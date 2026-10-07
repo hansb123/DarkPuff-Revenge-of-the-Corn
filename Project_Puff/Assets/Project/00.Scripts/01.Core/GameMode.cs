@@ -14,6 +14,6 @@ public enum GameMode
 
 public static class InputMaps
 {
-    public const string Platformer = "Platformer";   // Move, Jump, Pause
-    public const string UI = "UI";                   // Cancel
+    public const string Platformer = "Player";
+    public const string UI = "UI";
 }
