@@ -24,10 +24,10 @@ public class GoalDoor : MonoBehaviour, IInteractable
     private void Awake()
     {
         gameMode = FindFirstObjectByType<GameModeController>();
-        if (gameMode == null) Debug.LogWarning("[GoalDoor] GameModeController를 찾지 못했습니다.", this);
+        if (gameMode == null) Debug.Log(" GameModeController를 찾지 못했습니다.", this);
 
         var col = GetComponent<Collider2D>();
-        if (!col.isTrigger) Debug.LogWarning("[GoalDoor] 콜라이더의 Is Trigger를 켜 주세요.", this);
+        
     }
 
     private void Start()

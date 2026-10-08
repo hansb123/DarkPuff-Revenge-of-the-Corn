@@ -5,8 +5,7 @@ using UnityEngine.InputSystem;
 
 /// <summary>
 /// 게임 모드(타이틀/플랫포밍/미니게임/보스전/결과) 상태머신.
-/// 모드가 바뀔 때 입력 맵(Action Map)을 통째로 교체하고, 일시정지도 여기서 관리함.
-/// 씬에 하나만 두면 됨.
+/// 모드가 바뀔 때 입력 맵(Action Map)을 통째로 교체하고, 일시정지도 여기서 관리
 /// </summary>
 public class GameModeController : MonoBehaviour
 {
@@ -27,7 +26,7 @@ public class GameModeController : MonoBehaviour
     public bool IsPaused { get; private set; }
     public IMiniGame CurrentMiniGame { get; private set; }
 
-    // (이전 모드, 새 모드). 카메라/HUD/BGM 등이 구독해서 반응
+    // (이전 모드, 새 모드). 카메라/HUD/BGM 등이 구독해서 반응하게 만듦.
     public event Action<GameMode, GameMode> ModeChanged;
     public event Action<bool> PauseChanged;
 
@@ -121,7 +120,7 @@ public class GameModeController : MonoBehaviour
     }
 
     /// <summary>
-    /// 미니게임 시작. 어드레서블로 미니게임을 로드한 뒤 이걸 호출하는 흐름을 가정.
+    /// 미니게임 시작. 어드레서블로 미니게임을 로드한 뒤 이걸 호출하는 흐름 생각중
     /// </summary>
     public void StartMiniGame(IMiniGame game)
     {
@@ -129,7 +128,7 @@ public class GameModeController : MonoBehaviour
 
         if (CurrentMode == GameMode.MiniGame)
         {
-            Debug.LogWarning("[GameModeController] 이미 미니게임 진행 중입니다. EndMiniGame()을 먼저 호출하세요.", this);
+            Debug.Log("GameModeController 디버그. 이미 미니게임 진행 중입니다. EndMiniGame()을 먼저 호출하세요.", this);
             return;
         }
 
@@ -150,7 +149,7 @@ public class GameModeController : MonoBehaviour
         CurrentMiniGame = null;
     }
 
-    // ---------------- 일시정지 (모드가 아닌 오버레이) ----------------
+    //  일시정지 
 
     public void TogglePause()
     {
@@ -182,11 +181,10 @@ public class GameModeController : MonoBehaviour
         PauseChanged?.Invoke(false);
     }
 
-    // ---------------- 입력 맵 ----------------
+    // 입력 
 
-    /// <summary>
-    /// 지정한 Action Map만 켜고 나머지는 전부 끔.
-    /// </summary>
+    //지정한 Action Map만 켜고 나머지는 전부 끔.
+
     public void EnableInputMap(string mapName)
     {
         if (inputActions == null) return;
@@ -195,7 +193,7 @@ public class GameModeController : MonoBehaviour
 
         if (map == null)
         {
-            Debug.LogWarning($"[GameModeController] Action Map '{mapName}'을(를) 찾을 수 없습니다. Input Actions 에셋을 확인하세요.", this);
+            Debug.Log($"GameModeController 디버그. Action Map '{mapName}'을(를) 찾을 수 없습니다. Input Actions 에셋을 확인.", this);
             return;
         }
 
@@ -203,7 +201,7 @@ public class GameModeController : MonoBehaviour
         map.Enable();
     }
 
-    // ---------------- 테스트용 (컴포넌트 우측 상단 ⋮ 메뉴 → 실행) ----------------
+    // 테스트용 우측 상단 메뉴 → 실행)
 
     [ContextMenu("Debug/Mode - Title")] private void DebugTitle() => SetMode(GameMode.Title);
     [ContextMenu("Debug/Mode - Platforming")] private void DebugPlatforming() => SetMode(GameMode.Platforming);
