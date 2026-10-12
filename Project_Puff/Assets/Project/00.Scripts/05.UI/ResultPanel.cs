@@ -23,6 +23,10 @@ public class ResultPanel : MonoBehaviour
     [SerializeField] private Button nextButton;
     [SerializeField] private Button chaptersButton;
 
+    [Header("Progress")]
+    [Tooltip("이 스테이지의 ID. 예) ch1_01 (챕터ID_번호). 클리어 시 챕터 선택 화면의 잠금이 풀림")]
+    [SerializeField] private string stageId = "";
+
     [Header("Scenes")]
     [SerializeField] private string titleSceneName = "Title";
     [Tooltip("비워 두면 '다음' 버튼은 비활성이 됨 (마지막 스테이지/챕터)")]
@@ -62,6 +66,7 @@ public class ResultPanel : MonoBehaviour
     {
         if (next != GameMode.Result) return;
 
+        StageProgress.MarkCleared(stageId);
         Time.timeScale = 0f;   // 뒤에서 적이 계속 움직이지 않게
         Show();
     }
