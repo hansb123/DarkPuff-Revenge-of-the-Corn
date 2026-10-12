@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207141219808a594fabac4fa1ab09513, type: 3}
+  m_Name: Hotteok_Data
+  m_EditorClassIdentifier: Assembly-CSharp::MeleeEnemyData
+  <MaxHp>k__BackingField: 3
+  <MoveSpeed>k__BackingField: 2
+  <ContactDamage>k__BackingField: 1
+  <DetectRange>k__BackingField: 7
+  <DetectHeight>k__BackingField: 2
+  <WallCheckDistance>k__BackingField: 0.15
+  <LedgeCheckForward>k__BackingField: 0.15
+  <LedgeCheckDown>k__BackingField: 0.6
+  <KnockbackSpeed>k__BackingField: 4
+  <HitStunTime>k__BackingField: 0.25
+  <DeadDestroyDelay>k__BackingField: 1
+  <ChaseSpeedMultiplier>k__BackingField: 1.6
+  <AttackRange>k__BackingField: 1.6
+  <WindupTime>k__BackingField: 0.35
+  <LungeSpeed>k__BackingField: 7
+  <LungeTime>k__BackingField: 0.2
+  <RecoverTime>k__BackingField: 0.5
+  <AttackDamage>k__BackingField: 1
+  <HitBoxSize>k__BackingField: {x: 1.4, y: 1}
+  <HitBoxForward>k__BackingField: 0.9

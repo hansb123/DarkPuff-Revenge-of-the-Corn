@@ -11,6 +11,8 @@ public class InteractionPrompt : MonoBehaviour
     [Header("Sprites")]
     [SerializeField] private Sprite keySprite;          // prompt_key_E
     [SerializeField] private Sprite keyPressedSprite;   // prompt_key_E_pressed
+    [SerializeField] private Sprite keyUpSprite;        // prompt_key_up
+    [SerializeField] private Sprite keyUpPressedSprite; // prompt_key_up_pressed
     [SerializeField] private Sprite alertSprite;        // prompt_alert
 
     [Header("Motion")]
@@ -36,16 +38,27 @@ public class InteractionPrompt : MonoBehaviour
 
         transform.localPosition = basePosition + Vector3.up * (Mathf.Sin(Time.time * bobSpeed) * bobAmplitude);
 
+        bool pressed = Time.time < pressedUntil;
+
         if (kind == InteractionPromptKind.Key)
         {
-            sr.sprite = Time.time < pressedUntil ? keyPressedSprite : keySprite;
+            sr.sprite = pressed ? keyPressedSprite : keySprite;
+        }
+        else if (kind == InteractionPromptKind.KeyUp)
+        {
+            sr.sprite = pressed ? keyUpPressedSprite : keyUpSprite;
         }
     }
 
     public void Show(InteractionPromptKind promptKind)
     {
         kind = promptKind;
-        sr.sprite = promptKind == InteractionPromptKind.Alert ? alertSprite : keySprite;
+        sr.sprite = promptKind switch
+        {
+            InteractionPromptKind.Alert => alertSprite,
+            InteractionPromptKind.KeyUp => keyUpSprite,
+            _ => keySprite
+        };
         sr.enabled = true;
     }
 

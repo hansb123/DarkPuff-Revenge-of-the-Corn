@@ -2,13 +2,13 @@ using UnityEngine;
 
 /// <summary>
 /// 클리어 문. 평소에는 잠겨 있고(보스 처치 등), Unlock()되면 열린 모양이 되어 상호작용 가능.
-/// 상호작용하면 Result 모드로 전환(승리 UI).
+/// 문 앞에서 위쪽 방향키를 누르면 Result 모드로 전환(승리 UI).
 /// 문 오브젝트에 SpriteRenderer, Animator(선택), Is Trigger BoxCollider2D, 이 스크립트를 붙인다.
 /// </summary>
 [RequireComponent(typeof(Collider2D))]
 public class GoalDoor : MonoBehaviour, IInteractable
 {
-    [SerializeField] private bool startUnlocked = false;   // 1차 빌드처럼 보스가 없으면 true
+    [SerializeField] private bool startUnlocked = true;    // 보스가 없는 스테이지는 true. 보스 스테이지는 false로 두고 보스 처치 시 Unlock()
 
     [Header("Visual")]
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -19,15 +19,16 @@ public class GoalDoor : MonoBehaviour, IInteractable
     private bool unlocked;
 
     public bool CanInteract => unlocked;
-    public InteractionPromptKind PromptKind => InteractionPromptKind.Key;
+    public InteractionPromptKind PromptKind => InteractionPromptKind.KeyUp;
+    public InteractionInput Input => InteractionInput.Up;
 
     private void Awake()
     {
         gameMode = FindFirstObjectByType<GameModeController>();
-        if (gameMode == null) Debug.Log(" GameModeController를 찾지 못했습니다.", this);
+        if (gameMode == null) Debug.LogWarning("[GoalDoor] GameModeController를 찾지 못했습니다.", this);
 
         var col = GetComponent<Collider2D>();
-        
+        if (!col.isTrigger) Debug.LogWarning("[GoalDoor] 콜라이더의 Is Trigger를 켜 주세요.", this);
     }
 
     private void Start()

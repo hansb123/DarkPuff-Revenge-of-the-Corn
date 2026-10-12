@@ -12,14 +12,14 @@ public class GameModeController : MonoBehaviour
     [SerializeField] private InputActionAsset inputActions;
     [SerializeField] private GameMode startMode = GameMode.Platforming;
 
-    private readonly StateMachine machine = new StateMachine();
-    private readonly Dictionary<GameMode, GameModeState> states = new Dictionary<GameMode, GameModeState>();
+    private readonly StateMachine machine = new StateMachine(); //값이 변하지 않기 떄문에 리드온리 사용. 
+    private readonly Dictionary<GameMode, GameModeState> states = new Dictionary<GameMode, GameModeState>(); //상태머신 딕셔너리 
     private GameModeState currentState;
 
     private InputAction pauseAction;
     private InputAction cancelAction;
 
-    // 입력 콜백 안에서 바로 맵을 바꾸지 않고, 다음 Update에서 처리하기 위한 플래그
+   
     private bool pauseToggleRequested;
 
     public GameMode CurrentMode { get; private set; } = GameMode.None;
@@ -45,11 +45,11 @@ public class GameModeController : MonoBehaviour
 
         if (inputActions == null)
         {
-            Debug.LogError("[GameModeController] Input Actions 에셋이 연결되지 않았습니다.", this);
+            Debug.Log("GameModeController 디버그 Input Actions 에셋이 연결되지 않았습니다.", this);
             return;
         }
 
-        // 액션이 없어도 에러로 멈추지 않게 throwIfNotFound = false
+        
         pauseAction = inputActions.FindAction($"{InputMaps.Platformer}/Pause", false);
         cancelAction = inputActions.FindAction($"{InputMaps.UI}/Cancel", false);
     }
@@ -65,7 +65,7 @@ public class GameModeController : MonoBehaviour
         if (pauseAction != null) pauseAction.performed -= OnPausePerformed;
         if (cancelAction != null) cancelAction.performed -= OnCancelPerformed;
 
-        // 일시정지 상태로 씬이 바뀌어도 시간이 멈춘 채로 남지 않게
+        // 일시정지 상태로 씬이 바뀌어도 시간이 멈춘 채로 남지 않게하기위함  
         Time.timeScale = 1f;
 
         if (inputActions != null) inputActions.Disable();

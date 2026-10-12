@@ -20,13 +20,19 @@ public class PlayerInteractor : MonoBehaviour
 
     private readonly List<IInteractable> inRange = new List<IInteractable>();
     private InputAction interactAction;
+    private InputAction moveAction;
     private IInteractable current;
+    private bool upWasDown;
+
+    private const float UpThreshold = 0.6f;
 
     private void Awake()
     {
         if (inputActions != null)
         {
             interactAction = inputActions.FindAction($"{InputMaps.Platformer}/{interactActionName}", false);
+            moveAction = inputActions.FindAction($"{InputMaps.Platformer}/Move", false);
+
             if (interactAction == null)
                 Debug.LogWarning($"[PlayerInteractor] '{InputMaps.Platformer}/{interactActionName}' 액션을 찾지 못했습니다.", this);
         }
@@ -52,6 +58,11 @@ public class PlayerInteractor : MonoBehaviour
 
     private void Update()
     {
+        // 위쪽 방향키(또는 스틱 위): 누른 순간 한 번만 상호작용
+        bool upNow = moveAction != null && moveAction.ReadValue<Vector2>().y > UpThreshold;
+        if (upNow && !upWasDown) TryInteract(InteractionInput.Up);
+        upWasDown = upNow;
+
         // 가장 가까운 상호작용 가능 대상 선택
         IInteractable best = null;
         float bestDist = float.MaxValue;
@@ -80,7 +91,12 @@ public class PlayerInteractor : MonoBehaviour
 
     private void OnInteractStarted(InputAction.CallbackContext ctx)
     {
-        if (current == null || !current.CanInteract) return;
+        TryInteract(InteractionInput.Interact);
+    }
+
+    private void TryInteract(InteractionInput input)
+    {
+        if (current == null || !current.CanInteract || current.Input != input) return;
 
         if (prompt != null) prompt.PlayPressed();
         current.Interact(this);
