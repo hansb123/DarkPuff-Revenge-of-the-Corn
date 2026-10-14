@@ -33,7 +33,7 @@ public class GoalDoor : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        if (startUnlocked) Unlock(); else Lock();
+        if (startUnlocked) ApplyUnlocked(); else Lock();   // 씬 시작 때는 소리 없이
     }
 
     public void Lock()
@@ -46,6 +46,13 @@ public class GoalDoor : MonoBehaviour, IInteractable
     /// <summary>보스를 잡았을 때 등 외부에서 호출</summary>
     public void Unlock()
     {
+        if (unlocked) return;
+        ApplyUnlocked();
+        GameSfx.PlayAt(GameSfxId.DoorOpen, transform.position);
+    }
+
+    private void ApplyUnlocked()
+    {
         unlocked = true;
         if (animator != null)
         {
@@ -57,6 +64,7 @@ public class GoalDoor : MonoBehaviour, IInteractable
     public void Interact(PlayerInteractor interactor)
     {
         if (!unlocked || gameMode == null) return;
+        GameSfx.PlayAt(GameSfxId.DoorOpen, transform.position);
         gameMode.SetMode(GameMode.Result);
     }
 }

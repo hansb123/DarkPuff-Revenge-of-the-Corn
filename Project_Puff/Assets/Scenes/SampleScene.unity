@@ -2566,6 +2566,7 @@ MonoBehaviour:
   titleButton: {fileID: 777941514}
   nextButton: {fileID: 1659408998}
   chaptersButton: {fileID: 874851755}
+  stageId: 
   titleSceneName: Title
   nextSceneName: 
   chapterSelectSceneName: ChapterSelect

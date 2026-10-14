@@ -23,7 +23,7 @@ MonoBehaviour:
   <KnockbackSpeed>k__BackingField: 4
   <HitStunTime>k__BackingField: 0.25
   <DeadDestroyDelay>k__BackingField: 1
-  <ProjectilePrefab>k__BackingField: {fileID: 0}
+  <ProjectilePrefab>k__BackingField: {fileID: 8664479780844780862, guid: 23abff3c53a8009439c9104812374ff7, type: 3}
   <PreferredRange>k__BackingField: 5
   <TooCloseRange>k__BackingField: 2.5
   <RetreatSpeedMultiplier>k__BackingField: 1.2

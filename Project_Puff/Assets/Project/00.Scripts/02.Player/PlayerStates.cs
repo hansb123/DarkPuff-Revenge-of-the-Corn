@@ -52,6 +52,12 @@ public sealed class PlayerIdleState : PlayerState
             return;
         }
 
+        if (player.ConsumeSpecial())
+        {
+            player.ChangeState(player.SpecialState);
+            return;
+        }
+
         if (Mathf.Abs(player.MoveInput) > InputDeadZone)
         {
             player.ChangeState(player.RunState);
@@ -61,11 +67,14 @@ public sealed class PlayerIdleState : PlayerState
 
 public sealed class PlayerRunState : PlayerState
 {
+    private float stepTimer;
+
     public PlayerRunState(PlayerController player) : base(player) { }
 
     public override void Enter()
     {
         player.PlayAnimation("Run");
+        stepTimer = player.StepInterval * 0.5f;   // 달리기 시작하고 조금 뒤에 첫 발소리
     }
 
     public override void Tick()
@@ -89,6 +98,12 @@ public sealed class PlayerRunState : PlayerState
             return;
         }
 
+        if (player.ConsumeSpecial())
+        {
+            player.ChangeState(player.SpecialState);
+            return;
+        }
+
         float inputX = player.MoveInput;
 
         if (Mathf.Abs(inputX) <= InputDeadZone)
@@ -99,6 +114,13 @@ public sealed class PlayerRunState : PlayerState
 
         player.SetHorizontalVelocity(inputX * player.MoveSpeed);
         player.FaceDirection(inputX);
+
+        stepTimer -= Time.deltaTime;
+        if (stepTimer <= 0f)
+        {
+            GameSfx.Play(GameSfxId.PlayerStep);
+            stepTimer = player.StepInterval;
+        }
     }
 }
 
@@ -133,12 +155,19 @@ public sealed class PlayerJumpState : PlayerState
             return;
         }
 
+        if (player.ConsumeSpecial())
+        {
+            player.ChangeState(player.SpecialState);
+            return;
+        }
+
         // 가변 점프: 상승 중 버튼을 떼면 낮게 뜀
         player.CutJumpIfReleased();
 
         // 점프 직후에는 아직 바닥에 닿아 있다고 판정되므로, 내려오는 중일 때만 착지로 인정
         if (player.IsGrounded && player.Rb.linearVelocity.y <= 0.01f)
         {
+            GameSfx.Play(GameSfxId.PlayerLand);
             player.ChangeState(Mathf.Abs(inputX) > InputDeadZone ? player.RunState : player.IdleState);
         }
     }
@@ -269,5 +298,95 @@ public sealed class PlayerAttackState : PlayerState
         {
             player.ChangeState(Mathf.Abs(player.MoveInput) > InputDeadZone ? player.RunState : player.IdleState);
         }
+    }
+}
+
+/// <summary>
+/// 특수공격 "뻥이요". 준비 → 발사(한 번) → 빈틈. 땅에서는 반동으로 뒤로 밀려나고, 공중에서는 공중 조작을 유지한다.
+/// </summary>
+public sealed class PlayerSpecialState : PlayerState
+{
+    private enum Phase { Startup, Recover }
+
+    private Phase phase;
+    private float timer;
+    private bool rocket;          // 아래 + 특수공격: 같은 공격 + 높은 점프
+    private bool rocketLaunched;  // 이미 솟구쳤는가 (점프 취소로 높이가 깎이지 않게)
+
+    public PlayerSpecialState(PlayerController player) : base(player) { }
+
+    private PlayerSpecialAttack Special => player.Special;
+
+    public override void Enter()
+    {
+        phase = Phase.Startup;
+        timer = Special.StartupTime;
+
+        rocket = Special.WantsRocketJump(player.MoveInputY, player.IsGrounded);
+        rocketLaunched = false;
+
+        player.PlayAnimation(Special.AnimationName);
+        player.FaceDirection(player.MoveInput);
+        player.SetHorizontalVelocity(0f);
+    }
+
+    public override void Tick()
+    {
+        timer -= Time.deltaTime;
+
+        if (!player.IsGrounded)
+        {
+            // 공중: 공중 조작 유지
+            player.SetHorizontalVelocity(player.MoveInput * player.MoveSpeed);
+        }
+        else if (phase == Phase.Startup)
+        {
+            player.SetHorizontalVelocity(0f);
+        }
+        else
+        {
+            // 반동으로 밀려난 뒤 서서히 멈춤
+            float vx = Mathf.MoveTowards(player.Rb.linearVelocity.x, 0f, 18f * Time.deltaTime);
+            player.SetHorizontalVelocity(vx);
+        }
+
+        if (phase == Phase.Startup)
+        {
+            if (timer <= 0f)
+            {
+                phase = Phase.Recover;
+                timer = Special.RecoverTime;
+                Special.Fire(player.FacingDir, rocket);   // 로켓점프면 발밑에서 아래로 발사
+
+                if (rocket)
+                {
+                    player.RocketJump(Special.RocketJumpHeightMultiplier);
+                    rocketLaunched = true;
+                }
+                else if (player.IsGrounded)
+                {
+                    player.SetHorizontalVelocity(-player.FacingDir * Special.RecoilSpeed);
+                }
+            }
+            return;
+        }
+
+        // 빈틈 동안 점프로 취소 가능 (일반 공격과 동일한 조작감)
+        if (!rocketLaunched && player.IsGrounded && player.ConsumeJump())
+        {
+            player.Jump();
+            player.ChangeState(player.JumpState);
+            return;
+        }
+
+        if (timer <= 0f) Finish();
+    }
+
+    private void Finish()
+    {
+        if (!player.IsGrounded || rocketLaunched)
+            player.ChangeState(player.JumpState);
+        else
+            player.ChangeState(Mathf.Abs(player.MoveInput) > InputDeadZone ? player.RunState : player.IdleState);
     }
 }

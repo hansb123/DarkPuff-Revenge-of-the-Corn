@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b3c2dcb496f3c47b3e13857ad64a72, type: 3}
+  m_Name: UISfxBank
+  m_EditorClassIdentifier: Assembly-CSharp::UISfxBank
+  <Move>k__BackingField: {fileID: 8300000, guid: 15bd7bb72418447458caf1dd1ec09dab, type: 3}
+  <Submit>k__BackingField: {fileID: 8300000, guid: b3c27c16efef67243818ad94864033ac, type: 3}
+  <Back>k__BackingField: {fileID: 8300000, guid: 74d2b5017c4dee84ba21e6a0054ae097, type: 3}
+  <Denied>k__BackingField: {fileID: 8300000, guid: 7eababb6e3d0c6a4aa876c65b35b83be, type: 3}
+  <Tab>k__BackingField: {fileID: 8300000, guid: 34f525749847dc34fba88c95c7f2623f, type: 3}
+  <Pop>k__BackingField: {fileID: 8300000, guid: 3b5472ebdb265904290c0d3d6fbc21ae, type: 3}
+  <Clear>k__BackingField: {fileID: 8300000, guid: f1e206a9051dd9a439ce1e32fa3cb40d, type: 3}
+  <Start>k__BackingField: {fileID: 8300000, guid: c57f63c7bc0ef584f91d3721aba93bab, type: 3}
+  <Stamp>k__BackingField: {fileID: 8300000, guid: db7b1c2935ec998479a62d6216cf268d, type: 3}
+  <Volume>k__BackingField: 0.278
+  <PitchJitter>k__BackingField: 0.0389

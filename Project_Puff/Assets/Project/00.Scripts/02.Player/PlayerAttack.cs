@@ -59,6 +59,7 @@ public class PlayerAttack : MonoBehaviour
     /// <summary>판정이 켜지는 순간 한 번 호출. 히트박스 위치/크기에 맞춰 휘두르기 이펙트를 띄운다</summary>
     public void PlaySwingEffect(int facing)
     {
+        GameSfx.Play(GameSfxId.PlayerSwing);
         if (swingEffectPrefab == null) return;
 
         Vector2 center = (Vector2)transform.position + new Vector2(hitBoxOffset.x * facing, hitBoxOffset.y);
@@ -90,7 +91,11 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
-        if (newHits > 0) HitLanded?.Invoke(newHits);
+        if (newHits > 0)
+        {
+            GameSfx.Play(GameSfxId.PlayerHitEnemy);
+            HitLanded?.Invoke(newHits);
+        }
     }
 
     private void OnDrawGizmosSelected()

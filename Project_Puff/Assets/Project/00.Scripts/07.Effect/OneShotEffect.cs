@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -12,6 +13,7 @@ public class OneShotEffect : MonoBehaviour
     [SerializeField] private float fps = 24f;
 
     private SpriteRenderer sr;
+    private Action<OneShotEffect> release;   // 풀에서 만든 경우 반납 함수. 없으면 Destroy
     private float startTime;
     private bool playing;
 
@@ -21,20 +23,24 @@ public class OneShotEffect : MonoBehaviour
         sr.enabled = false;   // Play가 불리기 전에는 숨김
     }
 
+    /// <summary>풀에서 만들어질 때 한 번 호출. 이후 끝나면 Destroy 대신 이 함수로 반납</summary>
+    public void SetReleaser(Action<OneShotEffect> releaser) => release = releaser;
+
     /// <summary>
     /// 위치, 좌우 반전, 월드 기준 가로 크기(유닛)를 정해 재생한다.
     /// 프리팹 자체 크기에 상관없이 첫 프레임이 worldWidth 유닛이 되도록 맞춘다.
     /// </summary>
-    public void Play(Vector2 position, bool flipX, float worldWidth)
+    public void Play(Vector2 position, bool flipX, float worldWidth, float rotationZ = 0f)
     {
         if (frames == null || frames.Length == 0)
         {
             Debug.LogWarning("[OneShotEffect] frames가 비어 있습니다.", this);
-            Destroy(gameObject);
+            Finish();
             return;
         }
 
         transform.position = position;
+        transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);   // 풀에서 재사용돼도 매번 초기화
 
         float spriteWidth = frames[0].bounds.size.x;
         float scale = spriteWidth > 0f ? worldWidth / spriteWidth : 1f;
@@ -66,6 +72,9 @@ public class OneShotEffect : MonoBehaviour
     private void Finish()
     {
         playing = false;
-        Destroy(gameObject);   // 풀링을 쓰면 여기서 반환
+        sr.enabled = false;
+
+        if (release != null) release(this);   // 풀 반환
+        else Destroy(gameObject);
     }
 }

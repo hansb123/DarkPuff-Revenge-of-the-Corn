@@ -50,11 +50,18 @@ public class ResultPanel : MonoBehaviour
         if (panel != null) panel.SetActive(false);
 
         // 클릭 연결
-        if (titleButton != null) titleButton.onClick.AddListener(() => LoadScene(titleSceneName));
-        if (nextButton != null) nextButton.onClick.AddListener(() => LoadScene(nextSceneName));
-        if (chaptersButton != null) chaptersButton.onClick.AddListener(() => LoadScene(chapterSelectSceneName));
+        Hook(titleButton, () => LoadScene(titleSceneName));
+        Hook(nextButton, () => LoadScene(nextSceneName));
+        Hook(chaptersButton, () => LoadScene(chapterSelectSceneName));
 
         gameMode.ModeChanged += OnModeChanged;
+    }
+
+    private void Hook(Button b, UnityEngine.Events.UnityAction action)
+    {
+        if (b == null) return;
+        b.onClick.AddListener(action);
+        if (b.GetComponent<UISelectSound>() == null) b.gameObject.AddComponent<UISelectSound>();
     }
 
     private void OnDestroy()
@@ -74,6 +81,9 @@ public class ResultPanel : MonoBehaviour
     private void Show()
     {
         if (panel != null) panel.SetActive(true);
+
+        UISelectSound.IgnoreFor(0.1f);      // 첫 버튼 자동 선택 소리 방지
+        UISfx.Play(UISfxId.Clear);          // 클리어 징글
 
         // 다음 갈 곳이 없으면 비활성 (Button의 Disabled Sprite로 점선 모양이 됨)
         if (nextButton != null) nextButton.interactable = CanLoad(nextSceneName);
@@ -128,6 +138,7 @@ public class ResultPanel : MonoBehaviour
             return;
         }
 
+        UISfx.Play(UISfxId.Submit);
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }

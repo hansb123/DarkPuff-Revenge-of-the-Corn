@@ -62,6 +62,17 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         Damaged?.Invoke(hitFrom);
     }
 
+    /// <summary>낙사처럼 무적/하트와 상관없이 즉사. (이미 죽었으면 무시)</summary>
+    public void Kill()
+    {
+        if (IsDead) return;
+
+        Current = 0;
+        Changed?.Invoke(Current, maxHp);
+        StopBlink();
+        Died?.Invoke();
+    }
+
     public void Heal(int amount)
     {
         if (IsDead || amount <= 0) return;

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -18,6 +19,10 @@ public class ChapterSelectUI : MonoBehaviour
     [Header("UI 루트")]
     [SerializeField] private RectTransform tabRoot;     // 탭이 가로로 놓일 영역
     [SerializeField] private RectTransform stageRoot;   // 프레임 안쪽 영역 (스테이지 박스가 흩어질 곳)
+    [Tooltip("탭 크기 배율 (원본 이미지는 그대로, 화면에서만 줄임)")]
+    [SerializeField, Range(0.4f, 1.2f)] private float tabScale = 0.8f;
+    [Tooltip("스테이지 박스 크기 배율")]
+    [SerializeField, Range(0.4f, 1.2f)] private float stageScale = 1f;
 
     [Header("스테이지 스프라이트 (1~12번, 이름순 멀티 선택 후 드래그)")]
     [SerializeField] private Sprite[] stageNormal;
@@ -39,13 +44,19 @@ public class ChapterSelectUI : MonoBehaviour
     private readonly List<GameObject> stageButtons = new();
     private int currentPage = -1;
 
-    private void Start()
+    private IEnumerator Start()
     {
         if (pages == null || pages.Length == 0)
         {
             Debug.LogWarning("[ChapterSelectUI] pages가 비어 있습니다.", this);
-            return;
+            yield break;
         }
+
+        UISelectSound.IgnoreFor(0.5f);   // 처음 포커스 소리 방지
+
+        // Canvas / CanvasScaler가 첫 프레임에 크기를 잡으므로 한 프레임 기다린 뒤 배치 계산
+        yield return null;
+        Canvas.ForceUpdateCanvases();
 
         BuildTabs();
         ShowPage(Mathf.Clamp(StageProgress.LastPage, 0, pages.Length - 1), selectFirstStage: true);
@@ -54,7 +65,10 @@ public class ChapterSelectUI : MonoBehaviour
     private void Update()
     {
         if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            UISfx.Play(UISfxId.Back);
             SceneManager.LoadScene(titleSceneName);
+        }
     }
 
     // ───────────── 탭 ─────────────
@@ -63,14 +77,14 @@ public class ChapterSelectUI : MonoBehaviour
     {
         // 탭은 크기가 제각각이라 가로로 이어 붙이고 가운데 정렬
         float totalW = 0f;
-        foreach (var p in pages) totalW += p.TabNormal != null ? p.TabNormal.rect.width : 0f;
+        foreach (var p in pages) totalW += (p.TabNormal != null ? p.TabNormal.rect.width : 0f) * tabScale;
 
         float x = -totalW * 0.5f;
         for (int i = 0; i < pages.Length; i++)
         {
             int index = i;
             var data = pages[i];
-            var size = data.TabNormal != null ? data.TabNormal.rect.size : new Vector2(280, 110);
+            var size = (data.TabNormal != null ? data.TabNormal.rect.size : new Vector2(280, 110)) * tabScale;
 
             var go = new GameObject($"Tab_{data.ChapterId}", typeof(RectTransform), typeof(Image), typeof(Button), typeof(SelectNotifier));
             var rt = (RectTransform)go.transform;
@@ -100,6 +114,7 @@ public class ChapterSelectUI : MonoBehaviour
     {
         if (index == currentPage && !selectFirstStage) return;
 
+        if (currentPage != -1 && index != currentPage) UISfx.Play(UISfxId.Tab);   // 첫 구성 때는 무음
         currentPage = index;
         StageProgress.LastPage = index;
 
@@ -123,7 +138,7 @@ public class ChapterSelectUI : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             var s = GetSprite(data, i, StageVisual.Normal);
-            sizes[i] = s != null ? s.rect.size : new Vector2(150, 110);
+            sizes[i] = (s != null ? s.rect.size : new Vector2(150, 110)) * stageScale;
         }
 
         // 페이지마다 항상 같은 배치가 나오도록 시드 고정
@@ -162,6 +177,7 @@ public class ChapterSelectUI : MonoBehaviour
             if (!unlocked) img.sprite = GetSprite(data, i, StageVisual.Locked);
 
             btn.onClick.AddListener(() => EnterStage(data, stageIdx));
+            go.AddComponent<UISelectSound>();
             stageButtons.Add(go);
         }
     }
@@ -212,9 +228,11 @@ public class ChapterSelectUI : MonoBehaviour
         string sceneName = data.StageSceneNames[stageIndex];
         if (string.IsNullOrEmpty(sceneName) || !Application.CanStreamedLevelBeLoaded(sceneName))
         {
+            UISfx.Play(UISfxId.Denied);
             Debug.LogWarning($"[ChapterSelectUI] 씬 '{sceneName}' 을(를) 불러올 수 없습니다. (ChapterData 이름 / Build Settings 확인)", this);
             return;
         }
+        UISfx.Play(UISfxId.Submit);
         SceneManager.LoadScene(sceneName);
     }
 

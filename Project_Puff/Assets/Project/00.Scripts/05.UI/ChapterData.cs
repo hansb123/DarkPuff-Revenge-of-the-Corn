@@ -19,5 +19,12 @@ public class ChapterData : ScriptableObject
     [field: Tooltip("챕터1/2는 10칸, 챕터3은 12칸, 미니게임은 1칸. 아직 없는 씬은 빈 문자열로 둬도 됨.")]
     [field: SerializeField] public string[] StageSceneNames { get; private set; } = new string[10];
 
+    [field: Header("스테이지 이름 리본 (선택)")]
+    [field: Tooltip("스테이지 순서대로. 게임 시작 때 StageHud가 보여주는 이름 리본. 비워 두거나 없는 칸은 리본이 안 나옴")]
+    [field: SerializeField] public Sprite[] StageTitles { get; private set; }
+
     public int StageCount => StageSceneNames != null ? StageSceneNames.Length : 0;
+
+    public Sprite GetStageTitle(int index) =>
+        StageTitles != null && index >= 0 && index < StageTitles.Length ? StageTitles[index] : null;
 }

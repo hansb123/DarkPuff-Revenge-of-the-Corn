@@ -40,6 +40,14 @@ public class PlayerController : MonoBehaviour
     [Tooltip("공격 키를 미리 눌러도 이 시간(초) 안이면 공격으로 인정")]
     [SerializeField] private float attackBufferTime = 0.12f;
 
+    [Header("Special Attack")]
+    [SerializeField] private PlayerSpecialAttack special;   // 비워두면 같은 오브젝트에서 자동으로 찾음
+    [SerializeField] private float specialBufferTime = 0.12f;
+
+    [Header("Sound")]
+    [Tooltip("달릴 때 발소리 간격(초)")]
+    [SerializeField] private float stepInterval = 0.28f;
+
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;      // 발 밑에 둔 자식 오브젝트
     [SerializeField] private float groundCheckRadius = 0.15f;
@@ -56,6 +64,7 @@ public class PlayerController : MonoBehaviour
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction attackAction;
+    private InputAction specialAction;
 
     private readonly StateMachine machine = new StateMachine();
     private float lastJumpPressedTime = float.NegativeInfinity;
@@ -75,6 +84,9 @@ public class PlayerController : MonoBehaviour
     public PlayerHitState HitState { get; private set; }
     public PlayerState DeadState { get; private set; }
     public PlayerAttackState AttackState { get; private set; }
+    public PlayerSpecialState SpecialState { get; private set; }
+    public PlayerSpecialAttack Special => special;
+    private float lastSpecialPressedTime = float.NegativeInfinity;
 
     public PlayerAttack Attack => attack;
     private float lastAttackPressedTime = float.NegativeInfinity;
@@ -83,8 +95,12 @@ public class PlayerController : MonoBehaviour
     public int FacingDir => spriteRenderer != null && spriteRenderer.flipX ? -1 : 1;
 
     public float HitStunTime => hitStunTime;
+    public float StepInterval => stepInterval;
     public bool IsDead => health != null && health.IsDead;
     private Vector2 lastHitFrom;
+
+    // 위/아래 입력(-1 ~ 1). 아래 + 특수공격 = 로켓점프 판정에 사용
+    public float MoveInputY => moveAction != null ? moveAction.ReadValue<Vector2>().y : 0f;
 
     // 좌우 입력(-1 ~ 1). Platformer 맵이 꺼져 있으면 자동으로 0
     public float MoveInput => moveAction != null ? moveAction.ReadValue<Vector2>().x : 0f;
@@ -99,6 +115,7 @@ public class PlayerController : MonoBehaviour
             moveAction = inputActions.FindAction($"{InputMaps.Platformer}/Move", false);
             jumpAction = inputActions.FindAction($"{InputMaps.Platformer}/Jump", false);
             attackAction = inputActions.FindAction($"{InputMaps.Platformer}/Attack", false);
+            specialAction = inputActions.FindAction($"{InputMaps.Platformer}/Special", false);
 
             if (moveAction == null)
                 Debug.LogWarning($"[PlayerController] '{InputMaps.Platformer}/Move' 액션을 찾지 못했습니다. " +
@@ -117,6 +134,11 @@ public class PlayerController : MonoBehaviour
             Debug.LogError("[PlayerController] Input Actions 에셋이 연결되지 않았습니다.", this);
         }
 
+        if (special == null) special = GetComponent<PlayerSpecialAttack>();
+        if (special == null) Debug.LogWarning("[PlayerController] PlayerSpecialAttack이 없습니다. 특수공격(X)을 쓸 수 없습니다.", this);
+        if (specialAction == null && inputActions != null)
+            Debug.LogWarning($"[PlayerController] '{InputMaps.Platformer}/Special' 액션을 찾지 못했습니다. (Input Actions에 Special 액션 + X 키 추가)", this);
+
         if (attack == null) attack = GetComponent<PlayerAttack>();
         if (attack == null) Debug.LogWarning("[PlayerController] PlayerAttack이 없습니다. 공격할 수 없습니다.", this);
 
@@ -129,12 +151,14 @@ public class PlayerController : MonoBehaviour
         HitState = new PlayerHitState(this);
         DeadState = new PlayerDeadState(this);
         AttackState = new PlayerAttackState(this);
+        SpecialState = new PlayerSpecialState(this);
     }
 
     private void OnEnable()
     {
         if (jumpAction != null) jumpAction.performed += OnJumpPerformed;
         if (attackAction != null) attackAction.performed += OnAttackPerformed;
+        if (specialAction != null) specialAction.performed += OnSpecialPerformed;
 
         if (health != null)
         {
@@ -147,6 +171,7 @@ public class PlayerController : MonoBehaviour
     {
         if (jumpAction != null) jumpAction.performed -= OnJumpPerformed;
         if (attackAction != null) attackAction.performed -= OnAttackPerformed;
+        if (specialAction != null) specialAction.performed -= OnSpecialPerformed;
 
         if (health != null)
         {
@@ -194,12 +219,29 @@ public class PlayerController : MonoBehaviour
         if (machine.Current == DeadState) return;
 
         lastHitFrom = hitFrom;
+        GameSfx.Play(GameSfxId.PlayerHurt);
         machine.ChangeState(HitState);   // 무적 시간이 경직보다 길어서 Hit 중에 다시 불리지 않음
     }
 
     private void OnDied()
     {
+        GameSfx.Play(GameSfxId.PlayerDead);
         machine.ChangeState(DeadState);
+    }
+
+    /// <summary>
+    /// 부활/재시작 시 호출. 속도와 입력 버퍼를 지우고 Idle로 돌려놓음.
+    /// 위치 이동과 체력 회복은 RespawnManager가 먼저 처리한다.
+    /// </summary>
+    public void Revive()
+    {
+        rb.linearVelocity = Vector2.zero;
+        lastJumpPressedTime = float.NegativeInfinity;
+        lastAttackPressedTime = float.NegativeInfinity;
+        lastSpecialPressedTime = float.NegativeInfinity;
+        coyoteAvailable = false;
+        GameSfx.Play(GameSfxId.PlayerRespawn);
+        machine.ChangeState(IdleState);
     }
 
     /// <summary>공격이 온 반대 방향으로 튕겨 나감 (Hit 상태 진입 시 호출)</summary>
@@ -220,6 +262,21 @@ public class PlayerController : MonoBehaviour
     private void OnAttackPerformed(InputAction.CallbackContext context)
     {
         lastAttackPressedTime = Time.time;
+    }
+
+    private void OnSpecialPerformed(InputAction.CallbackContext context)
+    {
+        lastSpecialPressedTime = Time.time;
+    }
+
+    /// <summary>특수공격 입력이 버퍼 시간 안에 있고 쿨타임이 끝났으면 소비(한 번만 true)</summary>
+    public bool ConsumeSpecial()
+    {
+        if (special == null || !special.CanStart) return false;
+        if (Time.time - lastSpecialPressedTime > specialBufferTime) return false;
+
+        lastSpecialPressedTime = float.NegativeInfinity;
+        return true;
     }
 
     /// <summary>
@@ -266,6 +323,18 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
         coyoteAvailable = false;  // 공중 점프 방지 (코요테로 두 번 뛰는 것 막기)
         jumpCutDone = false;
+        GameSfx.Play(GameSfxId.PlayerJump);
+    }
+
+    /// <summary>
+    /// 로켓점프: 일반 점프의 heightMultiplier 배 높이로 솟구침. (점프 높이는 속도² 에 비례하므로 속도는 √배)
+    /// 버튼 뗌으로 인한 가변 점프 컷은 적용하지 않음.
+    /// </summary>
+    public void RocketJump(float heightMultiplier)
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed * Mathf.Sqrt(Mathf.Max(0.01f, heightMultiplier)));
+        coyoteAvailable = false;
+        jumpCutDone = true;
     }
 
     /// <summary>발판에서 막 벗어난 직후라 점프를 허용할 수 있는지 (코요테 타임)</summary>
