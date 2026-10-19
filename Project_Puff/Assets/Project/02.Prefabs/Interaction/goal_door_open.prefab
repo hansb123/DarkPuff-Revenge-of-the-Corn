@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8207550675048259064}
   - component: {fileID: 3542351339065018840}
   - component: {fileID: 1957158815583083538}
+  - component: {fileID: 3359068965899893422}
   m_Layer: 0
   m_Name: goal_door_open
   m_TagString: Untagged
@@ -152,6 +153,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoalDoor
   startUnlocked: 1
+  miniGame: {fileID: 0}
   spriteRenderer: {fileID: 8207550675048259064}
   closedSprite: {fileID: 3155650340342048636, guid: 768d06db38ca1604a82f108e3cf62eff, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 3359068965899893422}
+--- !u!95 &3359068965899893422
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6687823081950145762}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6ddc932e57ef7d4f97abcf00ab8fd25, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

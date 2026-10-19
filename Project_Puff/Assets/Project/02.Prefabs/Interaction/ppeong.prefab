@@ -147,7 +147,7 @@ MonoBehaviour:
   fps: 4
   bobHeight: 0.12
   bobSpeed: 2.2
-  pickupEffectPrefab: {fileID: 0}
+  pickupEffectPrefab: {fileID: 3881635530497149538, guid: eb34ababcb506934e8a3bc0fc20d9fcf, type: 3}
   pickupEffectWidth: 1.2
   onCollected:
     m_PersistentCalls:

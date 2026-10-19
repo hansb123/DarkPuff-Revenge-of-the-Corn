@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1080125365801460762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8317884132480420216}
+  - component: {fileID: 162264685970244217}
+  m_Layer: 0
+  m_Name: Stage_MiniGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8317884132480420216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080125365801460762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.25102, y: 1.61963, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &162264685970244217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080125365801460762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a658d03f2db8f24a908f8350f7f4546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StageMiniGame
+  gameMode: {fileID: 0}
+  health: {fileID: 0}
+  globalLight: {fileID: 0}
+  darkIntensity: 0.04
+  playerLight: {fileID: 0}
+  baseRadius: 2.2
+  boostRadius: 4.5
+  boostSeconds: 6
+  lightFadeTime: 0.6
+  onlyInMiniGame: []
+  hiddenInMiniGame: []
+  lightCornPrefab: {fileID: 8764546094321259495, guid: 25689302dcaca8d4ca2c3fe8cf13d4e2, type: 3}
+  platformCornPrefab: {fileID: 3315479145031329232, guid: e1fde00f41689354084cb68e3307965e, type: 3}
+  platformPrefab: {fileID: 2853610167534521874, guid: ed468cbc7f423e24695b44aa58714465, type: 3}
+  platformChance: 0.5
+  firstDelay: 2
+  spawnInterval: {x: 2.5, y: 4.5}
+  maxActive: 2
+  missDamage: 1
+  viewX: {x: -0.8, y: 0.8}
+  viewY: {x: -0.2, y: 0.7}

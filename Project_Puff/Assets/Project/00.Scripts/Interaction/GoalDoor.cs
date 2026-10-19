@@ -8,7 +8,9 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class GoalDoor : MonoBehaviour, IInteractable
 {
-    [SerializeField] private bool startUnlocked = true;    // 보스가 없는 스테이지는 true. 보스 스테이지는 false로 두고 보스 처치 시 Unlock()
+    [SerializeField] private bool startUnlocked = true;
+    [Tooltip("연결하면 이 미니게임을 깨기 전까지 문이 잠겨 있다. 문 앞에서 ↑ = 미니게임 시작, 미니게임 중 문에 도착해 ↑ = 클리어 후 문 해금")]
+    [SerializeField] private StageMiniGame miniGame;    // 보스가 없는 스테이지는 true. 보스 스테이지는 false로 두고 보스 처치 시 Unlock()
 
     [Header("Visual")]
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -18,7 +20,8 @@ public class GoalDoor : MonoBehaviour, IInteractable
     private GameModeController gameMode;
     private bool unlocked;
 
-    public bool CanInteract => unlocked;
+    private bool NeedsMiniGame => miniGame != null && !miniGame.Cleared;
+    public bool CanInteract => unlocked || NeedsMiniGame;
     public InteractionPromptKind PromptKind => InteractionPromptKind.KeyUp;
     public InteractionInput Input => InteractionInput.Up;
 
@@ -33,7 +36,7 @@ public class GoalDoor : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        if (startUnlocked) ApplyUnlocked(); else Lock();   // 씬 시작 때는 소리 없이
+        if (startUnlocked && !NeedsMiniGame) ApplyUnlocked(); else Lock();   // 씬 시작 때는 소리 없이
     }
 
     public void Lock()
@@ -63,7 +66,16 @@ public class GoalDoor : MonoBehaviour, IInteractable
 
     public void Interact(PlayerInteractor interactor)
     {
-        if (!unlocked || gameMode == null) return;
+        if (gameMode == null) return;
+
+        if (NeedsMiniGame)
+        {
+            if (miniGame.IsRunning) { miniGame.Clear(); Unlock(); }   // 미니게임 중 문에 도착 = 클리어
+            else miniGame.Enter();                                     // 처음 도착 = 미니게임 시작
+            return;
+        }
+
+        if (!unlocked) return;
         GameSfx.PlayAt(GameSfxId.DoorOpen, transform.position);
         gameMode.SetMode(GameMode.Result);
     }

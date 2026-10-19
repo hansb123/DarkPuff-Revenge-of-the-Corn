@@ -5,7 +5,8 @@ using UnityEngine;
 /// <summary>
 /// 죽음 처리 + 부활. 씬에 하나만 둔다.
 /// - 하트가 0이 되거나 낙사(Fall Y 아래로 떨어짐)하면 잠깐 기다린 뒤 마지막 체크포인트에서 부활
-/// - UseCheckpoints = false 이면 항상 시작 지점에서 부활 (미니게임: "처음부터 다시")
+/// - UseCheckpoints = false (미니게임) 이면 일반 체크포인트는 무시하고,
+///   '미니게임 전용' 체크포인트를 밟았으면 거기서, 아니면 시작 지점에서 부활
 /// - 부활할 때마다 Respawned 이벤트 (미니게임이 맵을 되돌리거나 사망 횟수 UI가 구독)
 /// </summary>
 public class RespawnManager : MonoBehaviour
@@ -30,11 +31,27 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] private float fadeTime = 0.25f;
 
     private Vector2 startPosition;
-    private Checkpoint currentCheckpoint;
+    private Checkpoint currentCheckpoint;       // 일반 체크포인트
+    private Checkpoint currentMiniCheckpoint;   // 미니게임 전용 체크포인트
     private bool respawning;
+    private bool useCheckpoints = true;
 
-    /// <summary>false면 체크포인트를 무시하고 항상 시작 지점으로 (미니게임)</summary>
-    public bool UseCheckpoints { get; set; } = true;
+    /// <summary>
+    /// false면 미니게임 모드: 일반 체크포인트는 무시하고 미니게임 전용 체크포인트만 사용.
+    /// true로 돌아올 때(미니게임 종료) 미니게임 전용 체크포인트는 초기화됨
+    /// </summary>
+    public bool UseCheckpoints
+    {
+        get => useCheckpoints;
+        set
+        {
+            if (value && !useCheckpoints) ClearMiniGameCheckpoints();
+            useCheckpoints = value;
+        }
+    }
+
+    /// <summary>미니게임 전용 체크포인트가 초기화될 때 (체크포인트가 표시를 원래대로 돌리는 용도)</summary>
+    public event Action MiniGameCheckpointsCleared;
     public int DeathCount { get; private set; }
 
     /// <summary>부활이 끝난 직후. 인자는 누적 사망 횟수</summary>
@@ -88,7 +105,22 @@ public class RespawnManager : MonoBehaviour
 
     public void SetCheckpoint(Checkpoint checkpoint)
     {
-        currentCheckpoint = checkpoint;
+        if (checkpoint.MiniGameOnly) currentMiniCheckpoint = checkpoint;
+        else currentCheckpoint = checkpoint;
+    }
+
+    private void ClearMiniGameCheckpoints()
+    {
+        currentMiniCheckpoint = null;
+        MiniGameCheckpointsCleared?.Invoke();
+    }
+
+    private Vector2 GetRespawnPosition()
+    {
+        if (UseCheckpoints)
+            return currentCheckpoint != null ? currentCheckpoint.RespawnPosition : startPosition;
+
+        return currentMiniCheckpoint != null ? currentMiniCheckpoint.RespawnPosition : startPosition;
     }
 
     private void OnDied()
@@ -106,8 +138,7 @@ public class RespawnManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(deathDelay);
         yield return Fade(1f);
 
-        Vector2 pos = (UseCheckpoints && currentCheckpoint != null) ? currentCheckpoint.RespawnPosition : startPosition;
-        player.transform.position = pos;
+        player.transform.position = GetRespawnPosition();
         health.ResetFull(respawnInvincible);
         player.Revive();
         RespawnApplied?.Invoke();
@@ -117,6 +148,33 @@ public class RespawnManager : MonoBehaviour
 
         respawning = false;
         Respawned?.Invoke(DeathCount);
+    }
+
+    /// <summary>
+    /// 죽지 않았지만 처음 위치로 되돌릴 때 (미니게임 시작). 암전 → 시작 지점 이동 → 밝아짐.
+    /// 함정도 RespawnApplied로 원래 자리로 돌아간다.
+    /// </summary>
+    public void RestartFromStart()
+    {
+        if (respawning) return;
+        StartCoroutine(RestartRoutine());
+    }
+
+    private IEnumerator RestartRoutine()
+    {
+        respawning = true;
+        yield return Fade(1f);
+
+        player.transform.position = startPosition;
+        var rb = player.GetComponent<Rigidbody2D>();
+        if (rb != null) rb.linearVelocity = Vector2.zero;
+        health.ResetFull(respawnInvincible);
+        ClearMiniGameCheckpoints();   // 미니게임을 새로 시작하므로 전용 체크포인트도 처음 상태로
+        RespawnApplied?.Invoke();
+
+        yield return null;
+        yield return Fade(0f);
+        respawning = false;
     }
 
     private IEnumerator Fade(float target)
