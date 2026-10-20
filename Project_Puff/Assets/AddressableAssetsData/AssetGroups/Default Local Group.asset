@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Default Local Group
   m_GUID: 80fcf9ef8f668fe4dbad8c7f0f499e38
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: ecc5ca0fd77c39c408f612b8b27ae4c6
+    m_Address: Assets/Project/02.Prefabs/Interaction/ppeong.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9230a7e5c7a96134a9f0732a45b686a2, type: 2}
   m_SchemaSet:

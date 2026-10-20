@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307e0e1bde90e5b42bd6517ed8064114, type: 3}
+  m_Name: Pattern_EggBombardment
+  m_EditorClassIdentifier: Assembly-CSharp::EggBombardmentPattern
+  displayName: "\uD328\uD134"
+  restAfter: 1.4
+  eggPrefab: {fileID: 4582453661655730494, guid: b8413b9bdec332349ba9434cc1f53c5e, type: 3}
+  countEasy: 4
+  countHard: 9
+  intervalEasy: 0.55
+  intervalHard: 0.22
+  fallTimeEasy: 1
+  fallTimeHard: 0.65
+  aimChanceEasy: 0.3
+  aimChanceHard: 0.7
+  aimJitter: 1.4
+  spawnHeight: 11
+  edgeMargin: 0.8

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13dcbeccd56aff544b2cd686d02fcd15, type: 3}
+  m_Name: Pattern_Peck
+  m_EditorClassIdentifier: Assembly-CSharp::PeckPattern
+  displayName: "\uD328\uD134"
+  restAfter: 1.4
+  peckPrefab: {fileID: 6004665450569523214, guid: ad06783b615e9af4198ff7a4d189bc47, type: 3}
+  countEasy: 3
+  countHard: 6
+  trackTimeEasy: 0.8
+  trackTimeHard: 0.45
+  lockTimeEasy: 0.6
+  lockTimeHard: 0.32
+  trackSpeedEasy: 3.5
+  trackSpeedHard: 7
+  gapEasy: 0.5
+  gapHard: 0.1
+  doubleFrom: 0.6
+  extraOffset: {x: 2.5, y: 4.5}
+  edgeMargin: 0.8

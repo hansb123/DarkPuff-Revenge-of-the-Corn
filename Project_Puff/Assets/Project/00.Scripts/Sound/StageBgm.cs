@@ -26,6 +26,7 @@ public class StageBgm : MonoBehaviour
     private AudioClip currentClip;
     private float savedNormalTime;
     private Coroutine fadeRoutine;
+    private bool suppressed;
 
     private void Awake()
     {
@@ -60,9 +61,9 @@ public class StageBgm : MonoBehaviour
         // Title/Result 등은 그대로 둔다
     }
 
-    private void Play(AudioClip clip, float volume, float startTime, bool instant)
+    private void Play(AudioClip clip, float volume, float startTime, bool instant, float fade = -1f)
     {
-        if (clip == null || clip == currentClip) return;
+        if (suppressed || clip == null || clip == currentClip) return;
 
         // 일반 곡의 재생 위치를 기억해 둔다
         if (current != null && currentClip == normalClip) savedNormalTime = current.time;
@@ -78,7 +79,7 @@ public class StageBgm : MonoBehaviour
         currentClip = clip;
 
         if (fadeRoutine != null) StopCoroutine(fadeRoutine);
-        fadeRoutine = StartCoroutine(Crossfade(prev, next, volume, instant ? 0f : fadeTime));
+        fadeRoutine = StartCoroutine(Crossfade(prev, next, volume, instant ? 0f : (fade < 0f ? fadeTime : fade)));
     }
 
     private IEnumerator Crossfade(AudioSource from, AudioSource to, float toVolume, float time)
@@ -93,6 +94,43 @@ public class StageBgm : MonoBehaviour
         }
         to.volume = toVolume;
         if (from != null) { from.volume = 0f; from.Stop(); }
+        fadeRoutine = null;
+    }
+
+    // ───────────── 연출용 ─────────────
+
+    /// <summary>BGM을 서서히 끄고, Release()를 부르기 전까지는 모드가 바뀌어도 다시 켜지지 않게 한다 (보스 등장 연출 등)</summary>
+    public void Suppress(float fade = 0.3f)
+    {
+        if (current != null && currentClip == normalClip) savedNormalTime = current.time;
+        suppressed = true;
+        currentClip = null;
+        if (fadeRoutine != null) StopCoroutine(fadeRoutine);
+        fadeRoutine = StartCoroutine(FadeOutAll(fade));
+    }
+
+    /// <summary>
+    /// Suppress를 풀고 BGM을 다시 켠다. overrideClip을 주면 그 곡(예: 닭 전투 BGM)을, 비우면 현재 게임 모드에 맞는 원래 곡을 튼다.
+    /// </summary>
+    public void Release(AudioClip overrideClip = null, float overrideVolume = 0.7f, float fade = 0.6f)
+    {
+        suppressed = false;
+        if (overrideClip != null) Play(overrideClip, overrideVolume, 0f, false, fade);
+        else Apply(gameMode != null ? gameMode.CurrentMode : GameMode.Platforming, instant: false);
+    }
+
+    private IEnumerator FadeOutAll(float time)
+    {
+        float va = a.volume, vb = b.volume;
+        for (float t = 0f; t < time; t += Time.unscaledDeltaTime)
+        {
+            float k = t / time;
+            a.volume = Mathf.Lerp(va, 0f, k);
+            b.volume = Mathf.Lerp(vb, 0f, k);
+            yield return null;
+        }
+        a.Stop(); b.Stop();
+        a.volume = b.volume = 0f;
         fadeRoutine = null;
     }
 

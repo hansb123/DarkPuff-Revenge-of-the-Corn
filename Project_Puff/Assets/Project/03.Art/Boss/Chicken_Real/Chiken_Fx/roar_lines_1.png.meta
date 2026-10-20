@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: 518f5a1545bbd134d9754bbf535ebca5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4026009719095087763
+    second: roar_lines_1_0
+  - first:
+      213: 4716878317639604209
+    second: roar_lines_1_1
+  - first:
+      213: 3071407396321066925
+    second: roar_lines_1_2
+  - first:
+      213: -1022209604947889484
+    second: roar_lines_1_3
+  - first:
+      213: -4675958090082719825
+    second: roar_lines_1_4
+  - first:
+      213: 8212907140850454333
+    second: roar_lines_1_5
+  - first:
+      213: -6632654651681870481
+    second: roar_lines_1_6
+  - first:
+      213: -7013864949158189495
+    second: roar_lines_1_7
+  - first:
+      213: 7438608222610745097
+    second: roar_lines_1_8
+  - first:
+      213: 1961353889072886736
+    second: roar_lines_1_9
+  - first:
+      213: -7881557952571506442
+    second: roar_lines_1_10
+  - first:
+      213: 8102121306493350044
+    second: roar_lines_1_11
+  - first:
+      213: 8062408863438044342
+    second: roar_lines_1_12
+  - first:
+      213: 7272414421944193858
+    second: roar_lines_1_13
+  - first:
+      213: -854404108518809730
+    second: roar_lines_1_14
+  - first:
+      213: 6337278834236617265
+    second: roar_lines_1_15
+  - first:
+      213: -5916992962367667918
+    second: roar_lines_1_16
+  - first:
+      213: 4328192119122328199
+    second: roar_lines_1_17
+  - first:
+      213: 3097286779637101497
+    second: roar_lines_1_18
+  - first:
+      213: -5135014642052353419
+    second: roar_lines_1_19
+  - first:
+      213: -4086218549082466687
+    second: roar_lines_1_20
+  - first:
+      213: 2361984754779673749
+    second: roar_lines_1_21
+  - first:
+      213: -894354332184512592
+    second: roar_lines_1_22
+  - first:
+      213: 4825149738129141637
+    second: roar_lines_1_23
+  - first:
+      213: -8349590648918788105
+    second: roar_lines_1_24
+  - first:
+      213: -2312546182436564763
+    second: roar_lines_1_25
+  - first:
+      213: 3522798190291238247
+    second: roar_lines_1_26
+  - first:
+      213: 7760069655455268960
+    second: roar_lines_1_27
+  - first:
+      213: -7374850317851111878
+    second: roar_lines_1_28
+  - first:
+      213: -6050773655577109362
+    second: roar_lines_1_29
+  - first:
+      213: 7213182150436059854
+    second: roar_lines_1_30
+  - first:
+      213: 4791908534342528057
+    second: roar_lines_1_31
+  - first:
+      213: 5960595271112174755
+    second: roar_lines_1_32
+  - first:
+      213: 7497381937300884297
+    second: roar_lines_1_33
+  - first:
+      213: -4409719383139990895
+    second: roar_lines_1_34
+  - first:
+      213: 852781676766428221
+    second: roar_lines_1_35
+  - first:
+      213: -4388919556563251139
+    second: roar_lines_1_36
+  - first:
+      213: -3530239060468503080
+    second: roar_lines_1_37
+  - first:
+      213: 6892506390041745277
+    second: roar_lines_1_38
+  - first:
+      213: -7720294655451079305
+    second: roar_lines_1_39
+  - first:
+      213: -2696189949482110839
+    second: roar_lines_1_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roar_lines_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 851
+        width: 428
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392dee042824fd730800000000000000
+      internalID: 4026009719095087763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 850
+        width: 342
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f796abb6d7b57140800000000000000
+      internalID: 4716878317639604209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 988
+        width: 105
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf793201c4df9a20800000000000000
+      internalID: 3071407396321066925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_3
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 985
+        width: 93
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2b61bb7c160d1f0800000000000000
+      internalID: -1022209604947889484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_4
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 981
+        width: 91
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7610034e8ab1fb0800000000000000
+      internalID: -4675958090082719825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_5
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1034
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f09afd78b1af170800000000000000
+      internalID: 8212907140850454333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_6
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1075
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6de8a05cb314f3a0800000000000000
+      internalID: -6632654651681870481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_7
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1057
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946ecd26dfeb9ae90800000000000000
+      internalID: -7013864949158189495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_8
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 996
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907630c54ce3b3760800000000000000
+      internalID: 7438608222610745097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_9
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 961
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3350d68f0283b10800000000000000
+      internalID: 1961353889072886736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_10
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 969
+        width: 131
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f00258ecc41f9290800000000000000
+      internalID: -7881557952571506442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_11
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 874
+        width: 307
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90f8a0c664807070800000000000000
+      internalID: 8102121306493350044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_12
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 846
+        width: 399
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc7f23152e63ef60800000000000000
+      internalID: 8062408863438044342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 783
+        width: 362
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2435967c26ecce460800000000000000
+      internalID: 7272414421944193858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 726
+        width: 373
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f1a197dfb8424f0800000000000000
+      internalID: -854404108518809730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 712
+        width: 300
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132764df58982f750800000000000000
+      internalID: 6337278834236617265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_16
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 750
+        width: 421
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231c693104e92eda0800000000000000
+      internalID: -5916992962367667918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_17
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 698
+        width: 319
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a7ee3fcc3d01c30800000000000000
+      internalID: 4328192119122328199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 673
+        width: 301
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b378cb7ae5cbfa20800000000000000
+      internalID: 3097286779637101497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 638
+        width: 301
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5723a08b363ccb8b0800000000000000
+      internalID: -5135014642052353419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_20
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 625
+        width: 413
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186d35b11e5da47c0800000000000000
+      internalID: -4086218549082466687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 252
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594d781ce9477c020800000000000000
+      internalID: 2361984754779673749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_22
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 575
+        width: 346
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b77fce297d9693f0800000000000000
+      internalID: -894354332184512592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 335
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fa1414f1066f240800000000000000
+      internalID: 4825149738129141637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 431
+        width: 344
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7b547fa8b402c80800000000000000
+      internalID: -8349590648918788105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_25
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 475
+        width: 371
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0de2ddf7f28efd0800000000000000
+      internalID: -2312546182436564763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 299
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76db2bb1a4e73e030800000000000000
+      internalID: 3522798190291238247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_27
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 404
+        width: 374
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06003bdac3e41bb60800000000000000
+      internalID: 7760069655455268960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_28
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 338
+        width: 374
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ecec4a5b447a990800000000000000
+      internalID: -7374850317851111878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 301
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cd80b2b65570ca0800000000000000
+      internalID: -6050773655577109362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 416
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecafde0e2fe5a1460800000000000000
+      internalID: 7213182150436059854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 442
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c26a16c67408240800000000000000
+      internalID: 4791908534342528057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_32
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 365
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aca38881d948b250800000000000000
+      internalID: 5960595271112174755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_33
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 0
+        width: 344
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bcf3e262d0c0860800000000000000
+      internalID: 7497381937300884297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_34
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 25
+        width: 444
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19249c0b5978dc2c0800000000000000
+      internalID: -4409719383139990895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_35
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 153
+        width: 411
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cff92ba60b5db00800000000000000
+      internalID: 852781676766428221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_36
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 214
+        width: 382
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d305843baec6713c0800000000000000
+      internalID: -4388919556563251139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_37
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dde09c4742120fc0800000000000000
+      internalID: -3530239060468503080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_38
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 0
+        width: 89
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d775c8e2b0a17af50800000000000000
+      internalID: 6892506390041745277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_39
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 0
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ddd7c2ae00cd490800000000000000
+      internalID: -7720294655451079305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_lines_1_40
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 0
+        width: 214
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980f326a685359ad0800000000000000
+      internalID: -2696189949482110839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      roar_lines_1_0: 4026009719095087763
+      roar_lines_1_1: 4716878317639604209
+      roar_lines_1_10: -7881557952571506442
+      roar_lines_1_11: 8102121306493350044
+      roar_lines_1_12: 8062408863438044342
+      roar_lines_1_13: 7272414421944193858
+      roar_lines_1_14: -854404108518809730
+      roar_lines_1_15: 6337278834236617265
+      roar_lines_1_16: -5916992962367667918
+      roar_lines_1_17: 4328192119122328199
+      roar_lines_1_18: 3097286779637101497
+      roar_lines_1_19: -5135014642052353419
+      roar_lines_1_2: 3071407396321066925
+      roar_lines_1_20: -4086218549082466687
+      roar_lines_1_21: 2361984754779673749
+      roar_lines_1_22: -894354332184512592
+      roar_lines_1_23: 4825149738129141637
+      roar_lines_1_24: -8349590648918788105
+      roar_lines_1_25: -2312546182436564763
+      roar_lines_1_26: 3522798190291238247
+      roar_lines_1_27: 7760069655455268960
+      roar_lines_1_28: -7374850317851111878
+      roar_lines_1_29: -6050773655577109362
+      roar_lines_1_3: -1022209604947889484
+      roar_lines_1_30: 7213182150436059854
+      roar_lines_1_31: 4791908534342528057
+      roar_lines_1_32: 5960595271112174755
+      roar_lines_1_33: 7497381937300884297
+      roar_lines_1_34: -4409719383139990895
+      roar_lines_1_35: 852781676766428221
+      roar_lines_1_36: -4388919556563251139
+      roar_lines_1_37: -3530239060468503080
+      roar_lines_1_38: 6892506390041745277
+      roar_lines_1_39: -7720294655451079305
+      roar_lines_1_4: -4675958090082719825
+      roar_lines_1_40: -2696189949482110839
+      roar_lines_1_5: 8212907140850454333
+      roar_lines_1_6: -6632654651681870481
+      roar_lines_1_7: -7013864949158189495
+      roar_lines_1_8: 7438608222610745097
+      roar_lines_1_9: 1961353889072886736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

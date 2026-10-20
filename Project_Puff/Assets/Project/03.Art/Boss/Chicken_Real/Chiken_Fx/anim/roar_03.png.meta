@@ -1,0 +1,1521 @@
+fileFormatVersion: 2
+guid: 031a94bfd36a16d43bb6c13fe3565c9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2914924601940603108
+    second: roar_03_0
+  - first:
+      213: -1471120363284372225
+    second: roar_03_1
+  - first:
+      213: -6324984721580165871
+    second: roar_03_2
+  - first:
+      213: 4336192297397002123
+    second: roar_03_3
+  - first:
+      213: 407922607701946725
+    second: roar_03_4
+  - first:
+      213: 1810688647577107376
+    second: roar_03_5
+  - first:
+      213: -507148954083264635
+    second: roar_03_6
+  - first:
+      213: -7337264119999293415
+    second: roar_03_7
+  - first:
+      213: -5465334924716239160
+    second: roar_03_8
+  - first:
+      213: 7233198340926104678
+    second: roar_03_9
+  - first:
+      213: 1211654312332841130
+    second: roar_03_10
+  - first:
+      213: 209695004782095279
+    second: roar_03_11
+  - first:
+      213: 3899738578206894770
+    second: roar_03_12
+  - first:
+      213: -1684245105206884527
+    second: roar_03_13
+  - first:
+      213: 5221543057871377946
+    second: roar_03_14
+  - first:
+      213: 7259232965502153462
+    second: roar_03_15
+  - first:
+      213: -552376555620853028
+    second: roar_03_16
+  - first:
+      213: -2984755473958321423
+    second: roar_03_17
+  - first:
+      213: -8718896613611088733
+    second: roar_03_18
+  - first:
+      213: -3675025738949435745
+    second: roar_03_19
+  - first:
+      213: -1856163160132826135
+    second: roar_03_20
+  - first:
+      213: 8284343208867685355
+    second: roar_03_21
+  - first:
+      213: 4399132080031006495
+    second: roar_03_22
+  - first:
+      213: 5522201171314087648
+    second: roar_03_23
+  - first:
+      213: 541446288051546382
+    second: roar_03_24
+  - first:
+      213: 640542502808280325
+    second: roar_03_25
+  - first:
+      213: 1671839956115510070
+    second: roar_03_26
+  - first:
+      213: -7031683664499932890
+    second: roar_03_27
+  - first:
+      213: 492858588373793138
+    second: roar_03_28
+  - first:
+      213: -5443015262961051523
+    second: roar_03_29
+  - first:
+      213: 7452047653554906325
+    second: roar_03_30
+  - first:
+      213: 3549188713495323326
+    second: roar_03_31
+  - first:
+      213: -5783348883609737568
+    second: roar_03_32
+  - first:
+      213: -4130349285837257545
+    second: roar_03_33
+  - first:
+      213: 8179255911123426500
+    second: roar_03_34
+  - first:
+      213: 5927019636643674467
+    second: roar_03_35
+  - first:
+      213: -2727294079872000828
+    second: roar_03_36
+  - first:
+      213: 3749004294939707261
+    second: roar_03_37
+  - first:
+      213: -2848736663520134056
+    second: roar_03_38
+  - first:
+      213: 35285499776807376
+    second: roar_03_39
+  - first:
+      213: 8360103384961462085
+    second: roar_03_40
+  - first:
+      213: -137029991117386163
+    second: roar_03_41
+  - first:
+      213: 4321910343246547034
+    second: roar_03_42
+  - first:
+      213: 6704559372542209354
+    second: roar_03_43
+  - first:
+      213: 1512823250502773660
+    second: roar_03_44
+  - first:
+      213: -7333402296320658102
+    second: roar_03_45
+  - first:
+      213: 8935504813806447629
+    second: roar_03_46
+  - first:
+      213: 2212424943027603493
+    second: roar_03_47
+  - first:
+      213: -7118447560643524065
+    second: roar_03_48
+  - first:
+      213: 3914493690942367484
+    second: roar_03_49
+  - first:
+      213: -7176655749058991934
+    second: roar_03_50
+  - first:
+      213: -8999646554354743949
+    second: roar_03_51
+  - first:
+      213: 6676645166149535333
+    second: roar_03_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roar_03_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 874
+        width: 346
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f884ab48b1c87d0800000000000000
+      internalID: -2914924601940603108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_1
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 967
+        width: 151
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4679ce2d7859be0800000000000000
+      internalID: -1471120363284372225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 965
+        width: 128
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115f07c28e32938a0800000000000000
+      internalID: -6324984721580165871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1028
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f122c9bef3d2c30800000000000000
+      internalID: 4336192297397002123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1042
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561fcef437b39a500800000000000000
+      internalID: 407922607701946725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_5
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1074
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb7aa54bbbd02910800000000000000
+      internalID: 1810688647577107376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_6
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1061
+        width: 35
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587f7a796be36f8f0800000000000000
+      internalID: -507148954083264635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_7
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 933
+        width: 173
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9181938482dcc2a90800000000000000
+      internalID: -7337264119999293415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_8
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 916
+        width: 210
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c690c1b7da3724b0800000000000000
+      internalID: -5465334924716239160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_9
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 924
+        width: 222
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66468d4619b716460800000000000000
+      internalID: 7233198340926104678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_10
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 907
+        width: 298
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa05b2d6d29a0d010800000000000000
+      internalID: 1211654312332841130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 355
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabe53fee7cf8e200800000000000000
+      internalID: 209695004782095279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 762
+        width: 396
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2baa8ee3397ae1630800000000000000
+      internalID: 3899738578206894770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_13
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 299
+        width: 789
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1570475100c50a8e0800000000000000
+      internalID: -1684245105206884527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_14
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 784
+        width: 394
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1694d70fb5a67840800000000000000
+      internalID: 5221543057871377946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_15
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 743
+        width: 290
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2bf8acbe9fdb460800000000000000
+      internalID: 7259232965502153462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 269
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda17f303709558f0800000000000000
+      internalID: -552376555620853028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 367
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2cf49d5b40496d0800000000000000
+      internalID: -2984755473958321423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 235
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4da5089b1400780800000000000000
+      internalID: -8718896613611088733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_19
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 671
+        width: 353
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e5081cf8faffcc0800000000000000
+      internalID: -3675025738949435745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_20
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 591
+        width: 289
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebcd13b0759d36e0800000000000000
+      internalID: -1856163160132826135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_21
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 613
+        width: 279
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be36af19146e7f270800000000000000
+      internalID: 8284343208867685355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 553
+        width: 302
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ff546b15bdc0d30800000000000000
+      internalID: 4399132080031006495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_23
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 528
+        width: 258
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e61c6a15bcc2ac40800000000000000
+      internalID: 5522201171314087648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 226
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e092440c78a938700800000000000000
+      internalID: 541446288051546382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 437
+        width: 340
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d5d67330aa3e800800000000000000
+      internalID: 640542502808280325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_26
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 331
+        width: 324
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633d1911591933710800000000000000
+      internalID: 1671839956115510070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_27
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 399
+        width: 309
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621809c66f07a6e90800000000000000
+      internalID: -7031683664499932890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 357
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279358c564cf6d600800000000000000
+      internalID: 492858588373793138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 380
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d785d28e4768674b0800000000000000
+      internalID: -5443015262961051523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 372
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d46c67bbddfa6760800000000000000
+      internalID: 7452047653554906325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_31
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 213
+        width: 372
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2e6bc9450414130800000000000000
+      internalID: 3549188713495323326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_32
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 171
+        width: 368
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a62a44f4da6dbfa0800000000000000
+      internalID: -5783348883609737568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_33
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 286
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4c163453d0ea6c0800000000000000
+      internalID: -4130349285837257545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_34
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 244
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc96856aed828170800000000000000
+      internalID: 8179255911123426500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_35
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 224
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36939e2f4f0014250800000000000000
+      internalID: 5927019636643674467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_36
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 86
+        width: 285
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc1433fb74b62ad0800000000000000
+      internalID: -2727294079872000828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_37
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 84
+        width: 286
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d778b4d0b83270430800000000000000
+      internalID: 3749004294939707261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_38
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 0
+        width: 190
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c304809114778d0800000000000000
+      internalID: -2848736663520134056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_39
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 0
+        width: 203
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d13bef99fb5d7000800000000000000
+      internalID: 35285499776807376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_40
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 0
+        width: 288
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f2b222cbd050470800000000000000
+      internalID: 8360103384961462085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_41
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 0
+        width: 309
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e8fd7f2fb291ef0800000000000000
+      internalID: -137029991117386163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_42
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 125
+        width: 319
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a580c480f828afb30800000000000000
+      internalID: 4321910343246547034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_43
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4de4ef1a316b0d50800000000000000
+      internalID: 6704559372542209354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_44
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 99
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b6b262bb0aef410800000000000000
+      internalID: 1512823250502773660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_45
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 100
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45f5cc27758a3a90800000000000000
+      internalID: -7333402296320658102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_46
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 100
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ce9bb294a410c70800000000000000
+      internalID: 8935504813806447629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_47
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 99
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528cf5583cc14be10800000000000000
+      internalID: 2212424943027603493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_48
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 99
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ac893a8a1363d90800000000000000
+      internalID: -7118447560643524065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_49
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 60
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6a024a543135630800000000000000
+      internalID: 3914493690942367484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_50
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 0
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8e21aae95676c90800000000000000
+      internalID: -7176655749058991934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_51
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 0
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3750e971425da1380800000000000000
+      internalID: -8999646554354743949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roar_03_52
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 0
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5660cab776538ac50800000000000000
+      internalID: 6676645166149535333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      roar_03_0: -2914924601940603108
+      roar_03_1: -1471120363284372225
+      roar_03_10: 1211654312332841130
+      roar_03_11: 209695004782095279
+      roar_03_12: 3899738578206894770
+      roar_03_13: -1684245105206884527
+      roar_03_14: 5221543057871377946
+      roar_03_15: 7259232965502153462
+      roar_03_16: -552376555620853028
+      roar_03_17: -2984755473958321423
+      roar_03_18: -8718896613611088733
+      roar_03_19: -3675025738949435745
+      roar_03_2: -6324984721580165871
+      roar_03_20: -1856163160132826135
+      roar_03_21: 8284343208867685355
+      roar_03_22: 4399132080031006495
+      roar_03_23: 5522201171314087648
+      roar_03_24: 541446288051546382
+      roar_03_25: 640542502808280325
+      roar_03_26: 1671839956115510070
+      roar_03_27: -7031683664499932890
+      roar_03_28: 492858588373793138
+      roar_03_29: -5443015262961051523
+      roar_03_3: 4336192297397002123
+      roar_03_30: 7452047653554906325
+      roar_03_31: 3549188713495323326
+      roar_03_32: -5783348883609737568
+      roar_03_33: -4130349285837257545
+      roar_03_34: 8179255911123426500
+      roar_03_35: 5927019636643674467
+      roar_03_36: -2727294079872000828
+      roar_03_37: 3749004294939707261
+      roar_03_38: -2848736663520134056
+      roar_03_39: 35285499776807376
+      roar_03_4: 407922607701946725
+      roar_03_40: 8360103384961462085
+      roar_03_41: -137029991117386163
+      roar_03_42: 4321910343246547034
+      roar_03_43: 6704559372542209354
+      roar_03_44: 1512823250502773660
+      roar_03_45: -7333402296320658102
+      roar_03_46: 8935504813806447629
+      roar_03_47: 2212424943027603493
+      roar_03_48: -7118447560643524065
+      roar_03_49: 3914493690942367484
+      roar_03_5: 1810688647577107376
+      roar_03_50: -7176655749058991934
+      roar_03_51: -8999646554354743949
+      roar_03_52: 6676645166149535333
+      roar_03_6: -507148954083264635
+      roar_03_7: -7337264119999293415
+      roar_03_8: -5465334924716239160
+      roar_03_9: 7233198340926104678
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

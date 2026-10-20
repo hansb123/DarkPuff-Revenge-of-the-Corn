@@ -19,6 +19,9 @@ public enum GameSfxId
     EnemyAlert, EnemyMeleeAttack, EnemyRangedShoot, EnemyProjectileHit, EnemyHurt, EnemyDead,
     // 장애물 / 함정
     TrapWarn, TrapFallHit, TrapSpikePop, TrapSurprise,
+    // 닭 미니게임
+    ChickenCluck, ChickenBawk, ChickenRoar, ChickenWingFlap, ChickenPeckWarn, ChickenPeckHit,
+    EggFall, EggSplat, ChickenWindGust, AngerTick, AngerFull,
 }
 
 /// <summary>
@@ -147,6 +150,10 @@ public class GameSfxBank : ScriptableObject
         GameSfxId.PelletHit => 0.06f,
         GameSfxId.PelletPop => 0.08f,
         GameSfxId.EnemyHurt => 0.06f,
+        GameSfxId.ChickenCluck => 0.07f,
+        GameSfxId.EggSplat => 0.08f,
+        GameSfxId.EggFall => 0.05f,
+        GameSfxId.AngerTick => 0.03f,
         _ => 0.02f,
     };
 #endif

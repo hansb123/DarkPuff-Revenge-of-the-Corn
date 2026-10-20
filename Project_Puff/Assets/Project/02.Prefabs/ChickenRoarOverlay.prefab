@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4578620506800310136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791191320862147920}
+  m_Layer: 5
+  m_Name: ChickenRoarOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &791191320862147920
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4578620506800310136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1032566135575335901}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &9170616408716854050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032566135575335901}
+  - component: {fileID: 3285317439155075726}
+  - component: {fileID: 6524020435317114034}
+  - component: {fileID: 4153764246366339235}
+  m_Layer: 5
+  m_Name: Ray_Overlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1032566135575335901
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170616408716854050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 791191320862147920}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3285317439155075726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170616408716854050}
+  m_CullTransparentMesh: 1
+--- !u!114 &6524020435317114034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170616408716854050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4153764246366339235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170616408716854050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8728a7f15f5fd4083499ca2c737f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChickenRoarOverlay
+  frames:
+  - {fileID: 5522917968497138425, guid: 0f26ecba0eb3d464fbed051f2824a3ed, type: 3}
+  - {fileID: 4047732628754243760, guid: 1784a286f45085240b124b0797b20b80, type: 3}
+  - {fileID: 8623242202529883901, guid: d1d39087cbca8a844979865794deb35b, type: 3}
+  - {fileID: -2914924601940603108, guid: aa1c5d3cad3d9684b8d2136d2b637611, type: 3}
+  - {fileID: 2915065138962803036, guid: ab45c3194e39fc749921a280f4626a8c, type: 3}
+  - {fileID: -385021144228675585, guid: 87ad04d051a9ba1419d3d3f6981f2824, type: 3}
+  - {fileID: 7360157873543158609, guid: 9e3a043de7bafae47bc35a654e4b5327, type: 3}
+  - {fileID: -3986873200167768019, guid: 076bf9faddc7a0249a0f5179074a9226, type: 3}
+  - {fileID: -7672684425781754122, guid: 35a9be26dd558f54780b11f023abf3a5, type: 3}
+  - {fileID: 331507057003237749, guid: eaa689989fe8d504995206a88d5893df, type: 3}
+  - {fileID: 6650230000397315994, guid: f6177db827d57424ab00f812f55164b1, type: 3}
+  - {fileID: -6586693133426116894, guid: 52ba71b80a4f6114b87ddfdfea50843a, type: 3}
+  - {fileID: 3127137347097214737, guid: c9bff46b652e8414989759235ff6d38d, type: 3}
+  - {fileID: 2628168452969568176, guid: d583888c3f4946b4880e31a335aaea37, type: 3}
+  - {fileID: -6115229127186038873, guid: 8acc8896d4352cc41a46fdf98ce9522b, type: 3}
+  - {fileID: -2555908049850213912, guid: f76157eb0d6e3c64f93cdd6bb7c0364a, type: 3}
+  - {fileID: -8974166353076253767, guid: 4a9d2a740a3e6034890b1ccc98a1dfb8, type: 3}
+  - {fileID: 2052437017686507869, guid: 9a59cbda04f652b49bcad97433a3d5a6, type: 3}
+  fps: 12
+  playSfx: 1
+  shakeTarget: {fileID: 0}
+  shakeTime: 0.5
+  shakeDistance: 0.25
