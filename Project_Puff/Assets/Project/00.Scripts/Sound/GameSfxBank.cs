@@ -22,6 +22,20 @@ public enum GameSfxId
     // 닭 미니게임
     ChickenCluck, ChickenBawk, ChickenRoar, ChickenWingFlap, ChickenPeckWarn, ChickenPeckHit,
     EggFall, EggSplat, ChickenWindGust, AngerTick, AngerFull,
+    // 닭 미니게임 클리어 연출
+    ChickenDizzy, ChickenCollapse, CraneMotor, CraneClank, SteamHiss, MechaStomp, TeaserSting,
+    // 회복템
+    HealDrop, HealLand, HealGet,
+    // 활공
+    FeatherGet, GlideStart,
+    // 메카 닭 미니게임
+    MechaIntro, MechaServo, MechaWingSpread, MechaAlarm,
+    LaserCharge, LaserLock, LaserFire, LaserBeamLoop, LaserHit, LaserEnd,
+    MechaFeatherLaunch, MechaFeatherFall, MechaFeatherStick,
+    FloorWarn, FloorShock, FloorShockEnd,
+    HardGet, HardEnd,
+    // 메카 닭 클리어 연출
+    MechaOverload, SparkZap, MechaPowerDown, MechaCoreOpen, HardEggPop, HardEggLand, ShadowPass,
 }
 
 /// <summary>
@@ -154,6 +168,13 @@ public class GameSfxBank : ScriptableObject
         GameSfxId.EggSplat => 0.08f,
         GameSfxId.EggFall => 0.05f,
         GameSfxId.AngerTick => 0.03f,
+        GameSfxId.MechaStomp => 0.04f,
+        GameSfxId.MechaServo => 0.05f,
+        GameSfxId.LaserLock => 0.02f,
+        GameSfxId.LaserHit => 0.06f,
+        GameSfxId.MechaFeatherLaunch => 0.05f,
+        GameSfxId.MechaFeatherStick => 0.07f,
+        GameSfxId.SparkZap => 0.06f,
         _ => 0.02f,
     };
 #endif

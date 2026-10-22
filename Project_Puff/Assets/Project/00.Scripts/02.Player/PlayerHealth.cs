@@ -62,6 +62,16 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         Damaged?.Invoke(hitFrom);
     }
 
+    /// <summary>능력 등으로 일정 시간 무적을 준다 (깜빡임 없음). 이미 더 긴 무적이 있으면 그대로 둔다.</summary>
+    public void GrantInvincible(float seconds)
+    {
+        if (IsDead || seconds <= 0f) return;
+        invincibleUntil = Mathf.Max(invincibleUntil, Time.time + seconds);
+    }
+
+    /// <summary>GrantInvincible 로 준 무적을 일찍 끝낼 때 (남은 무적을 지움)</summary>
+    public void EndInvincible() { invincibleUntil = float.NegativeInfinity; }
+
     /// <summary>낙사처럼 무적/하트와 상관없이 즉사. (이미 죽었으면 무시)</summary>
     public void Kill()
     {

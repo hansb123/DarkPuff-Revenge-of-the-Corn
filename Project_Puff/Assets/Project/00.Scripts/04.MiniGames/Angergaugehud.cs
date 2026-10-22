@@ -62,6 +62,8 @@ public class AngerGaugeHud : MonoBehaviour
     public int Stage => stage;
     public bool IsFull => target >= 1f;
     public bool IsRunning => running;
+    /// <summary>마지막으로 Run()에 넘긴 시간(초). 죽고 다시 시작할 때 같은 시간으로 다시 돌리는 데 사용</summary>
+    public float LastDuration { get; private set; }
 
     private float target;      // 실제 값
     private float shown;       // 화면에 보이는 값
@@ -82,10 +84,21 @@ public class AngerGaugeHud : MonoBehaviour
     {
         if (icon != null) { iconBase = icon.rectTransform.anchoredPosition; iconBaseScale = icon.rectTransform.localScale; }
         rootBase = Rt.anchoredPosition;
+        ApplyStageSprite();
         Apply(0f, true);
     }
 
-    private void OnEnable()
+    private void Start()
+    {
+        // 레이아웃 그룹 등이 위치를 정리한 뒤의 값을 기준으로 삼는다
+        if (icon != null) { iconBase = icon.rectTransform.anchoredPosition; iconBaseScale = icon.rectTransform.localScale; }
+        rootBase = Rt.anchoredPosition;
+        Subscribe();   // RespawnManager가 OnEnable 시점에 아직 없었던 경우를 대비
+    }
+
+    private void OnEnable() => Subscribe();
+
+    private void Subscribe()
     {
         if (resetOnRestart && RespawnManager.Instance != null && !subscribed)
         {
@@ -112,6 +125,7 @@ public class AngerGaugeHud : MonoBehaviour
     /// <summary>duration초 동안 0 → 1로 차오름. 다시 부르면 처음부터</summary>
     public void Run(float duration)
     {
+        LastDuration = duration;
         ResetGauge();
         running = true;
         runRoutine = StartCoroutine(RunRoutine(Mathf.Max(0.1f, duration)));
@@ -126,6 +140,13 @@ public class AngerGaugeHud : MonoBehaviour
         completedFired = false;
         target = shown = 0f;
         stage = 0;
+        ApplyStageSprite();
+        if (icon != null)
+        {
+            if (popRoutine != null) { StopCoroutine(popRoutine); popRoutine = null; }
+            icon.rectTransform.localScale = iconBaseScale;
+            icon.rectTransform.anchoredPosition = iconBase;
+        }
         Apply(0f, true);
     }
 
@@ -192,12 +213,7 @@ public class AngerGaugeHud : MonoBehaviour
 
         bool up = s > stage;
         stage = s;
-        if (icon != null)
-        {
-            icon.sprite = stage == 2 ? (furiousSprite != null ? furiousSprite : icon.sprite)
-                        : stage == 1 ? (angrySprite != null ? angrySprite : icon.sprite)
-                        : (calmSprite != null ? calmSprite : icon.sprite);
-        }
+        ApplyStageSprite();
         StageChanged?.Invoke(stage);
 
         if (up)
@@ -223,6 +239,15 @@ public class AngerGaugeHud : MonoBehaviour
         }
         rt.localScale = iconBaseScale;
         popRoutine = null;
+    }
+
+    /// <summary>현재 단계에 맞는 얼굴 스프라이트를 아이콘에 넣는다</summary>
+    private void ApplyStageSprite()
+    {
+        if (icon == null) return;
+        Sprite sp = stage == 2 ? furiousSprite : stage == 1 ? angrySprite : calmSprite;
+        if (sp != null) icon.sprite = sp;
+        else Debug.LogWarning($"[AngerGaugeHud] 단계 {stage} 의 스프라이트가 연결되지 않았습니다 (Calm/Angry/Furious Sprite).", this);
     }
 
     private void FireCompleted()

@@ -12,6 +12,11 @@ public class GoalDoor : MonoBehaviour, IInteractable
     [Tooltip("연결하면 이 미니게임을 깨기 전까지 문이 잠겨 있다. 문 앞에서 ↑ = 미니게임 시작, 미니게임 중 문에 도착해 ↑ = 클리어 후 문 해금")]
     [SerializeField] private StageMiniGame miniGame;    // 보스가 없는 스테이지는 true. 보스 스테이지는 false로 두고 보스 처치 시 Unlock()
 
+    [Header("다음 씬으로 넘어가기 전 연출 (선택)")]
+    [Tooltip("연결하면 문에 들어갈 때 이 연출의 떡밥(PlayTeaser)을 먼저 보여주고, 끝난 뒤 Result로 넘어간다. ChickenOutroSequence / MechaOutroSequence 를 끌어다 놓는다")]
+    [SerializeField] private MonoBehaviour teaserBeforeResult;
+    private ITeaserSequence teaser;
+
     [Header("Visual")]
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite closedSprite;          // goal_door_closed
@@ -19,14 +24,17 @@ public class GoalDoor : MonoBehaviour, IInteractable
 
     private GameModeController gameMode;
     private bool unlocked;
+    private bool leaving;       // 문에 들어가 떡밥/전환이 진행 중
 
     private bool NeedsMiniGame => miniGame != null && !miniGame.Cleared;
-    public bool CanInteract => unlocked || NeedsMiniGame;
+    public bool CanInteract => !leaving && (unlocked || NeedsMiniGame);
     public InteractionPromptKind PromptKind => InteractionPromptKind.KeyUp;
     public InteractionInput Input => InteractionInput.Up;
 
     private void Awake()
     {
+        teaser = teaserBeforeResult as ITeaserSequence;
+        if (teaserBeforeResult != null && teaser == null) Debug.LogWarning("[GoalDoor] Teaser Before Result 에는 ITeaserSequence(치킨/메카 아웃트로)를 연결해야 합니다.", this);
         gameMode = FindFirstObjectByType<GameModeController>();
         if (gameMode == null) Debug.LogWarning("[GoalDoor] GameModeController를 찾지 못했습니다.", this);
 
@@ -66,7 +74,7 @@ public class GoalDoor : MonoBehaviour, IInteractable
 
     public void Interact(PlayerInteractor interactor)
     {
-        if (gameMode == null) return;
+        if (gameMode == null || leaving) return;
 
         if (NeedsMiniGame)
         {
@@ -77,6 +85,22 @@ public class GoalDoor : MonoBehaviour, IInteractable
 
         if (!unlocked) return;
         GameSfx.PlayAt(GameSfxId.DoorOpen, transform.position);
+
+        // 떡밥 연출이 연결돼 있으면 먼저 보여주고, 끝나면 Result로
+        if (teaser != null && !teaser.IsTeaserPlaying)
+        {
+            leaving = true;
+            teaser.TeaserCompleted.AddListener(GoToResult);
+            teaser.PlayTeaser();
+            return;
+        }
+
         gameMode.SetMode(GameMode.Result);
+    }
+
+    private void GoToResult()
+    {
+        if (teaser != null) teaser.TeaserCompleted.RemoveListener(GoToResult);
+        if (gameMode != null) gameMode.SetMode(GameMode.Result);
     }
 }

@@ -102,6 +102,34 @@ public class ChickenPoseController : MonoBehaviour
         baseScale = transform.localScale;
     }
 
+    /// <summary>
+    /// 이 컴포넌트의 움직임을 멈추고 특정 포즈로 고정한다 (클리어 연출 등 다른 스크립트가 닭을 직접 움직일 때).
+    /// 위치/회전/크기는 건드리지 않고 기준값으로 되돌려 둔다.
+    /// </summary>
+    public void Freeze(Sprite pose = null)
+    {
+        CancelHit();
+        state = State.Idle;
+        gustCount = 0;
+        offsetX = 0f;
+        transform.position = basePos;
+        transform.rotation = Quaternion.identity;
+        transform.localScale = baseScale;
+        if (pose != null) Set(pose); else Set(idle);
+        enabled = false;
+    }
+
+    /// <summary>Freeze 해제 (미니게임을 다시 시작할 때)</summary>
+    public void Unfreeze()
+    {
+        transform.position = basePos;
+        transform.rotation = Quaternion.identity;
+        transform.localScale = baseScale;
+        state = State.Idle;
+        Set(idle);
+        enabled = true;
+    }
+
     private void OnPeckPhase(PeckStrike.Phase phase, float x, bool isMain)
     {
         if (!isMain || body == null) return;

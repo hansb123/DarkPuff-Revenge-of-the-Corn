@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,7 +12,7 @@ using UnityEngine.Events;
 /// 연출 중에는 Started 이벤트로 플레이어 입력을 잠그고, Completed에서 풀면 된다.
 /// 사용: 미니게임이 시작될 때 Play() 한 번. 연출 중 Skip()을 부르면 바로 마지막 상태로 넘어간다.
 /// </summary>
-public class ChickenIntroSequence : MonoBehaviour
+public class ChickenIntroSequence : MonoBehaviour, IMiniGameIntro
 {
     [Header("닭")]
     [SerializeField] private Transform chicken;
@@ -44,8 +44,15 @@ public class ChickenIntroSequence : MonoBehaviour
     [SerializeField] private float bgmFadeOutTime = 0.25f;
     [Tooltip("연출이 끝난 뒤 틀 닭 전투 BGM (bgm_minigame_chicken). 비우면 원래 StageBgm 규칙대로 돌아감")]
     [SerializeField] private AudioClip fightBgm;
-    [Range(0f, 1f)][SerializeField] private float fightBgmVolume = 0.7f;
+    [Range(0f, 1f)] [SerializeField] private float fightBgmVolume = 0.7f;
     [SerializeField] private float bgmFadeInTime = 0.6f;
+
+    [Header("재시작")]
+    [Tooltip("켜면 연출이 시작될 때 RespawnManager를 '미니게임 모드'로 바꿈 → 죽으면 체크포인트 대신 처음부터(게이지/패턴/회복템 초기화). StageMiniGame 없이 이 연출만으로 미니게임을 시작할 때 필요")]
+    [SerializeField] private bool useMiniGameRespawn = true;
+
+    [Tooltip("죽어서 씬이 다시 로드된 경우 등장/포효/배너 연출을 건너뛰고 바로 시작")]
+    [SerializeField] private bool skipIntroAfterDeathReload = true;
 
     [Header("이벤트")]
     [Tooltip("연출 시작 (플레이어 입력 잠그기 등)")]
@@ -88,6 +95,15 @@ public class ChickenIntroSequence : MonoBehaviour
     public void Play()
     {
         Cache();
+        if (skipIntroAfterDeathReload && RespawnManager.ConsumeReloadedByDeath())
+        {
+            IsPlaying = true;
+            if (stageBgm != null) stageBgm.Suppress(0f);
+            Started?.Invoke();
+            if (chicken != null) { chicken.gameObject.SetActive(true); chicken.position = chickenFinalPos; }
+            Finish();
+            return;
+        }
         if (routine != null) StopCoroutine(routine);
         routine = StartCoroutine(Sequence());
     }
@@ -121,7 +137,9 @@ public class ChickenIntroSequence : MonoBehaviour
     private IEnumerator Sequence()
     {
         IsPlaying = true;
-        HideAll();
+      
+
+        if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.UseCheckpoints = false;
         if (stageBgm != null) stageBgm.Suppress(bgmFadeOutTime);   // 닭이 나타나면 BGM 정지
         Started?.Invoke();
 

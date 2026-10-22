@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9623b5b1b089d9541b1bd1d2b2b71b41, type: 3}
+  m_Name: Pattern_Wind
+  m_EditorClassIdentifier: Assembly-CSharp::WindPattern
+  displayName: "\uD328\uD134"
+  restAfter: 1.4
+  gustPrefab: {fileID: 6065214244133201929, guid: 5fe27837e348d10498a87228406f93ad, type: 3}
+  countEasy: 2
+  countHard: 5
+  warnEasy: 1.1
+  warnHard: 0.6
+  speedEasy: 7
+  speedHard: 13
+  gapEasy: 0.9
+  gapHard: 0.3
+  alternateSides: 1
+  bothSidesFrom: 0.8

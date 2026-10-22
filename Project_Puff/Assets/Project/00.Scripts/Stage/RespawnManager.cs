@@ -23,6 +23,19 @@ public class RespawnManager : MonoBehaviour
     [Tooltip("이 높이보다 아래로 떨어지면 낙사")]
     [SerializeField] private float fallY = -15f;
 
+    [Header("재시작 방식")]
+    [Tooltip("켜면 죽었을 때 부활 대신 씬을 처음부터 다시 불러옴 (적/아이템/함정/게이지 전부 초기화)")]
+    [SerializeField] private bool reloadSceneOnDeath = false;
+    [Tooltip("켜면 미니게임 모드(UseCheckpoints=false)일 때만 씬을 다시 불러옴. 일반 구간은 기존대로 체크포인트 부활")]
+    [SerializeField] private bool onlyInMiniGameMode = true;
+
+    /// <summary>방금 죽어서 씬이 다시 로드된 것인지. 읽으면 false로 되돌아감 (연출 건너뛰기용)</summary>
+    public static bool ConsumeReloadedByDeath()
+    {
+        bool v = reloadedByDeath; reloadedByDeath = false; return v;
+    }
+    private static bool reloadedByDeath;
+
     [Header("연출")]
     [SerializeField] private float deathDelay = 1.0f;       // 죽는 모션을 보여줄 시간
     [SerializeField] private float respawnInvincible = 1.2f;
@@ -137,6 +150,13 @@ public class RespawnManager : MonoBehaviour
         // 죽는 모션을 보여주고 암전
         yield return new WaitForSecondsRealtime(deathDelay);
         yield return Fade(1f);
+
+        if (reloadSceneOnDeath && (!onlyInMiniGameMode || !UseCheckpoints))
+        {
+            reloadedByDeath = true;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+            yield break;
+        }
 
         player.transform.position = GetRespawnPosition();
         health.ResetFull(respawnInvincible);

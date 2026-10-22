@@ -14,103 +14,132 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameSfxBank
   entries:
   - id: 0
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: f3eab56c306e8a347a26486c9f98b146, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 1
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 9406d4477b9c61445aed3b38e3918ccd, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 2
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 81fb5061ddda6c441ab7133083514354, type: 3}
+    - {fileID: 8300000, guid: 6982d5339ff83154e9c9f0889dfb5078, type: 3}
     volume: 1
     pitchJitter: 0.08
   - id: 3
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: afd810b67400f7d45874ff214f5f1de5, type: 3}
+    - {fileID: 8300000, guid: c72338bfad2fb4a43a77d73da9261652, type: 3}
+    - {fileID: 8300000, guid: e808a8c66a972ab4d956ac948b6c6dfd, type: 3}
     volume: 1
     pitchJitter: 0.05
   - id: 4
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 42a54baa2852a1346be19b2592269234, type: 3}
+    - {fileID: 8300000, guid: f1988e0a610272e42b293070c4251bfe, type: 3}
     volume: 1
     pitchJitter: 0.05
   - id: 5
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 39c644f7b675e5c4cbbb599baa4c4703, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 6
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 4d50cadda5cf5e54489180976b92e19e, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 7
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: bd6ff7645f8974741969deba551c00c8, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 8
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 9fbb376c74faed148aa0280e5c14d336, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 9
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 3c7ce03ff8e6cd24293f875de8a5a00d, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 10
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 08ca9993fedadda478998818ea4343b3, type: 3}
     volume: 1
     pitchJitter: 0.06
   - id: 11
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 1b69ae231b72eb54887dd4f4bbdd80d3, type: 3}
     volume: 1
     pitchJitter: 0.08
   - id: 12
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 265e0095269132044b8d106921c282e6, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 13
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 7a21a8e3fb623ff468126521875380c7, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 14
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 85715d8904052214189494c0d9ffaf3a, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 15
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 4b24f45eb51a36242bf28f15707ef197, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 16
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: cb7195d45cefa674293e694caa375adb, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 17
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: af9257ff57dd4f34c9aecaf087b7ca56, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 18
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 82d16e38e0cec5b4fa6ace592abd0687, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 19
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: e7736052f6ed9ec4f8ffd7acd5fde17c, type: 3}
     volume: 1
     pitchJitter: 0.06
   - id: 20
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 4fb554cca889c904fbfed172bd89dca4, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 21
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: cb17f32ecd2f0444997e8478b105ff6c, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 22
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: ccafca47e20112f4eab4aad02194b573, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 23
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: 71958f741cf6b544db82a944a393cb4b, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 24
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: fa4a186f09830c54f8aebf3d858adeeb, type: 3}
     volume: 1
     pitchJitter: 0.02
   - id: 25
@@ -169,6 +198,42 @@ MonoBehaviour:
   - id: 35
     clips:
     - {fileID: 8300000, guid: cec0a781e865fa34382f7d10f7d0f4b2, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 36
+    clips:
+    - {fileID: 8300000, guid: 34b376155a45f2244b242385fab5f9ad, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 37
+    clips:
+    - {fileID: 8300000, guid: 3d3b47e9c334186409a51f0260cce932, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 38
+    clips:
+    - {fileID: 8300000, guid: 1dde71018bc6fd84cbad9f2e28560f33, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 39
+    clips:
+    - {fileID: 8300000, guid: db7695c4193f9ab47b4e9e6b8a8db364, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 40
+    clips:
+    - {fileID: 8300000, guid: 22d479c1ca9250543acb0ad101f86581, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 41
+    clips:
+    - {fileID: 8300000, guid: b44d135fc0c665647a0e18d2949fcf9e, type: 3}
+    - {fileID: 8300000, guid: 841c4e046d8539f49ac05a9e66e73493, type: 3}
+    volume: 1
+    pitchJitter: 0.04
+  - id: 42
+    clips:
+    - {fileID: 8300000, guid: 227615c971890764c962bd1f6973e09e, type: 3}
     volume: 1
     pitchJitter: 0.02
   <MasterVolume>k__BackingField: 0.8

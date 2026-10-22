@@ -29,6 +29,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/01.Scene/Chpater_01/Ch_06.unity
     guid: 6ad4e389ec0dce146ab61a099c453c6a
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chpater_01/Ch_07.unity
+    guid: 2411acdefbf77d842a20aa03d0186529
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chpater_01/Ch_08.unity
+    guid: c66b169ee02bbd54e8ed21255b6b842f
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chpater_01/Ch_09.unity
+    guid: 243332052a8155b4c97b397059e3ddd4
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chpater_01/Ch_10.unity
+    guid: 936e227959d86384284d6ab24ee21716
+  - enabled: 1
+    path: Assets/Project/01.Scene/MiniGameGroup/MiniGame_01.unity
+    guid: ffee0197961717246b4614761d97effe
+  - enabled: 1
+    path: Assets/Project/01.Scene/MiniGameGroup/MiniGame_02.unity
+    guid: 03e3cab836c5ce040add6c2241423956
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 5514b8a91905e7f4e9db8b94c60f7537, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

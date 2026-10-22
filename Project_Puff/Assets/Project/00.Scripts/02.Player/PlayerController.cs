@@ -44,6 +44,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerSpecialAttack special;   // 비워두면 같은 오브젝트에서 자동으로 찾음
     [SerializeField] private float specialBufferTime = 0.12f;
 
+    [Header("Glide (활공)")]
+    [Tooltip("비워두면 같은 오브젝트에서 자동으로 찾음. 없거나 해금 전이면 활공 불가")]
+    [SerializeField] private GlideAbility glide;
+
     [Header("Sound")]
     [Tooltip("달릴 때 발소리 간격(초)")]
     [SerializeField] private float stepInterval = 0.28f;
@@ -73,9 +77,12 @@ public class PlayerController : MonoBehaviour
     private float lastGroundedTime = float.NegativeInfinity;
     private bool coyoteAvailable;   // 점프하면 false, 다시 땅에 서면 true
     private bool jumpCutDone;       // 한 번의 점프에서 컷은 한 번만
+    private HardenAbility harden;   // 단단해지기 (있으면 이동속도 배율 적용)
+    private bool wasGliding;
+    private bool glideArmed;        // 공중에서 점프 버튼을 (다시) 눌렀다 → 누르고 있는 동안 활공
 
     public Rigidbody2D Rb => rb;
-    public float MoveSpeed => moveSpeed;
+    public float MoveSpeed => moveSpeed * (harden != null ? harden.SpeedMultiplier : 1f);
     public bool IsGrounded { get; private set; }
 
     public PlayerState IdleState { get; private set; }
@@ -139,6 +146,9 @@ public class PlayerController : MonoBehaviour
         if (specialAction == null && inputActions != null)
             Debug.LogWarning($"[PlayerController] '{InputMaps.Platformer}/Special' 액션을 찾지 못했습니다. (Input Actions에 Special 액션 + X 키 추가)", this);
 
+        if (glide == null) glide = GetComponent<GlideAbility>();
+        if (harden == null) harden = GetComponent<HardenAbility>();
+
         if (attack == null) attack = GetComponent<PlayerAttack>();
         if (attack == null) Debug.LogWarning("[PlayerController] PlayerAttack이 없습니다. 공격할 수 없습니다.", this);
 
@@ -165,6 +175,7 @@ public class PlayerController : MonoBehaviour
             health.Damaged += OnDamaged;
             health.Died += OnDied;
         }
+        if (harden != null) harden.FormChanged += OnHardenFormChanged;
     }
 
     private void OnDisable()
@@ -178,6 +189,7 @@ public class PlayerController : MonoBehaviour
             health.Damaged -= OnDamaged;
             health.Died -= OnDied;
         }
+        if (harden != null) harden.FormChanged -= OnHardenFormChanged;
     }
 
     private void Start()
@@ -210,6 +222,25 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, -maxFallSpeed);
         }
+
+        // 활공: 해금 후, 공중에서 점프 버튼을 누른 채 내려가는 동안 천천히 떨어짐
+        bool gliding = glide != null && glide.CanGlide && glideArmed && IsJumpHeld
+                       && machine.Current == JumpState && rb.linearVelocity.y < 0f;
+        if (glide != null) glide.SetGliding(gliding);
+        if (gliding != wasGliding)
+        {
+            wasGliding = gliding;
+            // 활공 모션 (Animator에 "Glide" 상태가 있을 때만). 끝나면 낙하(Jump) 모션으로 복귀
+            if (gliding) PlayIfExists("Glide");
+            else if (machine.Current == JumpState) PlayIfExists("Jump");
+        }
+        if (gliding)
+        {
+            rb.gravityScale = baseGravityScale * glide.GravityMultiplier;
+            if (rb.linearVelocity.y < -glide.FallSpeed)
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, -glide.FallSpeed);
+        }
+        if (IsGrounded || !IsJumpHeld) glideArmed = false;
     }
 
     // ---------------- 피격 / 사망 ----------------
@@ -240,6 +271,8 @@ public class PlayerController : MonoBehaviour
         lastAttackPressedTime = float.NegativeInfinity;
         lastSpecialPressedTime = float.NegativeInfinity;
         coyoteAvailable = false;
+        glideArmed = false;
+        if (glide != null) glide.SetGliding(false);
         GameSfx.Play(GameSfxId.PlayerRespawn);
         machine.ChangeState(IdleState);
     }
@@ -257,6 +290,7 @@ public class PlayerController : MonoBehaviour
     private void OnJumpPerformed(InputAction.CallbackContext context)
     {
         lastJumpPressedTime = Time.time;
+        if (!IsGrounded) glideArmed = true;   // 공중에서 누름 → 활공 준비
     }
 
     private void OnAttackPerformed(InputAction.CallbackContext context)
@@ -323,6 +357,7 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
         coyoteAvailable = false;  // 공중 점프 방지 (코요테로 두 번 뛰는 것 막기)
         jumpCutDone = false;
+        glideArmed = false;
         GameSfx.Play(GameSfxId.PlayerJump);
     }
 
@@ -335,6 +370,7 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed * Mathf.Sqrt(Mathf.Max(0.01f, heightMultiplier)));
         coyoteAvailable = false;
         jumpCutDone = true;
+        glideArmed = false;
     }
 
     /// <summary>발판에서 막 벗어난 직후라 점프를 허용할 수 있는지 (코요테 타임)</summary>
@@ -363,12 +399,40 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private string lastAnim;   // 마지막으로 재생한 상태 이름 (단단해지기 시작/끝날 때 같은 동작의 강철/일반 버전으로 바꾸기 위해)
+
+    private void PlayIfExists(string stateName)
+    {
+        if (animator != null && animator.HasState(0, Animator.StringToHash(stateName)))
+        {
+            lastAnim = stateName;
+            PlayResolved(stateName);
+        }
+    }
+
     public void PlayAnimation(string stateName)
     {
         if (animator != null)
         {
-            animator.Play(stateName);
+            lastAnim = stateName;
+            PlayResolved(stateName);
         }
+    }
+
+    /// <summary>단단해지기 중이고 "Hard"+이름 상태(HardIdle, HardRun ...)가 있으면 그것을, 아니면 원래 상태를 재생</summary>
+    private void PlayResolved(string stateName)
+    {
+        if (harden != null && harden.IsActive)
+        {
+            string hard = "Hard" + stateName;
+            if (animator.HasState(0, Animator.StringToHash(hard))) { animator.Play(hard); return; }
+        }
+        animator.Play(stateName);
+    }
+
+    private void OnHardenFormChanged(bool on)
+    {
+        if (animator != null && !string.IsNullOrEmpty(lastAnim)) PlayResolved(lastAnim);
     }
 
     private bool CheckGrounded()

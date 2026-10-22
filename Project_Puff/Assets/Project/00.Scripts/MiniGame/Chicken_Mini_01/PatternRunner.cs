@@ -35,12 +35,12 @@ public class PatternRunner : MonoBehaviour
     [Tooltip("연결하면 분노 게이지 진행도를 난이도로 사용")]
     [SerializeField] private AngerGaugeHud anger;
     [Tooltip("게이지를 연결하지 않았을 때의 고정 난이도 (테스트용)")]
-    [Range(0f, 1f)] [SerializeField] private float manualDifficulty = 0f;
+    [Range(0f, 1f)][SerializeField] private float manualDifficulty = 0f;
 
     [Header("흐름")]
     [SerializeField] private float startDelay = 1.0f;
     [Tooltip("난이도 1일 때 휴식 시간이 원래의 몇 배가 되는지")]
-    [Range(0.1f, 1f)] [SerializeField] private float restAtMax = 0.4f;
+    [Range(0.1f, 1f)][SerializeField] private float restAtMax = 0.4f;
     [SerializeField] private bool restartOnRespawn = true;
     [SerializeField] private float restartDelay = 1.2f;
 
@@ -205,6 +205,8 @@ public class PatternRunner : MonoBehaviour
     {
         yield return new WaitForSeconds(restartDelay);
         restartRoutine = null;
+        // 분노 게이지도 처음부터 다시 차오르게 (HUD는 재시작 때 0으로 비워지기만 하고 스스로 돌지 않는다)
+        if (anger != null && anger.LastDuration > 0f) anger.Run(anger.LastDuration);
         Begin();
     }
 

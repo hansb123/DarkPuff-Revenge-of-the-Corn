@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece1c098cd750ab46ba4bdef5d6f6914, type: 3}
+  m_Name: Pattern_FeatherRain
+  m_EditorClassIdentifier: Assembly-CSharp::FeatherRainPattern
+  displayName: "\uD328\uD134"
+  restAfter: 1.4
+  featherPrefab: {fileID: 3509672639048789647, guid: 2f90ea30e72be734c8281ae3aa0640a6, type: 3}
+  countEasy: 5
+  countHard: 11
+  intervalEasy: 0.35
+  intervalHard: 0.18
+  warnEasy: 0.9
+  warnHard: 0.55
+  fallEasy: 0.5
+  fallHard: 0.32
+  aimedEasy: 0.4
+  aimedHard: 0.65
+  riseSpeed: 22
+  topAboveGround: 13
+  slantRange: {x: 1.5, y: 4}
+  wingSpan: 2.6
+  aimJitter: 0.8
+  stickFrom: 0.5
+  stickChance: 0.3
+  stuckTime: 2.2

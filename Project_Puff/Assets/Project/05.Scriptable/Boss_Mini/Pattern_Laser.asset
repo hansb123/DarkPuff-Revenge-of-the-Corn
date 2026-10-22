@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d071a539c83ea954698ceb47518d10b7, type: 3}
+  m_Name: Pattern_Laser
+  m_EditorClassIdentifier: Assembly-CSharp::LaserPattern
+  displayName: "\uD328\uD134"
+  restAfter: 1.4
+  beamPrefab: {fileID: 848352910008998859, guid: 48c881d9c44b8d049be9a4842011435d, type: 3}
+  shotsEasy: 2
+  shotsHard: 4
+  chargeEasy: 1.1
+  chargeHard: 0.8
+  lockEasy: 0.6
+  lockHard: 0.32
+  fireEasy: 0.6
+  fireHard: 0.9
+  trackEasy: 45
+  trackHard: 95
+  sweepEasy: 0
+  sweepHard: 18
+  gapEasy: 0.6
+  gapHard: 0.25
+  doubleFrom: 0.55
+  pincerOffset: {x: 2.5, y: 4.5}
