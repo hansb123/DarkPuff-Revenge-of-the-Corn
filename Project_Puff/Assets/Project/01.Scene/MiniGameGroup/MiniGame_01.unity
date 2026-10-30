@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 115493639}
   - component: {fileID: 115493638}
   m_Layer: 0
-  m_Name: Chicken_Sequnce
+  m_Name: Chicken_Intro_Sequence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
   stageBgm: {fileID: 0}
   bgmFadeOutTime: 0.25
   fightBgm: {fileID: 8300000, guid: 6749ab163d30f6a49926f92cabeb839a, type: 3}
-  fightBgmVolume: 0.457
+  fightBgmVolume: 0.073
   bgmFadeInTime: 0.6
   useMiniGameRespawn: 1
   skipIntroAfterDeathReload: 1
@@ -301,7 +301,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 75
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -1122,33 +1122,6 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
---- !u!1 &520834874 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1167198382525845779, guid: 64262ba2aa40cad4a8de4677c91b5794, type: 3}
-  m_PrefabInstance: {fileID: 6427734497754272728}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &520834885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520834874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb123f048758759468e5fdefcba15858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GlideAbility
-  fallSpeed: 2.2
-  gravityMultiplier: 0.35
-  glideVisual: {fileID: 0}
-  glideStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  glideEnded:
-    m_PersistentCalls:
-      m_Calls: []
-  forceUnlocked: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,7 +3725,7 @@ PrefabInstance:
     - target: {fileID: 1009377497631106475, guid: 128b50884a08365449060c7a0971ff53, type: 3}
       propertyPath: normalClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6749ab163d30f6a49926f92cabeb839a, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2490021315105202909, guid: 128b50884a08365449060c7a0971ff53, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.19638
@@ -4527,10 +4500,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1167198382525845779, guid: 64262ba2aa40cad4a8de4677c91b5794, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 520834885}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64262ba2aa40cad4a8de4677c91b5794, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -8,6 +8,7 @@ public static class StageProgress
 {
     private const string ClearedPrefix = "cleared_";
     private const string LastPageKey = "chapter_last_page";
+    private const string CheatUnlockKey = "cheat_unlock_all";
 
     public static string MakeId(string chapterId, int stageNumber) => $"{chapterId}_{stageNumber:00}";
 
@@ -26,6 +27,13 @@ public static class StageProgress
     {
         get => PlayerPrefs.GetInt(LastPageKey, 0);
         set => PlayerPrefs.SetInt(LastPageKey, value);
+    }
+
+    /// <summary>타이틀의 숨겨진 버튼으로 켜는 '모든 챕터 해금'. 클리어 기록은 건드리지 않고 잠금만 무시한다</summary>
+    public static bool CheatUnlockAll
+    {
+        get => PlayerPrefs.GetInt(CheatUnlockKey, 0) == 1;
+        set { PlayerPrefs.SetInt(CheatUnlockKey, value ? 1 : 0); PlayerPrefs.Save(); }
     }
 
     public static void ResetAll()

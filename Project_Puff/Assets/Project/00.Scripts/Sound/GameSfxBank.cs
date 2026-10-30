@@ -36,6 +36,8 @@ public enum GameSfxId
     HardGet, HardEnd,
     // 메카 닭 클리어 연출
     MechaOverload, SparkZap, MechaPowerDown, MechaCoreOpen, HardEggPop, HardEggLand, ShadowPass,
+    // 2챕터 기믹 (enum 값이 밀리지 않게 항상 맨 끝에 추가)
+    PressSlam, PressRise,
 }
 
 /// <summary>

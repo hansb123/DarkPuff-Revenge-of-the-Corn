@@ -357,6 +357,52 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 6b1d619351ae8c747832dd2bfa87adc7, type: 3}
     volume: 1
     pitchJitter: 0.02
+  - id: 66
+    clips:
+    - {fileID: 8300000, guid: a9f22c50b5a48e74a8ec98f0eca32bf3, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 67
+    clips:
+    - {fileID: 8300000, guid: d0c91cf0ba500a74e8358dcc088f1809, type: 3}
+    - {fileID: 8300000, guid: 1da64a7ffb6408c41aaf21f53ee58890, type: 3}
+    volume: 1
+    pitchJitter: 0.06
+  - id: 68
+    clips:
+    - {fileID: 8300000, guid: a7ef52519bfd8fd4bb29713329a50ba8, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 69
+    clips:
+    - {fileID: 8300000, guid: 6957d4e62b98b51429c92423b56d51a9, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 70
+    clips:
+    - {fileID: 8300000, guid: e47787ad94043ad4f92101b7d1fc463d, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 71
+    clips:
+    - {fileID: 8300000, guid: 5d2635ca1e39d95458e90ae0f3a7af62, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 72
+    clips:
+    - {fileID: 8300000, guid: a1524d2f1c45c4f4f82b6fcc8c2c083a, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 73
+    clips:
+    - {fileID: 8300000, guid: b38e65a32e15c57419bda20c44f23ba9, type: 3}
+    volume: 1
+    pitchJitter: 0.02
+  - id: 74
+    clips:
+    - {fileID: 8300000, guid: ea66d118030472041bab61a44aeef3ef, type: 3}
+    volume: 1
+    pitchJitter: 0.02
   <MasterVolume>k__BackingField: 0.083
   <MinInterval>k__BackingField: 0.0065
   <HearNear>k__BackingField: 6

@@ -6,9 +6,6 @@ using UnityEngine;
 /// <summary>
 /// 닭의 공격 패턴을 계속 골라서 실행하는 지휘자.
 /// 흐름: 시작 대기 → (난이도에 맞는 패턴 선택 → 실행 → 휴식) 반복.
-/// 난이도는 분노 게이지 진행도(0~1)를 그대로 쓴다. 게이지가 차오를수록 패턴이 빨라지고, 새 패턴이 해금된다.
-/// 사용: ChickenIntroSequence.Completed 에 Begin() 을, AngerGaugeHud.Completed(클리어) 에 Stop() 을 연결.
-/// 하트가 0이 돼 처음부터 다시 시작하면(RespawnManager) 남은 공격을 치우고 잠시 뒤 다시 시작한다.
 /// </summary>
 public class PatternRunner : MonoBehaviour
 {
@@ -25,27 +22,26 @@ public class PatternRunner : MonoBehaviour
     [Header("패턴 목록")]
     [SerializeField] private List<Entry> patterns = new List<Entry>();
 
-    [Header("무대 (닭 공격이 떨어지는 범위)")]
+    [Header("무대 ")]
     [SerializeField] private Transform leftLimit;
     [SerializeField] private Transform rightLimit;
-    [Tooltip("바닥 높이. 이 오브젝트의 Y 가 바닥선")]
+    [Tooltip("바닥 높이")]
     [SerializeField] private Transform groundLine;
 
     [Header("난이도")]
-    [Tooltip("연결하면 분노 게이지 진행도를 난이도로 사용")]
+    [Tooltip("현재 분노 게이지 진행도를 난이도로 사용")]
     [SerializeField] private AngerGaugeHud anger;
-    [Tooltip("게이지를 연결하지 않았을 때의 고정 난이도 (테스트용)")]
+    [Tooltip("(테스트용)")]
     [Range(0f, 1f)][SerializeField] private float manualDifficulty = 0f;
 
     [Header("흐름")]
     [SerializeField] private float startDelay = 1.0f;
-    [Tooltip("난이도 1일 때 휴식 시간이 원래의 몇 배가 되는지")]
+    [Tooltip("난이도 1일 때 휴식 시간이 원래의 몇 배인지 확인용")]
     [Range(0.1f, 1f)][SerializeField] private float restAtMax = 0.4f;
     [SerializeField] private bool restartOnRespawn = true;
     [SerializeField] private float restartDelay = 1.2f;
 
-    [Header("풀링 (포트폴리오 측정용 스위치)")]
-    [Tooltip("끄면 Instantiate/Destroy 로 동작. Profiler로 풀링 전/후를 비교할 때 사용")]
+    [Header("풀링")]
     [SerializeField] private bool usePooling = true;
 
     public event Action<AttackPattern> PatternStarted;
@@ -73,7 +69,7 @@ public class PatternRunner : MonoBehaviour
     {
         var health = FindFirstObjectByType<PlayerHealth>();
         if (health != null) player = health.transform;
-        else Debug.LogWarning("[PatternRunner] 씬에서 PlayerHealth(플레이어)를 찾지 못했습니다.", this);
+        else Debug.Log("PatternRunner 씬에서 PlayerHealth 를 찾지 못했습니다.", this);
 
         if (anger == null) anger = FindFirstObjectByType<AngerGaugeHud>();
 
@@ -85,7 +81,7 @@ public class PatternRunner : MonoBehaviour
         if (RespawnManager.Instance != null) RespawnManager.Instance.RespawnApplied -= OnRespawn;
     }
 
-    // ───────────── 외부 호출 ─────────────
+    //외부 호출
 
     public void Begin()
     {
@@ -95,7 +91,7 @@ public class PatternRunner : MonoBehaviour
         loop = StartCoroutine(Loop());
     }
 
-    /// <summary>패턴을 멈추고 남아 있는 알 등을 모두 치운다</summary>
+    //패턴을 멈추고 남아 있는 알 등을 모두 치운다
     public void Stop()
     {
         IsRunning = false;
@@ -105,7 +101,7 @@ public class PatternRunner : MonoBehaviour
         Current = null;
     }
 
-    // ───────────── 오브젝트 추적 / 풀 ─────────────
+    // 오브젝트 추적 / 풀 
 
     public void Register(IPatternHazard h) => hazards.Add(h);
     public void Unregister(IPatternHazard h) => hazards.Remove(h);
@@ -118,7 +114,7 @@ public class PatternRunner : MonoBehaviour
         foreach (var h in copy) h.Cancel();
     }
 
-    /// <summary>프리팹별로 풀을 하나씩 만들어 재사용</summary>
+    //프리팹별로 풀을 하나씩 만들어 재사용
     public PrefabPool<T> GetPool<T>(T prefab, Action<T, PrefabPool<T>> onCreated = null) where T : Component
     {
         int key = prefab.GetInstanceID();
@@ -129,7 +125,7 @@ public class PatternRunner : MonoBehaviour
         return pool;
     }
 
-    // ───────────── 실행 ─────────────
+    //실행 
 
     private IEnumerator Loop()
     {
@@ -168,14 +164,14 @@ public class PatternRunner : MonoBehaviour
         };
     }
 
-    private AttackPattern Pick(float d)
+    private AttackPattern Pick(float d) //살짝 패턴 스케줄러? 느낌이라고 이해하면 편함 
     {
         var candidates = new List<Entry>();
         foreach (var e in patterns)
             if (e.pattern != null && e.unlockAt <= d && e.weight > 0f) candidates.Add(e);
         if (candidates.Count == 0) return null;
 
-        // 같은 패턴이 연속으로 나오지 않게 (후보가 둘 이상일 때)
+        // 같은 패턴이 연속으로 나오지 않게
         if (candidates.Count > 1) candidates.RemoveAll(e => e.pattern == last);
 
         float total = 0f;
@@ -189,7 +185,7 @@ public class PatternRunner : MonoBehaviour
         return candidates[candidates.Count - 1].pattern;
     }
 
-    // ───────────── 재시작 ─────────────
+    //재시작 
 
     private void OnRespawn()
     {

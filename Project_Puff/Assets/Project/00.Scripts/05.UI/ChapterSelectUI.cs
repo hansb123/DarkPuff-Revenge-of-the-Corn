@@ -149,7 +149,7 @@ public class ChapterSelectUI : MonoBehaviour
             int stageIdx = i;
             string stageId = StageProgress.MakeId(data.ChapterId, i + 1);
             bool cleared = StageProgress.IsCleared(stageId);
-            bool unlocked = unlockAll || IsUnlocked(pageIndex, i);
+            bool unlocked = unlockAll || StageProgress.CheatUnlockAll || IsUnlocked(pageIndex, i);
 
             var go = new GameObject($"Stage_{i + 1:00}", typeof(RectTransform), typeof(Image), typeof(Button));
             var rt = (RectTransform)go.transform;

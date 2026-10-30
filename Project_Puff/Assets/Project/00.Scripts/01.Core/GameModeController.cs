@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 /// <summary>
 /// 게임 모드(타이틀/플랫포밍/미니게임/보스전/결과) 상태머신.
-/// 모드가 바뀔 때 입력 맵(Action Map)을 통째로 교체하고, 일시정지도 여기서 관리
+/// 모드가 바뀔 때 입력 맵(Action Map)을 통째로 교체
 /// </summary>
 public class GameModeController : MonoBehaviour
 {
@@ -45,7 +45,7 @@ public class GameModeController : MonoBehaviour
 
         if (inputActions == null)
         {
-            Debug.Log("GameModeController 디버그 Input Actions 에셋이 연결되지 않았습니다.", this);
+            Debug.Log("GameModeController 작동안돜.", this);
             return;
         }
 
@@ -193,7 +193,7 @@ public class GameModeController : MonoBehaviour
 
         if (map == null)
         {
-            Debug.Log($"GameModeController 디버그. Action Map '{mapName}'을(를) 찾을 수 없습니다. Input Actions 에셋을 확인.", this);
+            Debug.Log($"GameModeController '{mapName}", this);
             return;
         }
 

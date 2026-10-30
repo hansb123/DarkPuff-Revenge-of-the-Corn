@@ -670,7 +670,7 @@ MonoBehaviour:
   stageBgm: {fileID: 0}
   bgmFadeOutTime: 0.2
   fightBgm: {fileID: 8300000, guid: d7500606b2fdd7345843cbd4a1e66bd0, type: 3}
-  fightBgmVolume: 0.7
+  fightBgmVolume: 0.057
   bgmFadeInTime: 0.6
   useMiniGameRespawn: 1
   skipIntroAfterDeathReload: 1
@@ -700,7 +700,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 75
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -3976,7 +3976,7 @@ PrefabInstance:
     - target: {fileID: 1009377497631106475, guid: 128b50884a08365449060c7a0971ff53, type: 3}
       propertyPath: normalClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6749ab163d30f6a49926f92cabeb839a, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2490021315105202909, guid: 128b50884a08365449060c7a0971ff53, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.19638
