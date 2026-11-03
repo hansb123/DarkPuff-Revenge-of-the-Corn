@@ -81,6 +81,7 @@ public class PlayerAttack : MonoBehaviour
             if (target == null || hitThisSwing.Contains(target)) continue;
 
             hitThisSwing.Add(target);
+            AttackSource.Current = AttackSource.Kind.Melee;
             target.TakeDamage(damage, transform.position);
             newHits++;
 

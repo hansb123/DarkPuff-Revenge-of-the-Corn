@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e306e6fdcb503f248a8e321bda4e71c9, type: 3}
+  m_Name: Pattern_FeatherFan
+  m_EditorClassIdentifier: Assembly-CSharp::FeatherFanPattern
+  displayName: "\uD328\uD134"
+  restAfter: 1.4
+  featherPrefab: {fileID: 6264143201494239165, guid: ccd635c9a84bd324daaafd14c7e7e01e, type: 3}
+  wavesEasy: 2
+  wavesHard: 4
+  countEasy: 7
+  countHard: 11
+  arcEasy: 70
+  arcHard: 95
+  speedEasy: 8
+  speedHard: 12
+  windupEasy: 0.9
+  windupHard: 0.5
+  waveGapEasy: 0.9
+  waveGapHard: 0.5
+  originDrop: 1.2

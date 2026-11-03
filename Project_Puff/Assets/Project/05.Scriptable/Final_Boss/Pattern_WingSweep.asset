@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbcda2705f3691e47bdf8267e8aaec22, type: 3}
+  m_Name: Pattern_WingSweep
+  m_EditorClassIdentifier: Assembly-CSharp::WingSweepPattern
+  displayName: "\uD328\uD134"
+  restAfter: 1.4
+  wavePrefab: {fileID: 7640926417407336834, guid: 01481a03e285383478b7e54ef24bca3f, type: 3}
+  parryWavePrefab: {fileID: 2717277993424360271, guid: 81eedaaef0402b746b6e8e3d9eaada92, type: 3}
+  phrases:
+  - notes: xxxx
+    minDifficulty: 0
+  - notes: xxxxxx
+    minDifficulty: 0
+  - notes: xxxpx
+    minDifficulty: 0
+  phrasesEasy: 1
+  phrasesHard: 3
+  shuffle: 1
+  phraseRestBeats: 1
+  countEasy: 2
+  countHard: 2
+  beatEasy: 0.75
+  beatHard: 0.5
+  windupEasy: 0.9
+  windupHard: 0.55
+  speedEasy: 7
+  speedHard: 11
+  heightEasy: 0.9
+  heightHard: 1.2
+  parrySpeedScale: 0.85
+  parryRecoil: 2
+  parryStun: 0.8
+  visualWidth: 3.2
+  startOffset: 1.2
+  edgeInset: 1.5
+  approachTime: 0.7
+  settle: 0.35
+  hold: 0.45
+  returnTime: 0.6
+  landOffset: 0
+  gap: 0.3

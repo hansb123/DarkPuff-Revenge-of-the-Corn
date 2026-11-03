@@ -1,0 +1,7215 @@
+fileFormatVersion: 2
+guid: 452ea531c6be2764e98879aa7cabc677
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6235263005818176306
+    second: eagle_rain_overlay_0
+  - first:
+      213: -1304546588946576855
+    second: eagle_rain_overlay_1
+  - first:
+      213: 3541820659841218391
+    second: eagle_rain_overlay_2
+  - first:
+      213: -1264947360774285449
+    second: eagle_rain_overlay_3
+  - first:
+      213: 8161935384678640336
+    second: eagle_rain_overlay_4
+  - first:
+      213: -5802237882705203129
+    second: eagle_rain_overlay_5
+  - first:
+      213: -3849780711623684104
+    second: eagle_rain_overlay_6
+  - first:
+      213: -5770925864743047271
+    second: eagle_rain_overlay_7
+  - first:
+      213: 6091311761885953507
+    second: eagle_rain_overlay_8
+  - first:
+      213: 5248769976675843816
+    second: eagle_rain_overlay_9
+  - first:
+      213: -7855171422119610937
+    second: eagle_rain_overlay_10
+  - first:
+      213: -7233482462911412400
+    second: eagle_rain_overlay_11
+  - first:
+      213: -6651027179354647920
+    second: eagle_rain_overlay_12
+  - first:
+      213: -357821225091929359
+    second: eagle_rain_overlay_13
+  - first:
+      213: -696157739460769498
+    second: eagle_rain_overlay_14
+  - first:
+      213: 2804091940387073419
+    second: eagle_rain_overlay_15
+  - first:
+      213: -5300521911779754319
+    second: eagle_rain_overlay_16
+  - first:
+      213: -2937784385077519906
+    second: eagle_rain_overlay_17
+  - first:
+      213: 3277837537049157953
+    second: eagle_rain_overlay_18
+  - first:
+      213: 1321890007218287944
+    second: eagle_rain_overlay_19
+  - first:
+      213: 4257965255970167936
+    second: eagle_rain_overlay_20
+  - first:
+      213: 4627154815535209671
+    second: eagle_rain_overlay_21
+  - first:
+      213: -3623556749806441214
+    second: eagle_rain_overlay_22
+  - first:
+      213: 4446795840910823377
+    second: eagle_rain_overlay_23
+  - first:
+      213: -7140714056606625713
+    second: eagle_rain_overlay_24
+  - first:
+      213: 958695656534695201
+    second: eagle_rain_overlay_25
+  - first:
+      213: 2752449517283357997
+    second: eagle_rain_overlay_26
+  - first:
+      213: 8331714271853390508
+    second: eagle_rain_overlay_27
+  - first:
+      213: 8242224734258967766
+    second: eagle_rain_overlay_28
+  - first:
+      213: -112199310993301740
+    second: eagle_rain_overlay_29
+  - first:
+      213: 1824226816815278812
+    second: eagle_rain_overlay_30
+  - first:
+      213: 8757512608890217519
+    second: eagle_rain_overlay_31
+  - first:
+      213: -1409047862573188189
+    second: eagle_rain_overlay_32
+  - first:
+      213: 8689708595422249500
+    second: eagle_rain_overlay_33
+  - first:
+      213: 3286230249926057621
+    second: eagle_rain_overlay_34
+  - first:
+      213: -1244228703466781465
+    second: eagle_rain_overlay_35
+  - first:
+      213: 6301518096378159371
+    second: eagle_rain_overlay_36
+  - first:
+      213: -980652073587206070
+    second: eagle_rain_overlay_37
+  - first:
+      213: 3442460164365743667
+    second: eagle_rain_overlay_38
+  - first:
+      213: 279956286178149089
+    second: eagle_rain_overlay_39
+  - first:
+      213: 1979774898269326261
+    second: eagle_rain_overlay_40
+  - first:
+      213: -2915811029606481158
+    second: eagle_rain_overlay_41
+  - first:
+      213: -3306098251518555436
+    second: eagle_rain_overlay_42
+  - first:
+      213: 4914464716658020561
+    second: eagle_rain_overlay_43
+  - first:
+      213: 3856755277915274244
+    second: eagle_rain_overlay_44
+  - first:
+      213: 8719764050149191265
+    second: eagle_rain_overlay_45
+  - first:
+      213: 3942841048598429561
+    second: eagle_rain_overlay_46
+  - first:
+      213: -3106436620299025286
+    second: eagle_rain_overlay_47
+  - first:
+      213: -6292585605736199784
+    second: eagle_rain_overlay_48
+  - first:
+      213: -3087199025808398336
+    second: eagle_rain_overlay_49
+  - first:
+      213: -7135430450597240755
+    second: eagle_rain_overlay_50
+  - first:
+      213: -7785497392193725462
+    second: eagle_rain_overlay_51
+  - first:
+      213: 8942600560217655393
+    second: eagle_rain_overlay_52
+  - first:
+      213: -3602962816464249199
+    second: eagle_rain_overlay_53
+  - first:
+      213: -3169413083484182218
+    second: eagle_rain_overlay_54
+  - first:
+      213: 6216759033904404173
+    second: eagle_rain_overlay_55
+  - first:
+      213: -5727327071273958174
+    second: eagle_rain_overlay_56
+  - first:
+      213: -8004016852707626407
+    second: eagle_rain_overlay_57
+  - first:
+      213: 8112342983327449386
+    second: eagle_rain_overlay_58
+  - first:
+      213: -7301701641072915185
+    second: eagle_rain_overlay_59
+  - first:
+      213: -9003053537604481072
+    second: eagle_rain_overlay_60
+  - first:
+      213: -5677502661135446657
+    second: eagle_rain_overlay_61
+  - first:
+      213: -3687188033828999647
+    second: eagle_rain_overlay_62
+  - first:
+      213: -4841472160994889304
+    second: eagle_rain_overlay_63
+  - first:
+      213: -8134656113926789777
+    second: eagle_rain_overlay_64
+  - first:
+      213: 6152766017535637821
+    second: eagle_rain_overlay_65
+  - first:
+      213: -7063714475771873764
+    second: eagle_rain_overlay_66
+  - first:
+      213: -8878412871985296069
+    second: eagle_rain_overlay_67
+  - first:
+      213: -153995047346793205
+    second: eagle_rain_overlay_68
+  - first:
+      213: 4018450869333920178
+    second: eagle_rain_overlay_69
+  - first:
+      213: -5249627963561912604
+    second: eagle_rain_overlay_70
+  - first:
+      213: 8200716449460516715
+    second: eagle_rain_overlay_71
+  - first:
+      213: -2954571297331745681
+    second: eagle_rain_overlay_72
+  - first:
+      213: 2643589107251773979
+    second: eagle_rain_overlay_73
+  - first:
+      213: 204268580521584054
+    second: eagle_rain_overlay_74
+  - first:
+      213: 3180843127281625462
+    second: eagle_rain_overlay_75
+  - first:
+      213: -2522915134960949832
+    second: eagle_rain_overlay_76
+  - first:
+      213: -5484631422505120742
+    second: eagle_rain_overlay_77
+  - first:
+      213: 5752765922792211187
+    second: eagle_rain_overlay_78
+  - first:
+      213: -2638375406374565316
+    second: eagle_rain_overlay_79
+  - first:
+      213: 3398345847860556681
+    second: eagle_rain_overlay_80
+  - first:
+      213: 6005897647003670408
+    second: eagle_rain_overlay_81
+  - first:
+      213: 6640706532887195370
+    second: eagle_rain_overlay_82
+  - first:
+      213: 3398333233159908255
+    second: eagle_rain_overlay_83
+  - first:
+      213: 8228448366802473075
+    second: eagle_rain_overlay_84
+  - first:
+      213: 7696618600351420515
+    second: eagle_rain_overlay_85
+  - first:
+      213: 7329637343742009825
+    second: eagle_rain_overlay_86
+  - first:
+      213: 3875902028105138157
+    second: eagle_rain_overlay_87
+  - first:
+      213: -6518221947914454908
+    second: eagle_rain_overlay_88
+  - first:
+      213: -4597047128340411437
+    second: eagle_rain_overlay_89
+  - first:
+      213: 4836510397346611238
+    second: eagle_rain_overlay_90
+  - first:
+      213: -5476038666653996844
+    second: eagle_rain_overlay_91
+  - first:
+      213: -5322103526570101034
+    second: eagle_rain_overlay_92
+  - first:
+      213: -1039469112892846928
+    second: eagle_rain_overlay_93
+  - first:
+      213: -4716417085747852267
+    second: eagle_rain_overlay_94
+  - first:
+      213: 8479774953538922797
+    second: eagle_rain_overlay_95
+  - first:
+      213: 1615507249896806138
+    second: eagle_rain_overlay_96
+  - first:
+      213: 3521682295949953662
+    second: eagle_rain_overlay_97
+  - first:
+      213: 7263433074031288720
+    second: eagle_rain_overlay_98
+  - first:
+      213: 6555140242924942103
+    second: eagle_rain_overlay_99
+  - first:
+      213: -6984242895110050064
+    second: eagle_rain_overlay_100
+  - first:
+      213: 2079591016839026033
+    second: eagle_rain_overlay_101
+  - first:
+      213: -3171913768403504369
+    second: eagle_rain_overlay_102
+  - first:
+      213: 1641256438399712216
+    second: eagle_rain_overlay_103
+  - first:
+      213: -6935789102002606117
+    second: eagle_rain_overlay_104
+  - first:
+      213: -1968580451659320
+    second: eagle_rain_overlay_105
+  - first:
+      213: -4944665134497948533
+    second: eagle_rain_overlay_106
+  - first:
+      213: -790276283817485088
+    second: eagle_rain_overlay_107
+  - first:
+      213: -7242831830641826159
+    second: eagle_rain_overlay_108
+  - first:
+      213: 5530240357862125315
+    second: eagle_rain_overlay_109
+  - first:
+      213: 3517540587578478793
+    second: eagle_rain_overlay_110
+  - first:
+      213: 2347542032265839114
+    second: eagle_rain_overlay_111
+  - first:
+      213: 7040429821760128046
+    second: eagle_rain_overlay_112
+  - first:
+      213: -2433604838906953520
+    second: eagle_rain_overlay_113
+  - first:
+      213: 1949648325456523403
+    second: eagle_rain_overlay_114
+  - first:
+      213: -1199055834213811053
+    second: eagle_rain_overlay_115
+  - first:
+      213: -3113868688944447553
+    second: eagle_rain_overlay_116
+  - first:
+      213: -533446418262764558
+    second: eagle_rain_overlay_117
+  - first:
+      213: -5936368947072997204
+    second: eagle_rain_overlay_118
+  - first:
+      213: -9201362972990651813
+    second: eagle_rain_overlay_119
+  - first:
+      213: 7078663838114945991
+    second: eagle_rain_overlay_120
+  - first:
+      213: 8420812410624295661
+    second: eagle_rain_overlay_121
+  - first:
+      213: 1228698334498067189
+    second: eagle_rain_overlay_122
+  - first:
+      213: -2233302619222389199
+    second: eagle_rain_overlay_123
+  - first:
+      213: -2124109341939686812
+    second: eagle_rain_overlay_124
+  - first:
+      213: 7096848099434967249
+    second: eagle_rain_overlay_125
+  - first:
+      213: -6425305854535127230
+    second: eagle_rain_overlay_126
+  - first:
+      213: -8312996181295239632
+    second: eagle_rain_overlay_127
+  - first:
+      213: 8275732091423382279
+    second: eagle_rain_overlay_128
+  - first:
+      213: 569313773955674216
+    second: eagle_rain_overlay_129
+  - first:
+      213: -6069745972748982161
+    second: eagle_rain_overlay_130
+  - first:
+      213: -2260915374382945057
+    second: eagle_rain_overlay_131
+  - first:
+      213: 3164590199556361208
+    second: eagle_rain_overlay_132
+  - first:
+      213: -4896723528272322404
+    second: eagle_rain_overlay_133
+  - first:
+      213: -1657357237527832498
+    second: eagle_rain_overlay_134
+  - first:
+      213: 5654098475909933127
+    second: eagle_rain_overlay_135
+  - first:
+      213: 2917237930108804903
+    second: eagle_rain_overlay_136
+  - first:
+      213: 2552002533876748835
+    second: eagle_rain_overlay_137
+  - first:
+      213: 7975658582530580628
+    second: eagle_rain_overlay_138
+  - first:
+      213: 2402513671191500752
+    second: eagle_rain_overlay_139
+  - first:
+      213: -2406706968231257428
+    second: eagle_rain_overlay_140
+  - first:
+      213: 5125349915761073679
+    second: eagle_rain_overlay_141
+  - first:
+      213: -3542453922383341976
+    second: eagle_rain_overlay_142
+  - first:
+      213: -9170371944644087950
+    second: eagle_rain_overlay_143
+  - first:
+      213: -4839380031462827756
+    second: eagle_rain_overlay_144
+  - first:
+      213: -653596848711712684
+    second: eagle_rain_overlay_145
+  - first:
+      213: 2109426792519452805
+    second: eagle_rain_overlay_146
+  - first:
+      213: -8318687120429413121
+    second: eagle_rain_overlay_147
+  - first:
+      213: -1026502439068992127
+    second: eagle_rain_overlay_148
+  - first:
+      213: 1118937223772315308
+    second: eagle_rain_overlay_149
+  - first:
+      213: 4102753534101951374
+    second: eagle_rain_overlay_150
+  - first:
+      213: 3690520793400775504
+    second: eagle_rain_overlay_151
+  - first:
+      213: -5866618753530759160
+    second: eagle_rain_overlay_152
+  - first:
+      213: -8580100074538918644
+    second: eagle_rain_overlay_153
+  - first:
+      213: 8285003884307418852
+    second: eagle_rain_overlay_154
+  - first:
+      213: -8170887831684276461
+    second: eagle_rain_overlay_155
+  - first:
+      213: -9000397209218859006
+    second: eagle_rain_overlay_156
+  - first:
+      213: -4578048552802981815
+    second: eagle_rain_overlay_157
+  - first:
+      213: -3954353280934413490
+    second: eagle_rain_overlay_158
+  - first:
+      213: 2453885491754037315
+    second: eagle_rain_overlay_159
+  - first:
+      213: -2212467542381285013
+    second: eagle_rain_overlay_160
+  - first:
+      213: -7655351179655489146
+    second: eagle_rain_overlay_161
+  - first:
+      213: -3710298376773223892
+    second: eagle_rain_overlay_162
+  - first:
+      213: 3165831635695930335
+    second: eagle_rain_overlay_163
+  - first:
+      213: -9020700690970324150
+    second: eagle_rain_overlay_164
+  - first:
+      213: 4474308460731983457
+    second: eagle_rain_overlay_165
+  - first:
+      213: 7507074921826336215
+    second: eagle_rain_overlay_166
+  - first:
+      213: 3553897810797938921
+    second: eagle_rain_overlay_167
+  - first:
+      213: -2253868112383265966
+    second: eagle_rain_overlay_168
+  - first:
+      213: -2184019469465544584
+    second: eagle_rain_overlay_169
+  - first:
+      213: 1154305472192796731
+    second: eagle_rain_overlay_170
+  - first:
+      213: -3397286022563113227
+    second: eagle_rain_overlay_171
+  - first:
+      213: 5410680196330661480
+    second: eagle_rain_overlay_172
+  - first:
+      213: -6351404731997721992
+    second: eagle_rain_overlay_173
+  - first:
+      213: 7924166895600162941
+    second: eagle_rain_overlay_174
+  - first:
+      213: 5925069631722459874
+    second: eagle_rain_overlay_175
+  - first:
+      213: -1546546064095814262
+    second: eagle_rain_overlay_176
+  - first:
+      213: 3873704111342370399
+    second: eagle_rain_overlay_177
+  - first:
+      213: -4918307852643922831
+    second: eagle_rain_overlay_178
+  - first:
+      213: -7345674476871082423
+    second: eagle_rain_overlay_179
+  - first:
+      213: -2415983579361738584
+    second: eagle_rain_overlay_180
+  - first:
+      213: -4290137532062978064
+    second: eagle_rain_overlay_181
+  - first:
+      213: 3200707984607512344
+    second: eagle_rain_overlay_182
+  - first:
+      213: 3704211542727404118
+    second: eagle_rain_overlay_183
+  - first:
+      213: -332320400778101438
+    second: eagle_rain_overlay_184
+  - first:
+      213: 315461598838701816
+    second: eagle_rain_overlay_185
+  - first:
+      213: 8482930992864370701
+    second: eagle_rain_overlay_186
+  - first:
+      213: 2247778198241989812
+    second: eagle_rain_overlay_187
+  - first:
+      213: 3229337806612373513
+    second: eagle_rain_overlay_188
+  - first:
+      213: -466883380272290944
+    second: eagle_rain_overlay_189
+  - first:
+      213: -3791329048864940140
+    second: eagle_rain_overlay_190
+  - first:
+      213: -8877023185603031535
+    second: eagle_rain_overlay_191
+  - first:
+      213: -9039262540514901849
+    second: eagle_rain_overlay_192
+  - first:
+      213: -4246277109952391200
+    second: eagle_rain_overlay_193
+  - first:
+      213: 8517191911804929497
+    second: eagle_rain_overlay_194
+  - first:
+      213: -7510986913194996553
+    second: eagle_rain_overlay_195
+  - first:
+      213: 6321210413312133610
+    second: eagle_rain_overlay_196
+  - first:
+      213: -1006817865700814398
+    second: eagle_rain_overlay_197
+  - first:
+      213: -7033362688359055442
+    second: eagle_rain_overlay_198
+  - first:
+      213: -844263740072092474
+    second: eagle_rain_overlay_199
+  - first:
+      213: 3588477346006174385
+    second: eagle_rain_overlay_200
+  - first:
+      213: 8123108261484042049
+    second: eagle_rain_overlay_201
+  - first:
+      213: -3715974322428785395
+    second: eagle_rain_overlay_202
+  - first:
+      213: 5815577696260948786
+    second: eagle_rain_overlay_203
+  - first:
+      213: 1938835240080119830
+    second: eagle_rain_overlay_204
+  - first:
+      213: 6488252900660719033
+    second: eagle_rain_overlay_205
+  - first:
+      213: -9194751709036531089
+    second: eagle_rain_overlay_206
+  - first:
+      213: 9019854269852666385
+    second: eagle_rain_overlay_207
+  - first:
+      213: 195691761058066046
+    second: eagle_rain_overlay_208
+  - first:
+      213: 1213578719722187237
+    second: eagle_rain_overlay_209
+  - first:
+      213: -1787156104537372244
+    second: eagle_rain_overlay_210
+  - first:
+      213: -6116857513052748550
+    second: eagle_rain_overlay_211
+  - first:
+      213: -5245905449412815260
+    second: eagle_rain_overlay_212
+  - first:
+      213: -1916416856661129415
+    second: eagle_rain_overlay_213
+  - first:
+      213: -4550829191503117173
+    second: eagle_rain_overlay_214
+  - first:
+      213: 5772868580501829090
+    second: eagle_rain_overlay_215
+  - first:
+      213: 1700762556487631274
+    second: eagle_rain_overlay_216
+  - first:
+      213: 2835021433558092669
+    second: eagle_rain_overlay_217
+  - first:
+      213: 702678166488593360
+    second: eagle_rain_overlay_218
+  - first:
+      213: -3091073677304647532
+    second: eagle_rain_overlay_219
+  - first:
+      213: 3812600845774889715
+    second: eagle_rain_overlay_220
+  - first:
+      213: -2791883753641278705
+    second: eagle_rain_overlay_221
+  - first:
+      213: 7444416370269237310
+    second: eagle_rain_overlay_222
+  - first:
+      213: -4078439625674420132
+    second: eagle_rain_overlay_223
+  - first:
+      213: 4071440267450753474
+    second: eagle_rain_overlay_224
+  - first:
+      213: -4033469088348853054
+    second: eagle_rain_overlay_225
+  - first:
+      213: -6509970637685337948
+    second: eagle_rain_overlay_226
+  - first:
+      213: 8834601589134578392
+    second: eagle_rain_overlay_227
+  - first:
+      213: -5309494546381711694
+    second: eagle_rain_overlay_228
+  - first:
+      213: -1863984299104527009
+    second: eagle_rain_overlay_229
+  - first:
+      213: -1065521744267027815
+    second: eagle_rain_overlay_230
+  - first:
+      213: 2401489025536923314
+    second: eagle_rain_overlay_231
+  - first:
+      213: 5352633268066944459
+    second: eagle_rain_overlay_232
+  - first:
+      213: -7261887337596410322
+    second: eagle_rain_overlay_233
+  - first:
+      213: -8478151454910461015
+    second: eagle_rain_overlay_234
+  - first:
+      213: 3745182575334653189
+    second: eagle_rain_overlay_235
+  - first:
+      213: 7528597887927033378
+    second: eagle_rain_overlay_236
+  - first:
+      213: -358442441648471194
+    second: eagle_rain_overlay_237
+  - first:
+      213: -200901643682965032
+    second: eagle_rain_overlay_238
+  - first:
+      213: 2031657228196363349
+    second: eagle_rain_overlay_239
+  - first:
+      213: 2083641835079406209
+    second: eagle_rain_overlay_240
+  - first:
+      213: 2058140046041866856
+    second: eagle_rain_overlay_241
+  - first:
+      213: -4988378145331110824
+    second: eagle_rain_overlay_242
+  - first:
+      213: 1598299302911435982
+    second: eagle_rain_overlay_243
+  - first:
+      213: -1323823966652185396
+    second: eagle_rain_overlay_244
+  - first:
+      213: -4721985042377335279
+    second: eagle_rain_overlay_245
+  - first:
+      213: -5436515219582215479
+    second: eagle_rain_overlay_246
+  - first:
+      213: -1211381954282465755
+    second: eagle_rain_overlay_247
+  - first:
+      213: -7395607818385400540
+    second: eagle_rain_overlay_248
+  - first:
+      213: 5008684145465587722
+    second: eagle_rain_overlay_249
+  - first:
+      213: -7445270685579851889
+    second: eagle_rain_overlay_250
+  - first:
+      213: -9174641216011198149
+    second: eagle_rain_overlay_251
+  - first:
+      213: 8702227198929666154
+    second: eagle_rain_overlay_252
+  - first:
+      213: 2317723477472951504
+    second: eagle_rain_overlay_253
+  - first:
+      213: -2098836872168227361
+    second: eagle_rain_overlay_254
+  - first:
+      213: 594331041133693047
+    second: eagle_rain_overlay_255
+  - first:
+      213: 879253101947385445
+    second: eagle_rain_overlay_256
+  - first:
+      213: 7685495275722295369
+    second: eagle_rain_overlay_257
+  - first:
+      213: 4419822136524815353
+    second: eagle_rain_overlay_258
+  - first:
+      213: 3583342186708078894
+    second: eagle_rain_overlay_259
+  - first:
+      213: 4913373461286126251
+    second: eagle_rain_overlay_260
+  - first:
+      213: -6067940315950678685
+    second: eagle_rain_overlay_261
+  - first:
+      213: -2722495514692282894
+    second: eagle_rain_overlay_262
+  - first:
+      213: -1419651591100431298
+    second: eagle_rain_overlay_263
+  - first:
+      213: 7893242550602314169
+    second: eagle_rain_overlay_264
+  - first:
+      213: 8688157485738249630
+    second: eagle_rain_overlay_265
+  - first:
+      213: -9012049413475335646
+    second: eagle_rain_overlay_266
+  - first:
+      213: 2871733457063073765
+    second: eagle_rain_overlay_267
+  - first:
+      213: -351912823930155375
+    second: eagle_rain_overlay_268
+  - first:
+      213: 6555466570919344511
+    second: eagle_rain_overlay_269
+  - first:
+      213: -549578818858363151
+    second: eagle_rain_overlay_270
+  - first:
+      213: 3579231821102765448
+    second: eagle_rain_overlay_271
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: eagle_rain_overlay_0
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1009
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2334deefaaa188650800000000000000
+      internalID: 6235263005818176306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1046
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a44e40ac155ede0800000000000000
+      internalID: -1304546588946576855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1010
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757b9ffef13172130800000000000000
+      internalID: 3541820659841218391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1036
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7771b7dc311027ee0800000000000000
+      internalID: -1264947360774285449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_4
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1035
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da26731df4054170800000000000000
+      internalID: 8161935384678640336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_5
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1044
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740ba03236f4a7fa0800000000000000
+      internalID: -5802237882705203129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_6
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1061
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff058cf6d4d29ac0800000000000000
+      internalID: -3849780711623684104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1033
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f60ee608d89efa0800000000000000
+      internalID: -5770925864743047271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_8
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1030
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edfe5736cfa88450800000000000000
+      internalID: 6091311761885953507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_9
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1068
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eebf7f0c7067d840800000000000000
+      internalID: 5248769976675843816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_10
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1022
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5b2c6c533dcf290800000000000000
+      internalID: -7855171422119610937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_11
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1032
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057c52d46028d9b90800000000000000
+      internalID: -7233482462911412400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_12
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1006
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092191fd40ec2b3a0800000000000000
+      internalID: -6651027179354647920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 967
+        width: 24
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1faec49dd73c80bf0800000000000000
+      internalID: -357821225091929359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_14
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 960
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6294dcf6930c656f0800000000000000
+      internalID: -696157739460769498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_15
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 991
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8dae4853c22ae620800000000000000
+      internalID: 2804091940387073419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_16
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1008
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be71349763c076b0800000000000000
+      internalID: -5300521911779754319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_17
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 971
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9d3c4baa4ea37d0800000000000000
+      internalID: -2937784385077519906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_18
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 954
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141a14b8fd73d7d20800000000000000
+      internalID: 3277837537049157953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_19
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 974
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845726835fb485210800000000000000
+      internalID: 1321890007218287944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_20
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 1007
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c9e0437d4571b30800000000000000
+      internalID: 4257965255970167936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_21
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 959
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccd6bcf9c4f63040800000000000000
+      internalID: 4627154815535209671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_22
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 979
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d6150a55a86bdc0800000000000000
+      internalID: -3623556749806441214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1019
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df8c26d14136bd30800000000000000
+      internalID: 4446795840910823377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_24
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 980
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40d25d066617ec90800000000000000
+      internalID: -7140714056606625713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_25
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 980
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12dd577ce98fd4d00800000000000000
+      internalID: 958695656534695201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_26
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 986
+        width: 24
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25bedbb04aa23620800000000000000
+      internalID: 2752449517283357997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_27
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1017
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caaafd7acf130a370800000000000000
+      internalID: 8331714271853390508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 952
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4b1740ab3426270800000000000000
+      internalID: 8242224734258967766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 922
+        width: 24
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f53343253617ef0800000000000000
+      internalID: -112199310993301740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_30
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 962
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda240eef94f05910800000000000000
+      internalID: 1824226816815278812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_31
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 919
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24e7e8815fe88970800000000000000
+      internalID: 8757512608890217519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_32
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 929
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab3dc73f6e027ce0800000000000000
+      internalID: -1409047862573188189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_33
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 947
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c124dcf6deb089870800000000000000
+      internalID: 8689708595422249500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_34
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 910
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e5cf840090b9d20800000000000000
+      internalID: 3286230249926057621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_35
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 950
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4848e169c9bbee0800000000000000
+      internalID: -1244228703466781465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_36
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 935
+        width: 25
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01e050625d737750800000000000000
+      internalID: 6301518096378159371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_37
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 940
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48959182260462f0800000000000000
+      internalID: -980652073587206070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_38
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 918
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336f372d74316cf20800000000000000
+      internalID: 3442460164365743667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_39
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 956
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2494e42ca92e300800000000000000
+      internalID: 279956286178149089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_40
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 926
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb049ad7c2997b10800000000000000
+      internalID: 1979774898269326261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_41
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 943
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2c3243155f887d0800000000000000
+      internalID: -2915811029606481158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_42
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 916
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da42bd18216e12d0800000000000000
+      internalID: -3306098251518555436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_43
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 874
+        width: 20
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d097913f9fa33440800000000000000
+      internalID: 4914464716658020561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_44
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 913
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40cb0c5cd72f58530800000000000000
+      internalID: 3856755277915274244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_45
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 859
+        width: 24
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e2d5e4433d20970800000000000000
+      internalID: 8719764050149191265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_46
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 865
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fb98b2b09c7b630800000000000000
+      internalID: 3942841048598429561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_47
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 890
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74cfc93a58b3e4d0800000000000000
+      internalID: -3106436620299025286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_48
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 870
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8998b5b2bbe3ca8a0800000000000000
+      internalID: -6292585605736199784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_49
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 866
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00822cbb7d01825d0800000000000000
+      internalID: -3087199025808398336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_50
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 834
+        width: 35
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4065a07fcbd9fc90800000000000000
+      internalID: -7135430450597240755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_51
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 903
+        width: 19
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb10920f5b54f390800000000000000
+      internalID: -7785497392193725462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_52
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 886
+        width: 23
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1688bff54df7a1c70800000000000000
+      internalID: 8942600560217655393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_53
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 865
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e15b16864bffdc0800000000000000
+      internalID: -3602962816464249199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_54
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 851
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6392374c79bf304d0800000000000000
+      internalID: -3169413083484182218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_55
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 910
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6921e476d564650800000000000000
+      internalID: 6216759033904404173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_56
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 839
+        width: 20
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4cc349f527480b0800000000000000
+      internalID: -5727327071273958174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_57
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 841
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9523f1e54150ce090800000000000000
+      internalID: -8004016852707626407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_58
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 828
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a218d5956f4d49070800000000000000
+      internalID: 8112342983327449386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_59
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 795
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d46f32b052baa90800000000000000
+      internalID: -7301701641072915185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_60
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 823
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfc24df18abe0380800000000000000
+      internalID: -9003053537604481072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_61
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 815
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7dcfaf09657531b0800000000000000
+      internalID: -5677502661135446657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_62
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 783
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e2d8fc40a74dcc0800000000000000
+      internalID: -3687188033828999647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_63
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 805
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1f4f588b2afccb0800000000000000
+      internalID: -4841472160994889304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_64
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 793
+        width: 20
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f652f671d55eb1f80800000000000000
+      internalID: -8134656113926789777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_65
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 829
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d397e4d1814036550800000000000000
+      internalID: 6152766017535637821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_66
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 822
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1635d40c15a8fd90800000000000000
+      internalID: -7063714475771873764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_67
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 826
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d8f04688a89c480800000000000000
+      internalID: -8878412871985296069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_68
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 840
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0599b10256ecddf0800000000000000
+      internalID: -153995047346793205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_69
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 822
+        width: 22
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9020666c764c730800000000000000
+      internalID: 4018450869333920178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_70
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 785
+        width: 24
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e65fec4e239527b0800000000000000
+      internalID: -5249627963561912604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_71
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 818
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67fbc9592ccec170800000000000000
+      internalID: 8200716449460516715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 733
+        width: 24
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ce9fe1f014ff6d0800000000000000
+      internalID: -2954571297331745681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_73
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 758
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1285d5694aefa420800000000000000
+      internalID: 2643589107251773979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_74
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 754
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b523c41135b5d200800000000000000
+      internalID: 204268580521584054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_75
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 743
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6792ddfa8ff942c20800000000000000
+      internalID: 3180843127281625462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_76
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 749
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5223e3d0eccfcd0800000000000000
+      internalID: -2522915134960949832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_77
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 740
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c03a1b7cca2e3b0800000000000000
+      internalID: -5484631422505120742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_78
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 737
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f28008902ee5df40800000000000000
+      internalID: 5752765922792211187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_79
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 738
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3acaeeeb8b926bd0800000000000000
+      internalID: -2638375406374565316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_80
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 783
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983f6ad1b89592f20800000000000000
+      internalID: 3398345847860556681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_81
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 748
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887120fd61c395350800000000000000
+      internalID: 6005897647003670408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_82
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 760
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee6b5e5867882c50800000000000000
+      internalID: 6640706532887195370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_83
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 710
+        width: 27
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ba6e6021e492f20800000000000000
+      internalID: 3398333233159908255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_84
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 770
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37097e38132513270800000000000000
+      internalID: 8228448366802473075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_85
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 749
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3605c9da6d1efca60800000000000000
+      internalID: 7696618600351420515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_86
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 764
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e12e2e745a18b560800000000000000
+      internalID: 7329637343742009825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_87
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 757
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def3c61fb58f9c530800000000000000
+      internalID: 3875902028105138157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_88
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 767
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48877636caf9a85a0800000000000000
+      internalID: -6518221947914454908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_89
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 761
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db4a833ef10430c0800000000000000
+      internalID: -4597047128340411437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_90
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 745
+        width: 24
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620045ad49cbe1340800000000000000
+      internalID: 4836510397346611238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_91
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 719
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8e8c198d33104b0800000000000000
+      internalID: -5476038666653996844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_92
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 781
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d67fe05a071426b0800000000000000
+      internalID: -5322103526570101034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_93
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 757
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc080369501391f0800000000000000
+      internalID: -1039469112892846928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_94
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 776
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c8a6f26abeb8eb0800000000000000
+      internalID: -4716417085747852267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_95
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 665
+        width: 28
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2921f874663ea570800000000000000
+      internalID: 8479774953538922797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_96
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 683
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6da22d84f6b6610800000000000000
+      internalID: 1615507249896806138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_97
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 658
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a01e5b3678fd030800000000000000
+      internalID: 3521682295949953662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_98
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 687
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0916573c5e5ecc460800000000000000
+      internalID: 7263433074031288720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_99
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 695
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713b860025988fa50800000000000000
+      internalID: 6555140242924942103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_100
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 705
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe6beb471cf21f90800000000000000
+      internalID: -6984242895110050064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_101
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 669
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17598ccf2013cdc10800000000000000
+      internalID: 2079591016839026033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_102
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 694
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f037320bb391bf3d0800000000000000
+      internalID: -3171913768403504369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_103
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 699
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db3324f80ae6c610800000000000000
+      internalID: 1641256438399712216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_104
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 589
+        width: 28
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfeb122f802fbf90800000000000000
+      internalID: -6935789102002606117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_105
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 613
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c19775269109fff0800000000000000
+      internalID: -1968580451659320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_106
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 582
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c9df41245016bb0800000000000000
+      internalID: -4944665134497948533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_107
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 645
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec94ac28ef5805f0800000000000000
+      internalID: -790276283817485088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_108
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 630
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196a3bef2da4c7b90800000000000000
+      internalID: -7242831830641826159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_109
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 629
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fa6e41e4c5fbc40800000000000000
+      internalID: 5530240357862125315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_110
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 621
+        width: 33
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c052a51780d0d030800000000000000
+      internalID: 3517540587578478793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_111
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 613
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0201806a05249020800000000000000
+      internalID: 2347542032265839114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_112
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 646
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2444100f91a4b160800000000000000
+      internalID: 7040429821760128046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_113
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 610
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d08745fa491a3ed0800000000000000
+      internalID: -2433604838906953520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_114
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 643
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8075c382da8e0b10800000000000000
+      internalID: 1949648325456523403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_115
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 641
+        width: 20
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c73d752191c5fe0800000000000000
+      internalID: -1199055834213811053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_116
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 621
+        width: 26
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf3146ece059c4d0800000000000000
+      internalID: -3113868688944447553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_117
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 643
+        width: 22
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f35eb41f41d898f0800000000000000
+      internalID: -533446418262764558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_118
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 586
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8ed0615e7cd9da0800000000000000
+      internalID: -5936368947072997204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_119
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 631
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52c57180213e4080800000000000000
+      internalID: -9201362972990651813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_120
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 634
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb9e33a1477c3260800000000000000
+      internalID: 7078663838114945991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_121
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 592
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de24677a54cbcd470800000000000000
+      internalID: 8420812410624295661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 596
+        width: 13
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f21fd310a63d0110800000000000000
+      internalID: 1228698334498067189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_123
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 521
+        width: 34
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ecc41b917b101e0800000000000000
+      internalID: -2233302619222389199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_124
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 589
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462a899bec5a582e0800000000000000
+      internalID: -2124109341939686812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_125
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 574
+        width: 21
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d03ab7eeb11d7260800000000000000
+      internalID: 7096848099434967249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_126
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 552
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f22373e5ab4d6a0800000000000000
+      internalID: -6425305854535127230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_127
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 546
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ee7ba640e42ac80800000000000000
+      internalID: -8312996181295239632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_128
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 547
+        width: 31
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b579d8d7e49d270800000000000000
+      internalID: 8275732091423382279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_129
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 548
+        width: 20
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8607d5e6cdb96e700800000000000000
+      internalID: 569313773955674216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_130
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 572
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f686079523ee3cba0800000000000000
+      internalID: -6069745972748982161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_131
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 540
+        width: 37
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc6fa2227d9f90e0800000000000000
+      internalID: -2260915374382945057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 538
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb4d301502eaeb20800000000000000
+      internalID: 3164590199556361208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_133
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 536
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90e70e15e75b0cb0800000000000000
+      internalID: -4896723528272322404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_134
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 520
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e481b3f9f52eff8e0800000000000000
+      internalID: -1657357237527832498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_135
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 549
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74860bd6b94677e40800000000000000
+      internalID: 5654098475909933127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_136
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 515
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f5e65f07c1c7820800000000000000
+      internalID: 2917237930108804903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_137
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 533
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322de9198c88a6320800000000000000
+      internalID: 2552002533876748835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_138
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 534
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490e785593b3fae60800000000000000
+      internalID: 7975658582530580628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_139
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 498
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d793637471775120800000000000000
+      internalID: 2402513671191500752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_140
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 522
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa5e1083c8a99ed0800000000000000
+      internalID: -2406706968231257428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_141
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 519
+        width: 22
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e5486d796e02740800000000000000
+      internalID: 5125349915761073679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_142
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 483
+        width: 30
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866d6232deca6dec0800000000000000
+      internalID: -3542453922383341976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_143
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fe7459d4b4cb080800000000000000
+      internalID: -9170371944644087950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_144
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 486
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4191a83608117dcb0800000000000000
+      internalID: -4839380031462827756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_145
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 453
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45049360125fde6f0800000000000000
+      internalID: -653596848711712684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_146
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 467
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58840d7dd70364d10800000000000000
+      internalID: 2109426792519452805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_147
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 484
+        width: 21
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc003563261e8c80800000000000000
+      internalID: -8318687120429413121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_148
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 496
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d7836687121c1f0800000000000000
+      internalID: -1026502439068992127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_149
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 490
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae19e40a73478f00800000000000000
+      internalID: 1118937223772315308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_150
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 483
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8310291a98efe830800000000000000
+      internalID: 4102753534101951374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_151
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 494
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05398debb1d573330800000000000000
+      internalID: 3690520793400775504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_152
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 437
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808772b8355959ea0800000000000000
+      internalID: -5866618753530759160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_153
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 388
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d1ec7017c5de880800000000000000
+      internalID: -8580100074538918644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_154
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 419
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee00ee032f3af270800000000000000
+      internalID: 8285003884307418852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_155
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 425
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f95eceecc2b9e80800000000000000
+      internalID: -8170887831684276461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_156
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 414
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200c713ac6a281380800000000000000
+      internalID: -9000397209218859006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_157
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 409
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948efa5c8118770c0800000000000000
+      internalID: -4578048552802981815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_158
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 393
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bf08d54a05f19c0800000000000000
+      internalID: -3954353280934413490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_159
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 415
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340fb7f7ad3fd0220800000000000000
+      internalID: 2453885491754037315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_160
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 393
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61384b0e7cbb41e0800000000000000
+      internalID: -2212467542381285013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_161
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 356
+        width: 35
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68954c179aab2c590800000000000000
+      internalID: -7655351179655489146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_162
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 406
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a39b9c84f528cc0800000000000000
+      internalID: -3710298376773223892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_163
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 437
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb8950791b4feb20800000000000000
+      internalID: 3165831635695930335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_164
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 394
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43d799e38800d280800000000000000
+      internalID: -9020700690970324150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_165
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 363
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1666471d6dfe71e30800000000000000
+      internalID: 4474308460731983457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_166
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 395
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddb3b10edc7e2860800000000000000
+      internalID: 7507074921826336215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_167
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 354
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e846a4ca3bf15130800000000000000
+      internalID: 3553897810797938921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_168
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 390
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253b0dea4e6a8b0e0800000000000000
+      internalID: -2253868112383265966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_169
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 357
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87818fb2dddc0b1e0800000000000000
+      internalID: -2184019469465544584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_170
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 362
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38575016bae40010800000000000000
+      internalID: 1154305472192796731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_171
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 349
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6d9b0bc5a6ad0d0800000000000000
+      internalID: -3397286022563113227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_172
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 348
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866a787b8f8961b40800000000000000
+      internalID: 5410680196330661480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_173
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 326
+        width: 25
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a6a842c074bd7a0800000000000000
+      internalID: -6351404731997721992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_174
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 304
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d785829becb48fd60800000000000000
+      internalID: 7924166895600162941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_175
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 289
+        width: 36
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2954c00731a3250800000000000000
+      internalID: 5925069631722459874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_176
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 326
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d5ac47c80998ae0800000000000000
+      internalID: -1546546064095814262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_177
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 305
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e38819d5922c530800000000000000
+      internalID: 3873704111342370399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_178
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 352
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c052bf019aebbb0800000000000000
+      internalID: -4918307852643922831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_179
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 299
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e127a7bfbee0a90800000000000000
+      internalID: -7345674476871082423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_180
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 314
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a087f82cb3b87ed0800000000000000
+      internalID: -2415983579361738584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_181
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 318
+        width: 22
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffa0db05ae5674c0800000000000000
+      internalID: -4290137532062978064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_182
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 305
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817894434f23b6c20800000000000000
+      internalID: 3200707984607512344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_183
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 321
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a2b29b5c0086330800000000000000
+      internalID: 3704211542727404118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_184
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 321
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d71003b5c536bf0800000000000000
+      internalID: -332320400778101438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_185
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 328
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8febe0b17aeb06400800000000000000
+      internalID: 315461598838701816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_186
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 298
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0025d32bcc69b570800000000000000
+      internalID: 8482930992864370701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_187
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 272
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4d410bc56b13f10800000000000000
+      internalID: 2247778198241989812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_188
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 285
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900aed610a9e0dc20800000000000000
+      internalID: 3229337806612373513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_189
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 290
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083265f0a0c4589f0800000000000000
+      internalID: -466883380272290944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_190
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 261
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f19cf315e726bc0800000000000000
+      internalID: -3791329048864940140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_191
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 244
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e8937f17a7ec480800000000000000
+      internalID: -8877023185603031535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_192
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 274
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a04d198c961e8280800000000000000
+      internalID: -9039262540514901849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_193
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 249
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e75a6b57713215c0800000000000000
+      internalID: -4246277109952391200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_194
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 260
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d586f2fae4233670800000000000000
+      internalID: 8517191911804929497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_195
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 281
+        width: 20
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc8766823d93c790800000000000000
+      internalID: -7510986913194996553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_196
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 235
+        width: 28
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae948f3316379b750800000000000000
+      internalID: 6321210413312133610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_197
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226
+        width: 12
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1d2694c701702f0800000000000000
+      internalID: -1006817865700814398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_198
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 236
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf3fd736e9746e90800000000000000
+      internalID: -7033362688359055442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_199
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 194
+        width: 22
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc924cf9929844f0800000000000000
+      internalID: -844263740072092474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_200
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 218
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba0c353225dcc130800000000000000
+      internalID: 3588477346006174385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_201
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 234
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1471ccdfce31bb070800000000000000
+      internalID: 8123108261484042049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_202
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 191
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dc825ba053e6cc0800000000000000
+      internalID: -3715974322428785395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_203
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 232
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233815d3a1515b050800000000000000
+      internalID: 5815577696260948786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_204
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 188
+        width: 36
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6181cf2e06028ea10800000000000000
+      internalID: 1938835240080119830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_205
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 205
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bda7cc03a7ea0a50800000000000000
+      internalID: 6488252900660719033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_206
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 217
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6236f8590ea56080800000000000000
+      internalID: -9194751709036531089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_207
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 181
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11acb505ba5fc2d70800000000000000
+      internalID: 9019854269852666385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_208
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 222
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e265fae9c37b200800000000000000
+      internalID: 195691761058066046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_209
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 225
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9a3007a6f77d010800000000000000
+      internalID: 1213578719722187237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_210
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca901eeddfeb237e0800000000000000
+      internalID: -1787156104537372244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_211
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 139
+        width: 22
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4cfc8108e8c1ba0800000000000000
+      internalID: -6116857513052748550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_212
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 121
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466967aa9ccc237b0800000000000000
+      internalID: -5245905449412815260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_213
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 156
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9378421c5058765e0800000000000000
+      internalID: -1916416856661129415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_214
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 177
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b848afe26f438d0c0800000000000000
+      internalID: -4550829191503117173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_215
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 112
+        width: 23
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e533d353695d1050800000000000000
+      internalID: 5772868580501829090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_216
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 119
+        width: 24
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa10bbab8825a9710800000000000000
+      internalID: 1700762556487631274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_217
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 167
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b49d529f4085720800000000000000
+      internalID: 2835021433558092669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_218
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 130
+        width: 24
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3b9f8c11a60c900800000000000000
+      internalID: 702678166488593360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_219
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 138
+        width: 33
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49032b12edc4a15d0800000000000000
+      internalID: -3091073677304647532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_220
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 146
+        width: 29
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f224cae44419e430800000000000000
+      internalID: 3812600845774889715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_221
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 164
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f030702a48c3149d0800000000000000
+      internalID: -2791883753641278705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_222
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 182
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30300e1f31ef4760800000000000000
+      internalID: 7444416370269237310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_223
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 129
+        width: 31
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c509cc9d4c87667c0800000000000000
+      internalID: -4078439625674420132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_224
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 80
+        width: 24
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1af911a59a08830800000000000000
+      internalID: 4071440267450753474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_225
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 44
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cca2700c3d3608c0800000000000000
+      internalID: -4033469088348853054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_226
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 84
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0da824230f7a5a0800000000000000
+      internalID: -6509970637685337948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_227
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 71
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2d77c665fca9a70800000000000000
+      internalID: 8834601589134578392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_228
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 114
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b65b0a47d2e056b0800000000000000
+      internalID: -5309494546381711694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_229
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 80
+        width: 36
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d18f0e72cc126e0800000000000000
+      internalID: -1863984299104527009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_230
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 109
+        width: 22
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a52847e918631f0800000000000000
+      internalID: -1065521744267027815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_231
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 118
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6902b8b8dc35120800000000000000
+      internalID: 2401489025536923314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_232
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 123
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5811c099f584a40800000000000000
+      internalID: 5352633268066944459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_233
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 106
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26a8ab01f7983b90800000000000000
+      internalID: -7261887337596410322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_234
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 81
+        width: 33
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abc912cb2e875a80800000000000000
+      internalID: -8478151454910461015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_235
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 25
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50dfdcd95bf89f330800000000000000
+      internalID: 3745182575334653189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_236
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 19
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e95ae04e3fa7860800000000000000
+      internalID: 7528597887927033378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_237
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 38
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6638e199f7e860bf0800000000000000
+      internalID: -358442441648471194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_238
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 23
+        width: 24
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d91c7df401463df0800000000000000
+      internalID: -200901643682965032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_239
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 65
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cbfff1c75e13c10800000000000000
+      internalID: 2031657228196363349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_240
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 19
+        width: 23
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1821d0b95359aec10800000000000000
+      internalID: 2083641835079406209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_241
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 8
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862e456a77bff8c10800000000000000
+      internalID: 2058140046041866856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_242
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 62
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c9732a188b5cab0800000000000000
+      internalID: -4988378145331110824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_243
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 43
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec46ac27fbc4e2610800000000000000
+      internalID: 1598299302911435982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_244
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 17
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc44c82cd15d0ade0800000000000000
+      internalID: -1323823966652185396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_245
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 33
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e14624f93287eb0800000000000000
+      internalID: -4721985042377335279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_246
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 12
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca1cc0363e9d84b0800000000000000
+      internalID: -5436515219582215479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_247
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 39
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526dcafd78e403fe0800000000000000
+      internalID: -1211381954282465755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_248
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 26
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d590f6fd58d5990800000000000000
+      internalID: -7395607818385400540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_249
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 0
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a087b9271bb628540800000000000000
+      internalID: 5008684145465587722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_250
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87426912c51da890800000000000000
+      internalID: -7445270685579851889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_251
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 26
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31aef16c602da080800000000000000
+      internalID: -9174641216011198149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_252
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 57
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6002f2f78584c870800000000000000
+      internalID: 8702227198929666154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_253
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 32
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcbb5219353a2020800000000000000
+      internalID: 2317723477472951504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_254
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 48
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddbbe02cfe6fd2e0800000000000000
+      internalID: -2098836872168227361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_255
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 61
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77803c9deec7f3800800000000000000
+      internalID: 594331041133693047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_256
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 37
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566fb39a90cb33c00800000000000000
+      internalID: 879253101947385445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_257
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948ce58db3d58aa60800000000000000
+      internalID: 7685495275722295369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_258
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 0
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb38f1e0dc565d30800000000000000
+      internalID: 4419822136524815353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_259
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2
+        width: 23
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e211863cbb69ab130800000000000000
+      internalID: 3583342186708078894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_260
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 0
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba28ac0812fcf2440800000000000000
+      internalID: 4913373461286126251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_261
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 0
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dfc759e685acba0800000000000000
+      internalID: -6067940315950678685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_262
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 0
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f51c28f0c0c73ad0800000000000000
+      internalID: -2722495514692282894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_263
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 0
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3404a746626c4ce0800000000000000
+      internalID: -1419651591100431298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_264
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 0
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b136a2974e6a8d60800000000000000
+      internalID: 7893242550602314169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_265
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 0
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d44129339829870800000000000000
+      internalID: 8688157485738249630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_266
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 0
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222098b6ec4cee280800000000000000
+      internalID: -9012049413475335646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_267
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 0
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e759d53d527ad720800000000000000
+      internalID: 2871733457063073765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_268
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 12
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e0db1b621cd1bf0800000000000000
+      internalID: -351912823930155375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_269
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 0
+        width: 19
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7978982d12b9fa50800000000000000
+      internalID: 6555466570919344511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_270
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 0
+        width: 21
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f65eddd9f08f58f0800000000000000
+      internalID: -549578818858363151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_rain_overlay_271
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885da91b06cfba130800000000000000
+      internalID: 3579231821102765448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      eagle_rain_overlay_0: 6235263005818176306
+      eagle_rain_overlay_1: -1304546588946576855
+      eagle_rain_overlay_10: -7855171422119610937
+      eagle_rain_overlay_100: -6984242895110050064
+      eagle_rain_overlay_101: 2079591016839026033
+      eagle_rain_overlay_102: -3171913768403504369
+      eagle_rain_overlay_103: 1641256438399712216
+      eagle_rain_overlay_104: -6935789102002606117
+      eagle_rain_overlay_105: -1968580451659320
+      eagle_rain_overlay_106: -4944665134497948533
+      eagle_rain_overlay_107: -790276283817485088
+      eagle_rain_overlay_108: -7242831830641826159
+      eagle_rain_overlay_109: 5530240357862125315
+      eagle_rain_overlay_11: -7233482462911412400
+      eagle_rain_overlay_110: 3517540587578478793
+      eagle_rain_overlay_111: 2347542032265839114
+      eagle_rain_overlay_112: 7040429821760128046
+      eagle_rain_overlay_113: -2433604838906953520
+      eagle_rain_overlay_114: 1949648325456523403
+      eagle_rain_overlay_115: -1199055834213811053
+      eagle_rain_overlay_116: -3113868688944447553
+      eagle_rain_overlay_117: -533446418262764558
+      eagle_rain_overlay_118: -5936368947072997204
+      eagle_rain_overlay_119: -9201362972990651813
+      eagle_rain_overlay_12: -6651027179354647920
+      eagle_rain_overlay_120: 7078663838114945991
+      eagle_rain_overlay_121: 8420812410624295661
+      eagle_rain_overlay_122: 1228698334498067189
+      eagle_rain_overlay_123: -2233302619222389199
+      eagle_rain_overlay_124: -2124109341939686812
+      eagle_rain_overlay_125: 7096848099434967249
+      eagle_rain_overlay_126: -6425305854535127230
+      eagle_rain_overlay_127: -8312996181295239632
+      eagle_rain_overlay_128: 8275732091423382279
+      eagle_rain_overlay_129: 569313773955674216
+      eagle_rain_overlay_13: -357821225091929359
+      eagle_rain_overlay_130: -6069745972748982161
+      eagle_rain_overlay_131: -2260915374382945057
+      eagle_rain_overlay_132: 3164590199556361208
+      eagle_rain_overlay_133: -4896723528272322404
+      eagle_rain_overlay_134: -1657357237527832498
+      eagle_rain_overlay_135: 5654098475909933127
+      eagle_rain_overlay_136: 2917237930108804903
+      eagle_rain_overlay_137: 2552002533876748835
+      eagle_rain_overlay_138: 7975658582530580628
+      eagle_rain_overlay_139: 2402513671191500752
+      eagle_rain_overlay_14: -696157739460769498
+      eagle_rain_overlay_140: -2406706968231257428
+      eagle_rain_overlay_141: 5125349915761073679
+      eagle_rain_overlay_142: -3542453922383341976
+      eagle_rain_overlay_143: -9170371944644087950
+      eagle_rain_overlay_144: -4839380031462827756
+      eagle_rain_overlay_145: -653596848711712684
+      eagle_rain_overlay_146: 2109426792519452805
+      eagle_rain_overlay_147: -8318687120429413121
+      eagle_rain_overlay_148: -1026502439068992127
+      eagle_rain_overlay_149: 1118937223772315308
+      eagle_rain_overlay_15: 2804091940387073419
+      eagle_rain_overlay_150: 4102753534101951374
+      eagle_rain_overlay_151: 3690520793400775504
+      eagle_rain_overlay_152: -5866618753530759160
+      eagle_rain_overlay_153: -8580100074538918644
+      eagle_rain_overlay_154: 8285003884307418852
+      eagle_rain_overlay_155: -8170887831684276461
+      eagle_rain_overlay_156: -9000397209218859006
+      eagle_rain_overlay_157: -4578048552802981815
+      eagle_rain_overlay_158: -3954353280934413490
+      eagle_rain_overlay_159: 2453885491754037315
+      eagle_rain_overlay_16: -5300521911779754319
+      eagle_rain_overlay_160: -2212467542381285013
+      eagle_rain_overlay_161: -7655351179655489146
+      eagle_rain_overlay_162: -3710298376773223892
+      eagle_rain_overlay_163: 3165831635695930335
+      eagle_rain_overlay_164: -9020700690970324150
+      eagle_rain_overlay_165: 4474308460731983457
+      eagle_rain_overlay_166: 7507074921826336215
+      eagle_rain_overlay_167: 3553897810797938921
+      eagle_rain_overlay_168: -2253868112383265966
+      eagle_rain_overlay_169: -2184019469465544584
+      eagle_rain_overlay_17: -2937784385077519906
+      eagle_rain_overlay_170: 1154305472192796731
+      eagle_rain_overlay_171: -3397286022563113227
+      eagle_rain_overlay_172: 5410680196330661480
+      eagle_rain_overlay_173: -6351404731997721992
+      eagle_rain_overlay_174: 7924166895600162941
+      eagle_rain_overlay_175: 5925069631722459874
+      eagle_rain_overlay_176: -1546546064095814262
+      eagle_rain_overlay_177: 3873704111342370399
+      eagle_rain_overlay_178: -4918307852643922831
+      eagle_rain_overlay_179: -7345674476871082423
+      eagle_rain_overlay_18: 3277837537049157953
+      eagle_rain_overlay_180: -2415983579361738584
+      eagle_rain_overlay_181: -4290137532062978064
+      eagle_rain_overlay_182: 3200707984607512344
+      eagle_rain_overlay_183: 3704211542727404118
+      eagle_rain_overlay_184: -332320400778101438
+      eagle_rain_overlay_185: 315461598838701816
+      eagle_rain_overlay_186: 8482930992864370701
+      eagle_rain_overlay_187: 2247778198241989812
+      eagle_rain_overlay_188: 3229337806612373513
+      eagle_rain_overlay_189: -466883380272290944
+      eagle_rain_overlay_19: 1321890007218287944
+      eagle_rain_overlay_190: -3791329048864940140
+      eagle_rain_overlay_191: -8877023185603031535
+      eagle_rain_overlay_192: -9039262540514901849
+      eagle_rain_overlay_193: -4246277109952391200
+      eagle_rain_overlay_194: 8517191911804929497
+      eagle_rain_overlay_195: -7510986913194996553
+      eagle_rain_overlay_196: 6321210413312133610
+      eagle_rain_overlay_197: -1006817865700814398
+      eagle_rain_overlay_198: -7033362688359055442
+      eagle_rain_overlay_199: -844263740072092474
+      eagle_rain_overlay_2: 3541820659841218391
+      eagle_rain_overlay_20: 4257965255970167936
+      eagle_rain_overlay_200: 3588477346006174385
+      eagle_rain_overlay_201: 8123108261484042049
+      eagle_rain_overlay_202: -3715974322428785395
+      eagle_rain_overlay_203: 5815577696260948786
+      eagle_rain_overlay_204: 1938835240080119830
+      eagle_rain_overlay_205: 6488252900660719033
+      eagle_rain_overlay_206: -9194751709036531089
+      eagle_rain_overlay_207: 9019854269852666385
+      eagle_rain_overlay_208: 195691761058066046
+      eagle_rain_overlay_209: 1213578719722187237
+      eagle_rain_overlay_21: 4627154815535209671
+      eagle_rain_overlay_210: -1787156104537372244
+      eagle_rain_overlay_211: -6116857513052748550
+      eagle_rain_overlay_212: -5245905449412815260
+      eagle_rain_overlay_213: -1916416856661129415
+      eagle_rain_overlay_214: -4550829191503117173
+      eagle_rain_overlay_215: 5772868580501829090
+      eagle_rain_overlay_216: 1700762556487631274
+      eagle_rain_overlay_217: 2835021433558092669
+      eagle_rain_overlay_218: 702678166488593360
+      eagle_rain_overlay_219: -3091073677304647532
+      eagle_rain_overlay_22: -3623556749806441214
+      eagle_rain_overlay_220: 3812600845774889715
+      eagle_rain_overlay_221: -2791883753641278705
+      eagle_rain_overlay_222: 7444416370269237310
+      eagle_rain_overlay_223: -4078439625674420132
+      eagle_rain_overlay_224: 4071440267450753474
+      eagle_rain_overlay_225: -4033469088348853054
+      eagle_rain_overlay_226: -6509970637685337948
+      eagle_rain_overlay_227: 8834601589134578392
+      eagle_rain_overlay_228: -5309494546381711694
+      eagle_rain_overlay_229: -1863984299104527009
+      eagle_rain_overlay_23: 4446795840910823377
+      eagle_rain_overlay_230: -1065521744267027815
+      eagle_rain_overlay_231: 2401489025536923314
+      eagle_rain_overlay_232: 5352633268066944459
+      eagle_rain_overlay_233: -7261887337596410322
+      eagle_rain_overlay_234: -8478151454910461015
+      eagle_rain_overlay_235: 3745182575334653189
+      eagle_rain_overlay_236: 7528597887927033378
+      eagle_rain_overlay_237: -358442441648471194
+      eagle_rain_overlay_238: -200901643682965032
+      eagle_rain_overlay_239: 2031657228196363349
+      eagle_rain_overlay_24: -7140714056606625713
+      eagle_rain_overlay_240: 2083641835079406209
+      eagle_rain_overlay_241: 2058140046041866856
+      eagle_rain_overlay_242: -4988378145331110824
+      eagle_rain_overlay_243: 1598299302911435982
+      eagle_rain_overlay_244: -1323823966652185396
+      eagle_rain_overlay_245: -4721985042377335279
+      eagle_rain_overlay_246: -5436515219582215479
+      eagle_rain_overlay_247: -1211381954282465755
+      eagle_rain_overlay_248: -7395607818385400540
+      eagle_rain_overlay_249: 5008684145465587722
+      eagle_rain_overlay_25: 958695656534695201
+      eagle_rain_overlay_250: -7445270685579851889
+      eagle_rain_overlay_251: -9174641216011198149
+      eagle_rain_overlay_252: 8702227198929666154
+      eagle_rain_overlay_253: 2317723477472951504
+      eagle_rain_overlay_254: -2098836872168227361
+      eagle_rain_overlay_255: 594331041133693047
+      eagle_rain_overlay_256: 879253101947385445
+      eagle_rain_overlay_257: 7685495275722295369
+      eagle_rain_overlay_258: 4419822136524815353
+      eagle_rain_overlay_259: 3583342186708078894
+      eagle_rain_overlay_26: 2752449517283357997
+      eagle_rain_overlay_260: 4913373461286126251
+      eagle_rain_overlay_261: -6067940315950678685
+      eagle_rain_overlay_262: -2722495514692282894
+      eagle_rain_overlay_263: -1419651591100431298
+      eagle_rain_overlay_264: 7893242550602314169
+      eagle_rain_overlay_265: 8688157485738249630
+      eagle_rain_overlay_266: -9012049413475335646
+      eagle_rain_overlay_267: 2871733457063073765
+      eagle_rain_overlay_268: -351912823930155375
+      eagle_rain_overlay_269: 6555466570919344511
+      eagle_rain_overlay_27: 8331714271853390508
+      eagle_rain_overlay_270: -549578818858363151
+      eagle_rain_overlay_271: 3579231821102765448
+      eagle_rain_overlay_28: 8242224734258967766
+      eagle_rain_overlay_29: -112199310993301740
+      eagle_rain_overlay_3: -1264947360774285449
+      eagle_rain_overlay_30: 1824226816815278812
+      eagle_rain_overlay_31: 8757512608890217519
+      eagle_rain_overlay_32: -1409047862573188189
+      eagle_rain_overlay_33: 8689708595422249500
+      eagle_rain_overlay_34: 3286230249926057621
+      eagle_rain_overlay_35: -1244228703466781465
+      eagle_rain_overlay_36: 6301518096378159371
+      eagle_rain_overlay_37: -980652073587206070
+      eagle_rain_overlay_38: 3442460164365743667
+      eagle_rain_overlay_39: 279956286178149089
+      eagle_rain_overlay_4: 8161935384678640336
+      eagle_rain_overlay_40: 1979774898269326261
+      eagle_rain_overlay_41: -2915811029606481158
+      eagle_rain_overlay_42: -3306098251518555436
+      eagle_rain_overlay_43: 4914464716658020561
+      eagle_rain_overlay_44: 3856755277915274244
+      eagle_rain_overlay_45: 8719764050149191265
+      eagle_rain_overlay_46: 3942841048598429561
+      eagle_rain_overlay_47: -3106436620299025286
+      eagle_rain_overlay_48: -6292585605736199784
+      eagle_rain_overlay_49: -3087199025808398336
+      eagle_rain_overlay_5: -5802237882705203129
+      eagle_rain_overlay_50: -7135430450597240755
+      eagle_rain_overlay_51: -7785497392193725462
+      eagle_rain_overlay_52: 8942600560217655393
+      eagle_rain_overlay_53: -3602962816464249199
+      eagle_rain_overlay_54: -3169413083484182218
+      eagle_rain_overlay_55: 6216759033904404173
+      eagle_rain_overlay_56: -5727327071273958174
+      eagle_rain_overlay_57: -8004016852707626407
+      eagle_rain_overlay_58: 8112342983327449386
+      eagle_rain_overlay_59: -7301701641072915185
+      eagle_rain_overlay_6: -3849780711623684104
+      eagle_rain_overlay_60: -9003053537604481072
+      eagle_rain_overlay_61: -5677502661135446657
+      eagle_rain_overlay_62: -3687188033828999647
+      eagle_rain_overlay_63: -4841472160994889304
+      eagle_rain_overlay_64: -8134656113926789777
+      eagle_rain_overlay_65: 6152766017535637821
+      eagle_rain_overlay_66: -7063714475771873764
+      eagle_rain_overlay_67: -8878412871985296069
+      eagle_rain_overlay_68: -153995047346793205
+      eagle_rain_overlay_69: 4018450869333920178
+      eagle_rain_overlay_7: -5770925864743047271
+      eagle_rain_overlay_70: -5249627963561912604
+      eagle_rain_overlay_71: 8200716449460516715
+      eagle_rain_overlay_72: -2954571297331745681
+      eagle_rain_overlay_73: 2643589107251773979
+      eagle_rain_overlay_74: 204268580521584054
+      eagle_rain_overlay_75: 3180843127281625462
+      eagle_rain_overlay_76: -2522915134960949832
+      eagle_rain_overlay_77: -5484631422505120742
+      eagle_rain_overlay_78: 5752765922792211187
+      eagle_rain_overlay_79: -2638375406374565316
+      eagle_rain_overlay_8: 6091311761885953507
+      eagle_rain_overlay_80: 3398345847860556681
+      eagle_rain_overlay_81: 6005897647003670408
+      eagle_rain_overlay_82: 6640706532887195370
+      eagle_rain_overlay_83: 3398333233159908255
+      eagle_rain_overlay_84: 8228448366802473075
+      eagle_rain_overlay_85: 7696618600351420515
+      eagle_rain_overlay_86: 7329637343742009825
+      eagle_rain_overlay_87: 3875902028105138157
+      eagle_rain_overlay_88: -6518221947914454908
+      eagle_rain_overlay_89: -4597047128340411437
+      eagle_rain_overlay_9: 5248769976675843816
+      eagle_rain_overlay_90: 4836510397346611238
+      eagle_rain_overlay_91: -5476038666653996844
+      eagle_rain_overlay_92: -5322103526570101034
+      eagle_rain_overlay_93: -1039469112892846928
+      eagle_rain_overlay_94: -4716417085747852267
+      eagle_rain_overlay_95: 8479774953538922797
+      eagle_rain_overlay_96: 1615507249896806138
+      eagle_rain_overlay_97: 3521682295949953662
+      eagle_rain_overlay_98: 7263433074031288720
+      eagle_rain_overlay_99: 6555140242924942103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

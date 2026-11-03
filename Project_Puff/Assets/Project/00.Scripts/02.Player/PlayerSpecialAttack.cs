@@ -234,6 +234,7 @@ public class PlayerSpecialAttack : MonoBehaviour
             var target = col.GetComponentInParent<IDamageable>();
             if (target != null)
             {
+                AttackSource.Current = AttackSource.Kind.Special;
                 target.TakeDamage(damagePerPellet, transform.position);
                 GameSfx.PlayAt(GameSfxId.PelletHit, point);
                 PelletHit?.Invoke();

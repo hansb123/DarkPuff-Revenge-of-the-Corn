@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4815481093691067608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1872596229994095066}
+  - component: {fileID: 7640926417407336834}
+  m_Layer: 0
+  m_Name: GroundShockWave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1872596229994095066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4815481093691067608}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7640926417407336834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4815481093691067608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dba232b7f6f71064e8d409368c28fdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundShockwave
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  damage: 1
+  frames:
+  - {fileID: 21300000, guid: 983a89bd34389df4e9515e1463f02dc4, type: 3}
+  - {fileID: 21300000, guid: 844030872e246cd43b4ebd5c80e9ca9f, type: 3}
+  - {fileID: 21300000, guid: 0690916ac694f1e428391cc0c2ee4737, type: 3}
+  - {fileID: 21300000, guid: b3936e1bde1b55b43a971c7e07eda602, type: 3}
+  frameTime: 0.07
+  tint: {r: 0.30254504, g: 0.11792451, b: 1, a: 1}
+  reflectedTint: {r: 1, g: 1, b: 1, a: 1}
+  rectColor: {r: 1, g: 0.85, b: 0.35, a: 0.7}
+  sortingOrder: 6
+  hitForwardRatio: 0.27
+  hitWidthRatio: 0.2
+  parryReach: 1
+  reflectSpeedScale: 1.7
+  pulseSpeed: 14

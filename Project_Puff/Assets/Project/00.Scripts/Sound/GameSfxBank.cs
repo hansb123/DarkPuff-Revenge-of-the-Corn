@@ -38,6 +38,11 @@ public enum GameSfxId
     MechaOverload, SparkZap, MechaPowerDown, MechaCoreOpen, HardEggPop, HardEggLand, ShadowPass,
     // 2챕터 기믹 (enum 값이 밀리지 않게 항상 맨 끝에 추가)
     PressSlam, PressRise,
+    // 독수리 보스 (enum 값이 밀리지 않게 맨 끝에 추가)
+    EagleScreech, EagleWingFlap, EagleStomp, EagleDiveWarn, EagleDive, EagleHurt,
+    EagleGroggy, EagleGroggyEnd, EaglePhaseRoar, EagleDefeat,
+    ParryMark, ParrySuccess, ParryFeatherFire,
+    ChickenSmashed, ChickenFlyAway, ChickenTwinkle,
 }
 
 /// <summary>

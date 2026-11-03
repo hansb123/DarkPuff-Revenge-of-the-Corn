@@ -25,6 +25,8 @@ public class PatternContext
 {
     public PatternRunner Runner;
     public Transform Player;
+    /// <summary>패턴을 쓰는 보스 본체 (독수리 등). 닭 패턴은 null 이어도 무방</summary>
+    public Transform Boss;
     public float LeftX, RightX, GroundY;
     /// <summary>0(쉬움) ~ 1(가장 어려움). 분노 게이지 진행도</summary>
     public float Difficulty;
