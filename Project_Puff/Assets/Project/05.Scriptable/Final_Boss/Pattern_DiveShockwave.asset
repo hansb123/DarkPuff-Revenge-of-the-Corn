@@ -26,10 +26,14 @@ MonoBehaviour:
   diveHard: 0.24
   betweenEasy: 0.8
   betweenHard: 0.4
+  lockHoldEasy: 1
+  lockHoldHard: 0.8
   speedEasy: 6.5
   speedHard: 10
   heightEasy: 0.9
   heightHard: 1.2
+  waveDelayEasy: 0.55
+  waveDelayHard: 0.35
   hold: 0.5
   returnTime: 0.8
   impactHeight: 1.6

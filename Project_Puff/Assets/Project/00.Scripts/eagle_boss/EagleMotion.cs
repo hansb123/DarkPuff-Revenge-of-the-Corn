@@ -95,6 +95,7 @@ public class EagleMotion : MonoBehaviour
     /// <summary>하늘 그로기 중 날개짓으로 바람을 일으키는 중 (바람 이펙트가 구독)</summary>
     public bool IsSummoning { get; private set; }
     private bool skyDazed;
+    private bool externalRotation;   // 사망 연출처럼 코드가 직접 회전을 줄 때 기울임 처리를 끈다
     private GameObject shadow;
     private bool grounded;       // 그로기로 쓰러져 있는 중
     private bool dashing;
@@ -159,7 +160,7 @@ public class EagleMotion : MonoBehaviour
     /// <summary>true = 정면 고정(좌우 이동 없음), false = 하늘을 떠다니며 플레이어를 따라감</summary>
     public void SetFrontLocked(bool locked) => frontLocked = locked;
 
-    private float GroundY => groundLine != null ? groundLine.position.y : 0f;
+    public float GroundY => groundLine != null ? groundLine.position.y : 0f;
 
     private void Update()
     {
@@ -195,7 +196,7 @@ public class EagleMotion : MonoBehaviour
         Vector3 pos = transform.position;
         float vx = dt > 0f ? Mathf.Clamp((pos.x - lastPos.x) / dt, -25f, 25f) : 0f;
         lastPos = pos;
-        if (!useTilt) return;
+        if (!useTilt || externalRotation) return;
 
         float target = grounded ? 0f : Mathf.Clamp(-vx * tiltPerSpeed, -maxTilt, maxTilt);   // 오른쪽으로 가면 시계방향(앞으로 숙임)
         tilt = Mathf.SmoothDampAngle(tilt, target, ref tiltVel, tiltSmooth);
@@ -788,6 +789,77 @@ public class EagleMotion : MonoBehaviour
             transform.position = new Vector3(target.x + Mathf.Sin(tt * 1.3f) * ax, target.y + Mathf.Sin(tt * (skyDazed ? 2.1f : 5f)) * ay, z);
             yield return null;
         }
+    }
+
+    /// <summary>
+    /// 사망 연출: 맞은 충격에 몸을 떨다가(flinch) 빙글빙글 돌며 바닥까지 추락, 쿵 하고 쓰러진 포즈로 멈춘다.
+    /// 끝난 뒤에는 그 자리에 그대로 있음 (EagleDeathSequence 가 이어서 연출). 추락 중 onLand 가 착지 순간에 불림.
+    /// </summary>
+    public IEnumerator DeathFall(float flinchTime, float spinTurns, System.Action onLand)
+    {
+        if (fallRoutine != null) { StopCoroutine(fallRoutine); fallRoutine = null; }
+        DestroyShadow();
+        diving = dashing = sweeping = false;
+        IsCharging = false; ParryWindow = false;
+        ResetSky();
+        EaglePose.FacingLocked = true;
+        EaglePose.RaiseEyeFlash(false);
+        grounded = true;
+        externalRotation = true;
+
+        float z = transform.position.z;
+        Vector3 p0 = transform.position;
+
+        // 1) 맞은 충격: 몸을 떨며 어질어질
+        EaglePose.Raise(EaglePose.Id.SkyGroggy);
+        GameSfx.Play(GameSfxId.EagleHurt);
+        for (float t = 0f; t < flinchTime; t += Time.deltaTime)
+        {
+            float k = t / Mathf.Max(0.01f, flinchTime);
+            Vector2 j = Random.insideUnitCircle * (0.18f * (1f - k * 0.4f));
+            transform.position = new Vector3(p0.x + j.x, p0.y + j.y + Mathf.Sin(k * Mathf.PI) * 0.4f, z);
+            yield return null;
+        }
+
+        // 2) 추락: 회전하며 점점 빨라짐
+        float landY = GroundY + groggyHeight;
+        var pose = GetComponent<EaglePoseController>();
+        if (pose != null && pose.TryGetGroggyBottomLocalY(out float bottomLocal))
+            landY = GroundY - bottomLocal * Mathf.Abs(transform.lossyScale.y) + landOffset;
+        float x = transform.position.x;
+        float y = transform.position.y, v = 0f;
+        float startY = y;
+        float dir = x < (leftLimit != null && rightLimit != null ? (leftLimit.position.x + rightLimit.position.x) * 0.5f : 0f) ? -1f : 1f;
+        GameSfx.Play(GameSfxId.EagleDefeat);
+        while (y > landY)
+        {
+            v += fallGravity * Time.deltaTime;
+            y -= v * Time.deltaTime;
+            y = Mathf.Max(y, landY);
+            float prog = startY - landY > 0.01f ? 1f - (y - landY) / (startY - landY) : 1f;
+            transform.position = new Vector3(x, y, z);
+            transform.rotation = Quaternion.Euler(0f, 0f, dir * 360f * spinTurns * prog);
+            yield return null;
+        }
+
+        // 3) 착지: 쓰러진 포즈, 한 번 튕김
+        transform.rotation = Quaternion.identity;
+        EaglePose.Raise(EaglePose.Id.Groggy);
+        GameSfx.PlayAt(GameSfxId.EagleStomp, new Vector2(x, GroundY));
+        onLand?.Invoke();
+        float up = Mathf.Sqrt(2f * fallGravity * Mathf.Max(0.3f, bounceHeight * 1.4f)), by = 0f;
+        while (up > 0f || by > 0f)
+        {
+            up -= fallGravity * Time.deltaTime;
+            by = Mathf.Max(0f, by + up * Time.deltaTime);
+            transform.position = new Vector3(x, landY + by, z);
+            if (up < 0f && by <= 0f) break;
+            yield return null;
+        }
+        transform.position = new Vector3(x, landY, z);
+        tilt = 0f; tiltVel = 0f;
+        externalRotation = false;
+        curX = x; curY = landY;
     }
 
     /// <summary>그로기 시작. 그 자리(X)에서 바닥으로 떨어져 쓰러진다. 이후 Recover() 가 올 때까지 그대로 있음</summary>

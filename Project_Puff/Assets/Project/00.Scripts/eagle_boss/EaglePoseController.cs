@@ -345,6 +345,17 @@ public class EaglePoseController : MonoBehaviour
         return s != null ? s : sr.sprite;
     }
 
+    /// <summary>분신 등이 쓸 포즈 스프라이트 (측면 기준, 분노 단계 반영). 없으면 null</summary>
+    public Sprite PoseSprite(EaglePose.Id id)
+    {
+        switch (id)
+        {
+            case EaglePose.Id.Windup: return sideView ? SWindup : windup;
+            case EaglePose.Id.Dive: return sideView ? SDive : strike;
+            default: return sideView ? SIdle : idle2;
+        }
+    }
+
     private void UpdateFacing()
     {
         if (EaglePose.FacingLocked) return;

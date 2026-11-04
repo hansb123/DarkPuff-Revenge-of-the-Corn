@@ -8,7 +8,7 @@ using UnityEngine.UI;
 /// <summary>
 /// 최종 보스 연출: 가짜 보스(진화한 닭)의 포효 → 독수리 등장 → 닭이 한 방에 날아감 → 독수리가 진짜 보스로 전투 시작.
 ///   1) 포효     : 닭이 포효 (BGM 줄임, 공격 없음)
-///   2) 쿵쿵     : 번개가 칠 때마다 오른쪽에서 독수리 실루엣이 한 걸음씩 다가옴. 닭의 포효가 멈칫
+///   2) 접근     : 오른쪽에서 검은 독수리 실루엣이 점점 커지며(가까워지며) 천천히 다가옴. 발걸음마다 땅이 울리고 번개. 닭의 포효가 멈칫
 ///   3) 정체     : 독수리가 닭 바로 앞에서 실루엣을 벗고 정체를 드러냄 (번쩍)
 ///   4) 타격     : 날개를 휘둘러 닭을 침. 히트스톱 + 흰 번쩍임 + 큰 흔들림
 ///   5) 날아감   : 닭이 왼쪽 위로 포물선을 그리며 회전하고 작아지며 화면 밖으로, 깃털이 흩날림. 화면 구석에서 별이 "띵"
@@ -55,9 +55,17 @@ public class EagleIntroSequence : MonoBehaviour
     [SerializeField] private float roarTime = 2.0f;
     [SerializeField] private float roarShake = 0.1f;
 
-    [Header("2) 쿵쿵")]
-    [SerializeField] private int stompCount = 3;
-    [SerializeField] private float stompGap = 0.85f;
+    [Header("2) 접근 (검은 실루엣이 오른쪽에서 점점 다가옴)")]
+    [Tooltip("화면 오른쪽 밖에서 닭 앞까지 다가오는 시간(초)")]
+    [SerializeField] private float approachTime = 4.0f;
+    [Tooltip("발걸음 간격(초). 걸음마다 쿵 소리 + 땅 울림 (번개는 Flash Every N Steps 걸음마다)")]
+    [SerializeField] private float stepInterval = 0.6f;
+    [Tooltip("N 걸음마다 번개가 번쩍임 (1 = 매 걸음)")]
+    [SerializeField] private int flashEveryNSteps = 2;
+    [Tooltip("시작할 때의 크기 배율 (멀리 있는 느낌). 다가오며 1 로 커짐")]
+    [Range(0.3f, 1f)][SerializeField] private float approachScaleStart = 0.7f;
+    [Tooltip("다가오는 속도 곡선: 1 = 일정, 클수록 처음엔 느리고 뒤로 갈수록 빨라짐")]
+    [SerializeField] private float approachAccel = 1.4f;
     [Tooltip("독수리가 닭 앞에서 멈출 거리 (닭 위치에서 오른쪽으로)")]
     [SerializeField] private float stopDistance = 5.5f;
     [Tooltip("독수리 실루엣 색 (번개 때만 보이는 검은 그림자)")]
@@ -80,7 +88,7 @@ public class EagleIntroSequence : MonoBehaviour
     [Tooltip("총 회전 (바퀴 수, 반시계 +)")]
     [SerializeField] private float spinTurns = 3.5f;
     [Tooltip("날아가는 끝에서의 크기 배율 (멀어지는 느낌)")]
-    [Range(0.05f, 1f)] [SerializeField] private float endScale = 0.25f;
+    [Range(0.05f, 1f)][SerializeField] private float endScale = 0.25f;
     [Tooltip("날아가는 경로의 정점 높이 (화면 위쪽 밖으로 얼마나 올라가는지)")]
     [SerializeField] private float arcAboveScreen = 5f;
     [SerializeField] private Sprite[] featherSprites;     // chicken_feather 등
@@ -101,7 +109,7 @@ public class EagleIntroSequence : MonoBehaviour
     [SerializeField] private float liftTime = 1.3f;
     [Tooltip("보스 1페이즈 BGM (bgm_boss_eagle_p1)")]
     [SerializeField] private AudioClip bossBgm;
-    [Range(0f, 1f)] [SerializeField] private float bossBgmVolume = 0.7f;
+    [Range(0f, 1f)][SerializeField] private float bossBgmVolume = 0.7f;
 
     [Header("화면 효과 (Canvas UI)")]
     [Tooltip("화면 전체를 덮는 흰색 Image (처음엔 알파 0). 번개 / 타격 번쩍임용")]
@@ -126,6 +134,7 @@ public class EagleIntroSequence : MonoBehaviour
     private Vector3 chickenPos0, chickenScale0;
     private Sprite chickenSprite0;
     private Color eagleColor0 = Color.white;
+    private Vector3 eagleScale0 = Vector3.one;
     private bool cached;
     private float timeScale0 = 1f;
     private readonly List<GameObject> spawned = new List<GameObject>();
@@ -163,6 +172,7 @@ public class EagleIntroSequence : MonoBehaviour
         if (chicken != null) { chickenPos0 = chicken.position; chickenScale0 = chicken.localScale; }
         if (chickenBody != null) chickenSprite0 = chickenBody.sprite;
         if (eagleBody != null) eagleColor0 = eagleBody.color;
+        if (eagle != null) eagleScale0 = eagle.localScale;
     }
 
     private void HideProps()
@@ -202,6 +212,7 @@ public class EagleIntroSequence : MonoBehaviour
         }
         if (chickenBody != null && chickenSprite0 != null) chickenBody.sprite = chickenSprite0;
         if (eagleBody != null) eagleBody.color = eagleColor0;
+        if (eagle != null) eagle.localScale = eagleScale0;
         if (pose != null) pose.Unfreeze();
     }
 
@@ -211,6 +222,7 @@ public class EagleIntroSequence : MonoBehaviour
     {
         IsPlaying = true;
         Started?.Invoke();
+        if (chicken != null) chicken.gameObject.SetActive(true);   // 닭은 처음부터 있는 상태로 시작
         if (runner != null) runner.Stop();
         if (stageBgm != null) stageBgm.Suppress(0.5f);
         if (pose != null) { pose.RebaseHere(); pose.Freeze(chickenRoarPose); }
@@ -246,28 +258,34 @@ public class EagleIntroSequence : MonoBehaviour
             eagleBody.color = silhouetteColor;
             eagle.position = new Vector3(startX, groundY, eagle.position.z);
         }
-        for (int i = 0; i < stompCount; i++)
+        if (eagle != null)
         {
-            yield return new WaitForSecondsRealtime(stompGap);
-            float k = stompCount > 1 ? (float)i / (stompCount - 1) : 1f;
-            float fromX = eagle != null ? eagle.position.x : startX;
-            float toX = Mathf.Lerp(startX, stopX, (i + 1f) / stompCount);
-
-            GameSfx.Play(GameSfxId.EagleStomp);
-            StartCoroutine(FlashRoutine(0.45f, 0.22f));          // 번개
-            if (i == 0) SetChickenPose(chickenNervousPose);       // 포효가 멈칫
-            if (eagle != null)
+            // 점점 다가옴: 실루엣이 커지며(가까워지며) 일정한 발걸음으로 닭 앞까지
+            float nextStep = 0f;
+            int stepNo = 0;
+            float stopAt = Mathf.Max(0.5f, approachTime);
+            bool nervous = false;
+            for (float t = 0f; t < stopAt; t += Time.unscaledDeltaTime)
             {
-                for (float t = 0f; t < 0.18f; t += Time.unscaledDeltaTime)
+                float k = t / stopAt;
+                float e = Mathf.Pow(k, Mathf.Max(0.5f, approachAccel));          // 뒤로 갈수록 빨라짐
+                float hop = Mathf.Abs(Mathf.Sin(t / Mathf.Max(0.2f, stepInterval) * Mathf.PI)) * 0.14f;   // 걸을 때마다 작게 들썩
+                eagle.position = new Vector3(Mathf.Lerp(startX, stopX, e), groundY + hop, eagle.position.z);
+                eagle.localScale = eagleScale0 * Mathf.Lerp(approachScaleStart, 1f, e);
+
+                if (t >= nextStep)   // 발걸음: 가까울수록 더 크게 울림
                 {
-                    float e = t / 0.18f;
-                    float hop = Mathf.Sin(e * Mathf.PI) * 0.18f;  // 쿵 하고 내딛는 작은 튐
-                    eagle.position = new Vector3(Mathf.Lerp(fromX, toX, e), groundY + hop, eagle.position.z);
-                    yield return null;
+                    nextStep = t + stepInterval;
+                    stepNo++;
+                    GameSfx.Play(GameSfxId.EagleStomp);
+                    if (flashEveryNSteps > 0 && stepNo % flashEveryNSteps == 0) StartCoroutine(FlashRoutine(0.4f, 0.2f));
+                    StartCoroutine(Shake(0.3f, Mathf.Lerp(stompShakeStart, stompShakeEnd, k)));
                 }
-                eagle.position = new Vector3(toX, groundY, eagle.position.z);
+                if (!nervous && k > 0.35f) { nervous = true; SetChickenPose(chickenNervousPose); }   // 포효가 멈칫
+                yield return null;
             }
-            yield return Shake(0.35f, Mathf.Lerp(stompShakeStart, stompShakeEnd, k));
+            eagle.position = new Vector3(stopX, groundY, eagle.position.z);
+            eagle.localScale = eagleScale0;
         }
 
         // 3) 정체 공개
