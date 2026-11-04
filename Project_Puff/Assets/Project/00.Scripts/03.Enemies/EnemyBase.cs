@@ -178,6 +178,14 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     {
         if (isDead) return;
 
+        // 엘리트처럼 "받는 피해를 줄이거나 막는" 적은 ModifyDamage를 override (기본은 그대로)
+        amount = ModifyDamage(amount, hitFrom);
+        if (amount <= 0)
+        {
+            OnDamageBlocked(hitFrom);
+            return;
+        }
+
         hp -= amount;
 
         if (hp <= 0)
@@ -191,6 +199,12 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
         float dir = transform.position.x >= hitFrom.x ? 1f : -1f;
         OnHit(dir);
     }
+
+    /// <summary>실제로 깎을 피해량 결정. 기본은 받은 그대로. 0 이하를 돌려주면 "막힘"으로 처리(HP/경직 없음)</summary>
+    protected virtual int ModifyDamage(int amount, Vector2 hitFrom) => amount;
+
+    /// <summary>피해가 0으로 막혔을 때 (튕기는 소리/반짝임 등). 기본은 아무것도 안 함</summary>
+    protected virtual void OnDamageBlocked(Vector2 hitFrom) { }
 
     /// <summary>살아남아 피격당했을 때. 하위 클래스에서 Hit 상태로 전환(이미 Hit 중이면 갱신)</summary>
     protected abstract void OnHit(float knockbackDir);

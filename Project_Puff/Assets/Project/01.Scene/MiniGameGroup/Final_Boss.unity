@@ -7956,6 +7956,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1424669618}
   - component: {fileID: 1424669619}
+  - component: {fileID: 1424669620}
+  - component: {fileID: 1424669621}
   m_Layer: 0
   m_Name: EagleDeathSequence
   m_TagString: Untagged
@@ -7993,7 +7995,8 @@ MonoBehaviour:
   boss: {fileID: 1826159738}
   motion: {fileID: 1826159740}
   player: {fileID: 520834897}
-  floor: {fileID: 0}
+  floor: {fileID: 1424669620}
+  rescue: {fileID: 1424669621}
   lockBehaviours:
   - {fileID: 520834906}
   hitStopTime: 0.22
@@ -8004,6 +8007,10 @@ MonoBehaviour:
   clearTime: 3.2
   calmPause: 1.3
   collapseToBlackout: 3.2
+  maxFallSpeed: 3
+  fallGravityScale: 0.35
+  rescueAfter: 3
+  afterRescue: 0.3
   blackoutTime: 1.2
   blackoutHold: 0.8
   fadeOutSprites: []
@@ -8016,9 +8023,12 @@ MonoBehaviour:
   sunGlowSprite: {fileID: 0}
   beamSortingOrder: -5
   warmTint: {r: 1, g: 0.82, b: 0.55, a: 0.22}
-  featherSprites: []
+  featherSprites:
+  - {fileID: 826495861414411624, guid: 4538ef58fa8dc98438f85a1a4edcf84b, type: 3}
+  - {fileID: 21300000, guid: b90699785d0f53940ad9362ac7c99ac7, type: 3}
   featherColor: {r: 0.45, g: 0.32, b: 0.22, a: 1}
-  cameraFollowScripts: []
+  cameraFollowScripts:
+  - {fileID: 520834906}
   cameraFollowFall: 1
   stageBgm: {fileID: 0}
   calmBgm: {fileID: 0}
@@ -8028,6 +8038,57 @@ MonoBehaviour:
   Completed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1424669620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424669617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ff684e7c2c4db4cbb9778ef8fa7d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EagleFloorCollapse
+  tilemaps:
+  - {fileID: 1664189214}
+  objectPieces: []
+  radiusCells: 5
+  wholeFloor: 0
+  crackTime: 1.8
+  spreadDelay: 0.07
+  fallGravity: 26
+  crackColor: {r: 0.05, g: 0.03, b: 0.03, a: 1}
+  dustColor: {r: 0.75, g: 0.68, b: 0.58, a: 0.8}
+  pitBackdrop: 1
+  pitSprite: {fileID: -6812838210347923535, guid: e7c5c40508df11148a07c620f1635c67, type: 3}
+--- !u!114 &1424669621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424669617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834ca443cf4452c4081aa4d7fd96b532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EagleChickenRescue
+  flyFrames:
+  - {fileID: 21300000, guid: 8bdf165fd00ba9947ba3de8a4ffd7a2f, type: 3}
+  - {fileID: 21300000, guid: fb36d556428277b4485c62886a4a6672, type: 3}
+  - {fileID: 21300000, guid: c465312bff140794aa57de04b474bc46, type: 3}
+  flapFps: 8
+  chickenHeight: 2.6
+  sortingOrder: 300
+  saddleOffset: {x: 0.15, y: 0.9}
+  approachTime: 1.3
+  startMargin: 3
+  carryTime: 1.6
+  carryVelocity: {x: -4.5, y: 2.2}
+  swoopSfx: {fileID: 0}
+  catchSfx: {fileID: 0}
+  audioSrc: {fileID: 0}
 --- !u!1 &1425113244
 GameObject:
   m_ObjectHideFlags: 0
@@ -12390,7 +12451,7 @@ MonoBehaviour:
     inheritPreviousGroups: 0
     timed: 1
     duration: 75
-    difficultyAtEnd: 0
+    difficultyAtEnd: 0.75
     lowHpThreshold: 0
     lowHpDifficulty: 1
     skyGroggy: 0
@@ -12415,7 +12476,7 @@ MonoBehaviour:
       gate: 0
   - name: 
     difficulty: 0.55
-    refillHp: 1
+    refillHp: 20
     advanceAtHpRatio: 0
     inheritPreviousGroups: 0
     timed: 0
@@ -14100,7 +14161,7 @@ Transform:
   m_GameObject: {fileID: 2054215776}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.44666, y: 721.87885, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14823,6 +14884,10 @@ PrefabInstance:
     - target: {fileID: 1167198382525845779, guid: 64262ba2aa40cad4a8de4677c91b5794, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940674967784909708, guid: 64262ba2aa40cad4a8de4677c91b5794, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7681771895772977230, guid: 64262ba2aa40cad4a8de4677c91b5794, type: 3}
       propertyPath: m_LocalPosition.x

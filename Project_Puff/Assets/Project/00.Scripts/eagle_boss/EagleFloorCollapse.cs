@@ -30,6 +30,8 @@ public class EagleFloorCollapse : MonoBehaviour
     [SerializeField] private Color crackColor = new Color(0.05f, 0.03f, 0.03f, 1f);
     [SerializeField] private Color dustColor = new Color(0.75f, 0.68f, 0.58f, 0.8f);
     [SerializeField] private bool pitBackdrop = true;
+    [Tooltip("구멍 아래 배경 그림 (eagle_pit_bg_1920x2400). 비워두면 검은 사각형")]
+    [SerializeField] private Sprite pitSprite;
 
     public bool IsCollapsing { get; private set; }
 
@@ -46,6 +48,21 @@ public class EagleFloorCollapse : MonoBehaviour
                 var r = tm.GetComponent<TilemapRenderer>();
                 if (r != null && r.sortingOrder >= order) { order = r.sortingOrder; layerId = r.sortingLayerID; }
             }
+
+        // 구멍 배경/떨어지는 조각이 플레이어를 가리지 않도록, 플레이어가 땅 타일보다 뒤에 그려지는 구성이면 그 아래 순서로 맞춘다
+        int pitLayer = layerId, pitOrder = order - 1;
+        bool useChunkOverride = false; int chunkLayer = 0, chunkOrder = 0;
+        var pgo = GameObject.FindGameObjectWithTag("Player");
+        var psr = pgo != null ? pgo.GetComponentInChildren<SpriteRenderer>() : null;
+        if (psr != null)
+        {
+            int pv = SortingLayer.GetLayerValueFromID(psr.sortingLayerID), tv = SortingLayer.GetLayerValueFromID(layerId);
+            if (pv < tv || (pv == tv && psr.sortingOrder <= order + 2))
+            {
+                pitLayer = psr.sortingLayerID; pitOrder = psr.sortingOrder - 2;
+                useChunkOverride = true; chunkLayer = psr.sortingLayerID; chunkOrder = psr.sortingOrder - 1;
+            }
+        }
 
         float cell = 1f;
         if (tilemaps != null && tilemaps.Length > 0 && tilemaps[0] != null) cell = tilemaps[0].cellSize.x * Mathf.Abs(tilemaps[0].transform.lossyScale.x);
@@ -84,13 +101,27 @@ public class EagleFloorCollapse : MonoBehaviour
         if (pitBackdrop)
         {
             pit = new GameObject("PitBackdrop").AddComponent<SpriteRenderer>();
-            pit.sprite = EagleVis.White;
-            pit.sortingLayerID = layerId;
-            pit.sortingOrder = order - 1;
-            pit.color = Color.black;
-            float w = halfW * 2f + cell * 2f, h = 40f;
-            pit.transform.position = new Vector3(centerX, floorTopY - h * 0.5f, 0f);
-            pit.transform.localScale = new Vector3(w, h, 1f);
+            pit.sortingLayerID = pitLayer;
+            pit.sortingOrder = pitOrder;
+            if (pitSprite != null)
+            {
+                pit.sprite = pitSprite;
+                var cam = Camera.main;
+                float camW = cam != null ? cam.orthographicSize * 2f * cam.aspect : halfW * 2f + cell * 2f;
+                float sc = camW * 1.05f / Mathf.Max(0.01f, pitSprite.bounds.size.x);
+                float h = pitSprite.bounds.size.y * sc;
+                float cx = cam != null ? cam.transform.position.x : centerX;
+                pit.transform.position = new Vector3(cx, floorTopY - h * 0.5f, 0f);
+                pit.transform.localScale = new Vector3(sc, sc, 1f);
+            }
+            else
+            {
+                pit.sprite = EagleVis.White;
+                pit.color = Color.black;
+                float w = halfW * 2f + cell * 2f, h = 40f;
+                pit.transform.position = new Vector3(centerX, floorTopY - h * 0.5f, 0f);
+                pit.transform.localScale = new Vector3(w, h, 1f);
+            }
         }
 
         // 3) 타일 붕괴 (가운데 → 바깥)
@@ -128,7 +159,7 @@ public class EagleFloorCollapse : MonoBehaviour
                         go.transform.position = world;
                         go.transform.localScale = scale;
                         var sr = go.AddComponent<SpriteRenderer>();
-                        sr.sprite = sprite; sr.color = col; sr.sortingLayerID = sl; sr.sortingOrder = so + 2;
+                        sr.sprite = sprite; sr.color = col; sr.sortingLayerID = useChunkOverride ? chunkLayer : sl; sr.sortingOrder = useChunkOverride ? chunkOrder : so + 2;
                         fallers.Add(new Piece
                         {
                             t = go.transform,

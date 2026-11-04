@@ -1,0 +1,1937 @@
+fileFormatVersion: 2
+guid: d74fc73c686633d4ea88fd5327806329
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5507188116194664262
+    second: bg_top_storm_0
+  - first:
+      213: 1135612986229472095
+    second: bg_top_storm_1
+  - first:
+      213: 3229422193566387399
+    second: bg_top_storm_2
+  - first:
+      213: 2680129781101560900
+    second: bg_top_storm_3
+  - first:
+      213: -5409920065882102215
+    second: bg_top_storm_4
+  - first:
+      213: -639656936030713067
+    second: bg_top_storm_5
+  - first:
+      213: 815381815118043009
+    second: bg_top_storm_6
+  - first:
+      213: -4999109492993543239
+    second: bg_top_storm_7
+  - first:
+      213: -6915289244268787067
+    second: bg_top_storm_8
+  - first:
+      213: 265204605364202702
+    second: bg_top_storm_9
+  - first:
+      213: 4500522133100827173
+    second: bg_top_storm_10
+  - first:
+      213: 6419667770440832944
+    second: bg_top_storm_11
+  - first:
+      213: 740673605057684357
+    second: bg_top_storm_12
+  - first:
+      213: -7136509542069648256
+    second: bg_top_storm_13
+  - first:
+      213: 2351598505114394169
+    second: bg_top_storm_14
+  - first:
+      213: 2524909825625040121
+    second: bg_top_storm_15
+  - first:
+      213: 8915092311092637330
+    second: bg_top_storm_16
+  - first:
+      213: 2868338558516584050
+    second: bg_top_storm_17
+  - first:
+      213: 763926297330853302
+    second: bg_top_storm_18
+  - first:
+      213: -3826321031580047361
+    second: bg_top_storm_19
+  - first:
+      213: -3649797899437930106
+    second: bg_top_storm_20
+  - first:
+      213: 8488689783999934889
+    second: bg_top_storm_21
+  - first:
+      213: -5339459611491338180
+    second: bg_top_storm_22
+  - first:
+      213: -3156834775117761459
+    second: bg_top_storm_23
+  - first:
+      213: -1017157830477398228
+    second: bg_top_storm_24
+  - first:
+      213: 5025292004916756933
+    second: bg_top_storm_25
+  - first:
+      213: -4225543903241708642
+    second: bg_top_storm_26
+  - first:
+      213: 1653111467246038617
+    second: bg_top_storm_27
+  - first:
+      213: 4669757429321467905
+    second: bg_top_storm_28
+  - first:
+      213: 3571861822156969605
+    second: bg_top_storm_29
+  - first:
+      213: -2988132299148459757
+    second: bg_top_storm_30
+  - first:
+      213: 8036879150852004317
+    second: bg_top_storm_31
+  - first:
+      213: 7039186555842406955
+    second: bg_top_storm_32
+  - first:
+      213: 5254919523910215593
+    second: bg_top_storm_33
+  - first:
+      213: 2349249011793704289
+    second: bg_top_storm_34
+  - first:
+      213: -3311394900165058534
+    second: bg_top_storm_35
+  - first:
+      213: -572699624790401840
+    second: bg_top_storm_36
+  - first:
+      213: -1348904330538334595
+    second: bg_top_storm_37
+  - first:
+      213: -2416834307282424235
+    second: bg_top_storm_38
+  - first:
+      213: -6543914221808380019
+    second: bg_top_storm_39
+  - first:
+      213: 4976903150826466238
+    second: bg_top_storm_40
+  - first:
+      213: 3788666917762336818
+    second: bg_top_storm_41
+  - first:
+      213: -4996404562176964997
+    second: bg_top_storm_42
+  - first:
+      213: -8014847695219499344
+    second: bg_top_storm_43
+  - first:
+      213: 5311680720903872075
+    second: bg_top_storm_44
+  - first:
+      213: 7386999319042476624
+    second: bg_top_storm_45
+  - first:
+      213: -3938045785298931684
+    second: bg_top_storm_46
+  - first:
+      213: 6489904130985862957
+    second: bg_top_storm_47
+  - first:
+      213: 7920394976469572022
+    second: bg_top_storm_48
+  - first:
+      213: 841361114862960745
+    second: bg_top_storm_49
+  - first:
+      213: -667083826203634854
+    second: bg_top_storm_50
+  - first:
+      213: 1283965310937521055
+    second: bg_top_storm_51
+  - first:
+      213: 3808706038919105853
+    second: bg_top_storm_52
+  - first:
+      213: -9045707126902824838
+    second: bg_top_storm_53
+  - first:
+      213: -3981216013936868128
+    second: bg_top_storm_54
+  - first:
+      213: -2503529324419080578
+    second: bg_top_storm_55
+  - first:
+      213: -4213283625089613768
+    second: bg_top_storm_56
+  - first:
+      213: -3899669724959713623
+    second: bg_top_storm_57
+  - first:
+      213: 919190324331166823
+    second: bg_top_storm_58
+  - first:
+      213: -6620178762887458962
+    second: bg_top_storm_59
+  - first:
+      213: 1238564827110063515
+    second: bg_top_storm_60
+  - first:
+      213: 3630353256202127564
+    second: bg_top_storm_61
+  - first:
+      213: 497189417022742630
+    second: bg_top_storm_62
+  - first:
+      213: -3926456405495794812
+    second: bg_top_storm_63
+  - first:
+      213: -8471534713415569462
+    second: bg_top_storm_64
+  - first:
+      213: -3548629545782380396
+    second: bg_top_storm_65
+  - first:
+      213: -2263953356660406638
+    second: bg_top_storm_66
+  - first:
+      213: 1333650028831513805
+    second: bg_top_storm_67
+  - first:
+      213: -3393980765405696110
+    second: bg_top_storm_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bg_top_storm_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 1920
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0e6fe26998293b0800000000000000
+      internalID: -5507188116194664262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_1
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 184
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b37868ef182cf00800000000000000
+      internalID: 1135612986229472095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 179
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc8945ff5631dc20800000000000000
+      internalID: 3229422193566387399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 144
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444018206dbb13520800000000000000
+      internalID: 2680129781101560900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 158
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936e6d1fc5a1ce4b0800000000000000
+      internalID: -5409920065882102215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 175
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b46cdd76b7f17f0800000000000000
+      internalID: -639656936030713067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 179
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1879c66d071d05b00800000000000000
+      internalID: 815381815118043009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_7
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 144
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b336dc07689f9ab0800000000000000
+      internalID: -4999109492993543239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_8
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 152
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a87443215f700a0800000000000000
+      internalID: -6915289244268787067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_9
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 154
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecce787fe223ea300800000000000000
+      internalID: 265204605364202702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_10
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 158
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52212470901157e30800000000000000
+      internalID: 4500522133100827173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_11
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 163
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7562903dd371950800000000000000
+      internalID: 6419667770440832944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_12
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 177
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583a8f338b6674a00800000000000000
+      internalID: 740673605057684357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_13
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 156
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084c0c0e16606fc90800000000000000
+      internalID: -7136509542069648256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_14
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 160
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93edeaf816e82a020800000000000000
+      internalID: 2351598505114394169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_15
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 162
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4264edb184a0320800000000000000
+      internalID: 2524909825625040121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_16
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 165
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e2e760935c8bb70800000000000000
+      internalID: 8915092311092637330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 118
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27edfebc8b26ec720800000000000000
+      internalID: 2868338558516584050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_18
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 124
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b52cf28be20a9a00800000000000000
+      internalID: 763926297330853302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_19
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 115
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7a0146b4d26eac0800000000000000
+      internalID: -3826321031580047361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_20
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 139
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689090ed520595dc0800000000000000
+      internalID: -3649797899437930106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_21
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 137
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1bdcf2262edc570800000000000000
+      internalID: 8488689783999934889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_22
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 128
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c387384e5cd66e5b0800000000000000
+      internalID: -5339459611491338180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_23
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 118
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4471866f7ba034d0800000000000000
+      internalID: -3156834775117761459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_24
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 124
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f33e1a75452e1f0800000000000000
+      internalID: -1017157830477398228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_25
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 126
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c18cad047c6db540800000000000000
+      internalID: 5025292004916756933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_26
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 91
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9bd578353adb55c0800000000000000
+      internalID: -4225543903241708642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 86
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e2353fe1801f610800000000000000
+      internalID: 1653111467246038617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_28
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 98
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10882f9f3af4ec040800000000000000
+      internalID: 4669757429321467905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_29
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 94
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5861278176dc19130800000000000000
+      internalID: 3571861822156969605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_30
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 88
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311826771850886d0800000000000000
+      internalID: -2988132299148459757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_31
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 68
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9d649a10bb88f60800000000000000
+      internalID: 8036879150852004317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_32
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 101
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a21b890e630b160800000000000000
+      internalID: 7039186555842406955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_33
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 47
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7eee917793de840800000000000000
+      internalID: 5254919523910215593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_34
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 88
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165b6e487853a9020800000000000000
+      internalID: 2349249011793704289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_35
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 94
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a102f9002ef8b02d0800000000000000
+      internalID: -3311394900165058534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_36
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 77
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc5e5db9bc5d08f0800000000000000
+      internalID: -572699624790401840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76c64e78aab74de0800000000000000
+      internalID: -1348904330538334595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_38
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 32
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e2471a00ea57ed0800000000000000
+      internalID: -2416834307282424235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_39
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 30
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d871c78bfa85f25a0800000000000000
+      internalID: -6543914221808380019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_40
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 63
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebba8820c03811540800000000000000
+      internalID: 4976903150826466238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_41
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 36
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2388f7d0d7c049430800000000000000
+      internalID: 3788666917762336818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_42
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 33
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b760d45d58439aab0800000000000000
+      internalID: -4996404562176964997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_43
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 53
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be55955c7a85c090800000000000000
+      internalID: -8014847695219499344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_44
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 58
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e14c12971e6b940800000000000000
+      internalID: 5311680720903872075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_45
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 47
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a449f1eb4e38660800000000000000
+      internalID: 7386999319042476624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10780219304959c0800000000000000
+      internalID: -3938045785298931684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_47
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 24
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27a0c11c65c01a50800000000000000
+      internalID: 6489904130985862957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_48
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9d14d5445eaed60800000000000000
+      internalID: 7920394976469572022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_49
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960cb3be97d1dab00800000000000000
+      internalID: 841361114862960745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_50
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 12
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5359bf5bca0eb6f0800000000000000
+      internalID: -667083826203634854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_51
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bda56c5af81d110800000000000000
+      internalID: 1283965310937521055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_52
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d88a786fd3bd430800000000000000
+      internalID: 3808706038919105853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_53
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 0
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70ecb65b41377280800000000000000
+      internalID: -9045707126902824838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_54
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 0
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e44233f021efb8c0800000000000000
+      internalID: -3981216013936868128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_55
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 26
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e1a3df75da14dd0800000000000000
+      internalID: -2503529324419080578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_56
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 16
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830409cadd86785c0800000000000000
+      internalID: -4213283625089613768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_57
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a65e66eb0791e9c0800000000000000
+      internalID: -3899669724959713623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_58
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 24
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c3cbadabe91cc00800000000000000
+      internalID: 919190324331166823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_59
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f02888d766024a0800000000000000
+      internalID: -6620178762887458962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_60
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 0
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d3037e524403110800000000000000
+      internalID: 1238564827110063515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_61
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 12
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc84c155d0b916230800000000000000
+      internalID: 3630353256202127564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_62
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 0
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66069bbf32f56e600800000000000000
+      internalID: 497189417022742630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_63
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 0
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483bd54d3bc6289c0800000000000000
+      internalID: -3926456405495794812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_64
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 6
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf6970ff001f6a80800000000000000
+      internalID: -8471534713415569462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_65
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 6
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4987f24ca3cb0cec0800000000000000
+      internalID: -3548629545782380396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_66
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2960434ca62d490e0800000000000000
+      internalID: -2263953356660406638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_67
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc113f92a3128210800000000000000
+      internalID: 1333650028831513805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_top_storm_68
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 0
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f2c77d97826e0d0800000000000000
+      internalID: -3393980765405696110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bg_top_storm_0: -5507188116194664262
+      bg_top_storm_1: 1135612986229472095
+      bg_top_storm_10: 4500522133100827173
+      bg_top_storm_11: 6419667770440832944
+      bg_top_storm_12: 740673605057684357
+      bg_top_storm_13: -7136509542069648256
+      bg_top_storm_14: 2351598505114394169
+      bg_top_storm_15: 2524909825625040121
+      bg_top_storm_16: 8915092311092637330
+      bg_top_storm_17: 2868338558516584050
+      bg_top_storm_18: 763926297330853302
+      bg_top_storm_19: -3826321031580047361
+      bg_top_storm_2: 3229422193566387399
+      bg_top_storm_20: -3649797899437930106
+      bg_top_storm_21: 8488689783999934889
+      bg_top_storm_22: -5339459611491338180
+      bg_top_storm_23: -3156834775117761459
+      bg_top_storm_24: -1017157830477398228
+      bg_top_storm_25: 5025292004916756933
+      bg_top_storm_26: -4225543903241708642
+      bg_top_storm_27: 1653111467246038617
+      bg_top_storm_28: 4669757429321467905
+      bg_top_storm_29: 3571861822156969605
+      bg_top_storm_3: 2680129781101560900
+      bg_top_storm_30: -2988132299148459757
+      bg_top_storm_31: 8036879150852004317
+      bg_top_storm_32: 7039186555842406955
+      bg_top_storm_33: 5254919523910215593
+      bg_top_storm_34: 2349249011793704289
+      bg_top_storm_35: -3311394900165058534
+      bg_top_storm_36: -572699624790401840
+      bg_top_storm_37: -1348904330538334595
+      bg_top_storm_38: -2416834307282424235
+      bg_top_storm_39: -6543914221808380019
+      bg_top_storm_4: -5409920065882102215
+      bg_top_storm_40: 4976903150826466238
+      bg_top_storm_41: 3788666917762336818
+      bg_top_storm_42: -4996404562176964997
+      bg_top_storm_43: -8014847695219499344
+      bg_top_storm_44: 5311680720903872075
+      bg_top_storm_45: 7386999319042476624
+      bg_top_storm_46: -3938045785298931684
+      bg_top_storm_47: 6489904130985862957
+      bg_top_storm_48: 7920394976469572022
+      bg_top_storm_49: 841361114862960745
+      bg_top_storm_5: -639656936030713067
+      bg_top_storm_50: -667083826203634854
+      bg_top_storm_51: 1283965310937521055
+      bg_top_storm_52: 3808706038919105853
+      bg_top_storm_53: -9045707126902824838
+      bg_top_storm_54: -3981216013936868128
+      bg_top_storm_55: -2503529324419080578
+      bg_top_storm_56: -4213283625089613768
+      bg_top_storm_57: -3899669724959713623
+      bg_top_storm_58: 919190324331166823
+      bg_top_storm_59: -6620178762887458962
+      bg_top_storm_6: 815381815118043009
+      bg_top_storm_60: 1238564827110063515
+      bg_top_storm_61: 3630353256202127564
+      bg_top_storm_62: 497189417022742630
+      bg_top_storm_63: -3926456405495794812
+      bg_top_storm_64: -8471534713415569462
+      bg_top_storm_65: -3548629545782380396
+      bg_top_storm_66: -2263953356660406638
+      bg_top_storm_67: 1333650028831513805
+      bg_top_storm_68: -3393980765405696110
+      bg_top_storm_7: -4999109492993543239
+      bg_top_storm_8: -6915289244268787067
+      bg_top_storm_9: 265204605364202702
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

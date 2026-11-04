@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132a49d8045b0684b8f9aeb0b013df4d, type: 3}
+  m_Name: ThunderCloudData
+  m_EditorClassIdentifier: Assembly-CSharp::ThunderCloudData
+  <MaxHp>k__BackingField: 5
+  <MoveSpeed>k__BackingField: 2
+  <ContactDamage>k__BackingField: 1
+  <DetectRange>k__BackingField: 7
+  <DetectHeight>k__BackingField: 2
+  <WallCheckDistance>k__BackingField: 0.15
+  <LedgeCheckForward>k__BackingField: 0.15
+  <LedgeCheckDown>k__BackingField: 0.6
+  <KnockbackSpeed>k__BackingField: 4
+  <HitStunTime>k__BackingField: 0.25
+  <DeadDestroyDelay>k__BackingField: 1
+  <HoverHeight>k__BackingField: 3.5
+  <ChaseSpeedMultiplier>k__BackingField: 1.4
+  <LeashDistance>k__BackingField: 14
+  <VerticalSpeed>k__BackingField: 3
+  <AttackRange>k__BackingField: 2.5
+  <WarnTime>k__BackingField: 1
+  <StrikeTime>k__BackingField: 0.25
+  <StrikeDamage>k__BackingField: 2
+  <StrikeWidth>k__BackingField: 1.6
+  <StrikesPerCast>k__BackingField: 1
+  <StrikeSpacing>k__BackingField: 3
+  <RecoverTime>k__BackingField: 1.6
+  <RodAttractRange>k__BackingField: 6

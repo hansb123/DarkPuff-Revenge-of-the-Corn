@@ -622,7 +622,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 8312e3556a5308f4188edb1b72045b66, type: 2}
     - target: {fileID: 4890636849983613779, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
       propertyPath: stageId
-      value: ch2_01
+      value: ch2_07
       objectReference: {fileID: 0}
     - target: {fileID: 4890636849983613779, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
       propertyPath: gameMode
@@ -630,7 +630,7 @@ PrefabInstance:
       objectReference: {fileID: 1117431158}
     - target: {fileID: 4890636849983613779, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
       propertyPath: nextSceneName
-      value: Ch2_02
+      value: Ch2_08
       objectReference: {fileID: 0}
     - target: {fileID: 6640314966515426505, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
       propertyPath: m_Name

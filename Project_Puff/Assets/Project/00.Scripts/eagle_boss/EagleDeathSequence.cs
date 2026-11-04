@@ -21,6 +21,8 @@ public class EagleDeathSequence : MonoBehaviour
     [SerializeField] private EagleMotion motion;
     [SerializeField] private Transform player;
     [SerializeField] private EagleFloorCollapse floor;
+    [Tooltip("추락하는 플레이어를 구해주는 실사 닭 연출 (없으면 그냥 추락하며 암전)")]
+    [SerializeField] private EagleChickenRescue rescue;
 
     [Header("플레이어 제어 잠금 (사망 연출 중 비활성화)")]
     [SerializeField] private Behaviour[] lockBehaviours;
@@ -35,6 +37,16 @@ public class EagleDeathSequence : MonoBehaviour
     [SerializeField] private float calmPause = 1.3f;
     [Tooltip("바닥 붕괴 시작 → 암전 시작까지 (균열 시간 + 떨어지는 시간)")]
     [SerializeField] private float collapseToBlackout = 3.2f;
+    [Header("추락 속도 (바닥이 무너진 뒤 플레이어)")]
+    [Tooltip("떨어지는 최대 속도. 작을수록 천천히 떨어짐")]
+    [SerializeField] private float maxFallSpeed = 6f;
+    [Tooltip("추락 중 중력 배율 (1 = 원래대로). 작을수록 가속이 느림")]
+    [SerializeField, Range(0.05f, 1f)] private float fallGravityScale = 0.35f;
+
+    [Tooltip("닭 구출 연출을 쓸 때: 바닥 붕괴 시작 → 닭이 나타나기까지 (플레이어가 한동안 떨어지는 시간)")]
+    [SerializeField] private float rescueAfter = 4.2f;
+    [Tooltip("닭이 태운 뒤 암전 시작까지 여유")]
+    [SerializeField] private float afterRescue = 0.3f;
     [SerializeField] private float blackoutTime = 1.2f;
     [SerializeField] private float blackoutHold = 0.8f;
 
@@ -146,10 +158,21 @@ public class EagleDeathSequence : MonoBehaviour
         float px = player != null ? player.position.x : 0f;
         float floorTop = FloorTopAt(px);
         if (floor != null) StartCoroutine(floor.Collapse(px, floorTop));
+        if (player != null) StartCoroutine(SlowFall());
         if (cameraFollowFall && cam != null && player != null) StartCoroutine(FollowFall());
 
         // 균열~붕괴~추락이 진행되는 동안 기다렸다가 암전
-        yield return new WaitForSeconds(collapseToBlackout);
+        if (rescue != null && player != null)
+        {
+            yield return new WaitForSeconds(rescueAfter);
+            yield return rescue.Rescue(player);
+            yield return new WaitForSeconds(afterRescue);
+        }
+        else
+        {
+            if (rescue == null) Debug.LogWarning("[EagleDeathSequence] rescue 가 비어 있어서 닭 구출 연출이 생략됩니다.");
+            yield return new WaitForSeconds(collapseToBlackout);
+        }
         yield return FadeImageRoutine(blackImg, 0f, 1f, blackoutTime);
         yield return new WaitForSecondsRealtime(blackoutHold);
 
@@ -286,6 +309,21 @@ public class EagleDeathSequence : MonoBehaviour
                     b.sr.transform.localRotation = Quaternion.Euler(0f, 0f, b.baseAngle + Mathf.Sin(Time.time * b.swaySpeed * 0.6f + b.phase) * 1.5f);
                 }
             yield return null;
+        }
+    }
+
+    // 추락 속도를 낮춤: 중력 배율을 줄이고 최대 낙하 속도를 제한
+    private IEnumerator SlowFall()
+    {
+        var rb = player.GetComponent<Rigidbody2D>();
+        if (rb == null) yield break;
+        rb.gravityScale *= fallGravityScale;
+        while (blackImg == null || blackImg.color.a < 0.99f)
+        {
+            if (rb == null || !rb.simulated) yield break;
+            var v = rb.linearVelocity;
+            if (v.y < -maxFallSpeed) { v.y = -maxFallSpeed; rb.linearVelocity = v; }
+            yield return new WaitForFixedUpdate();
         }
     }
 
