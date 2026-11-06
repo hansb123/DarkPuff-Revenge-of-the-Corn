@@ -65,7 +65,7 @@ public static class GameSfx
 
         var voice = NextVoice();
         voice.pitch = 1f + Random.Range(-entry.pitchJitter, entry.pitchJitter);
-        voice.volume = bank.MasterVolume * entry.volume * scale;
+        voice.volume = bank.MasterVolume * entry.volume * scale * GameAudioSettings.SfxVolume;
         voice.clip = clip;
         voice.Play();
     }

@@ -2,47 +2,48 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// ÄÁº£ÀÌ¾î º§Æ®. À§¿¡ ¼­ ÀÖ´Â ÇÃ·¹ÀÌ¾î¸¦ ÇÑ ¹æÇâÀ¸·Î ¹Ğ¾î ¿Å±ä´Ù.
-/// ±¸¼º: ÀÌ ¿ÀºêÁ§Æ® = BoxCollider2D(Is Trigger ²û, Layer = Ground ¡æ ¹Ù´Ú ¿ªÇÒ) + SpriteRenderer(conveyor_1, Draw Mode = Tiled).
-/// - Speed °¡ ¾ç¼ö¸é ¿À¸¥ÂÊ, À½¼ö¸é ¿ŞÂÊ. ÇÃ·¹ÀÌ¾î ÀÔ·Â ÀÌµ¿¿¡ ´õÇØÁ®¼­ °°ÀÌ ¿òÁ÷ÀÎ´Ù.
-/// - Reversing À» ÄÑ¸é ÀÏÁ¤ ½Ã°£¸¶´Ù ¸ØÃè´Ù°¡ ¹İ´ë·Î µ·´Ù (¸ØÃß´Â µ¿¾ÈÀÌ ¿¹°í).
-/// - ÀÌµ¿Àº Rigidbody À§Ä¡¸¦ Á÷Á¢ ¿Å±â¹Ç·Î ÇÃ·¹ÀÌ¾î ½ºÅ©¸³Æ®¸¦ °íÄ¥ ÇÊ¿ä°¡ ¾ø´Ù. º®¿¡ ¸·È÷¸é °Å±â¼­ ¸ØÃá´Ù.
-/// ½ºÇÁ¶óÀÌÆ®´Â conveyor_1~4 (¿À¸¥ÂÊÀ¸·Î °¥ ¶§ 1¡æ2¡æ3¡æ4). ³¡ ¸¶°³ conveyor_cap_L/R Àº ¼±ÅÃ.
+/// ì»¨ë² ì´ì–´ ë²¨íŠ¸. ìœ„ì— ì„œ ìˆëŠ” í”Œë ˆì´ì–´ë¥¼ í•œ ë°©í–¥ìœ¼ë¡œ ë°€ì–´ ì˜®ê¸´ë‹¤.
+/// êµ¬ì„±: ì´ ì˜¤ë¸Œì íŠ¸ = BoxCollider2D(Is Trigger ë”, Layer = Ground â†’ ë°”ë‹¥ ì—­í• ) + SpriteRenderer(conveyor_1, Draw Mode = Tiled).
+/// - Speed ê°€ ì–‘ìˆ˜ë©´ ì˜¤ë¥¸ìª½, ìŒìˆ˜ë©´ ì™¼ìª½. í”Œë ˆì´ì–´ ì…ë ¥ ì´ë™ì— ë”í•´ì ¸ì„œ ê°™ì´ ì›€ì§ì¸ë‹¤.
+/// - Reversing ì„ ì¼œë©´ ì¼ì • ì‹œê°„ë§ˆë‹¤ ë©ˆì·„ë‹¤ê°€ ë°˜ëŒ€ë¡œ ëˆë‹¤ (ë©ˆì¶”ëŠ” ë™ì•ˆì´ ì˜ˆê³ ).
+/// - ì´ë™ì€ Rigidbody ìœ„ì¹˜ë¥¼ ì§ì ‘ ì˜®ê¸°ë¯€ë¡œ í”Œë ˆì´ì–´ ìŠ¤í¬ë¦½íŠ¸ë¥¼ ê³ ì¹  í•„ìš”ê°€ ì—†ë‹¤. ë²½ì— ë§‰íˆë©´ ê±°ê¸°ì„œ ë©ˆì¶˜ë‹¤.
+/// ìŠ¤í”„ë¼ì´íŠ¸ëŠ” conveyor_1~4 (ì˜¤ë¥¸ìª½ìœ¼ë¡œ ê°ˆ ë•Œ 1â†’2â†’3â†’4). ë ë§ˆê°œ conveyor_cap_L/R ì€ ì„ íƒ.
 /// </summary>
 [RequireComponent(typeof(BoxCollider2D))]
 public class ConveyorBelt : MonoBehaviour
 {
-    [Header("Å©±â (À¯´Ö)")]
-    [Tooltip("°¡·Î Ä­ ¼ö. Äİ¶óÀÌ´õ¿Í ½ºÇÁ¶óÀÌÆ® Å©±â°¡ ÀÚµ¿À¸·Î ¸ÂÃçÁø´Ù")]
+    [Header("í¬ê¸° (ìœ ë‹›)")]
+    [Tooltip("ê°€ë¡œ ì¹¸ ìˆ˜ (ìŠ¤í”„ë¼ì´íŠ¸ í•œ ì¥ = 1ì¹¸). ì½œë¼ì´ë”ì™€ ìŠ¤í”„ë¼ì´íŠ¸ í¬ê¸°ê°€ ìë™ìœ¼ë¡œ ë§ì¶°ì§„ë‹¤")]
     [SerializeField] private float width = 4f;
-    [Tooltip("½ºÇÁ¶óÀÌÆ® À­¸é±îÁöÀÇ ¿©¹é (conveyor ±×¸²Àº 8px / 64 = 0.125)")]
+    [Tooltip("ìŠ¤í”„ë¼ì´íŠ¸ ìœ—ë©´ê¹Œì§€ì˜ ì—¬ë°± (conveyor ê·¸ë¦¼ì€ 8px / 64 = 0.125)")]
     [SerializeField] private float topInset = 0.125f;
-    [Tooltip("Äİ¶óÀÌ´õ ³ôÀÌ (±×¸² À­¸éºÎÅÍ ¾Æ·¡ ÇÏ¿ìÂ¡ ³¡±îÁö)")]
+    [Tooltip("ì½œë¼ì´ë” ë†’ì´ (ê·¸ë¦¼ ìœ—ë©´ë¶€í„° ì•„ë˜ í•˜ìš°ì§• ëê¹Œì§€)")]
     [SerializeField] private float colliderHeight = 0.5625f;
 
-    [Header("¿òÁ÷ÀÓ")]
-    [Tooltip("ÃÊ´ç ÀÌµ¿ °Å¸®. +¿À¸¥ÂÊ / -¿ŞÂÊ")]
+    [Header("ì›€ì§ì„")]
+    [Tooltip("ì´ˆë‹¹ ì´ë™ ê±°ë¦¬. +ì˜¤ë¥¸ìª½ / -ì™¼ìª½")]
     [SerializeField] private float speed = 3f;
-    [Tooltip("ÄÑ¸é ÁÖ±âÀûÀ¸·Î ¸ØÃè´Ù°¡ ¹æÇâÀÌ ¹Ù²ï´Ù")]
+    [Tooltip("ì¼œë©´ ì£¼ê¸°ì ìœ¼ë¡œ ë©ˆì·„ë‹¤ê°€ ë°©í–¥ì´ ë°”ë€ë‹¤")]
     [SerializeField] private bool reversing;
     [SerializeField] private float reverseInterval = 3f;
-    [Tooltip("¹æÇâÀ» ¹Ù²Ù±â Àü ¸ØÃß´Â ½Ã°£ (ÃÊ)")]
+    [Tooltip("ë°©í–¥ì„ ë°”ê¾¸ê¸° ì „ ë©ˆì¶”ëŠ” ì‹œê°„ (ì´ˆ)")]
     [SerializeField] private float pauseTime = 0.6f;
-    [Tooltip("ÇÃ·¹ÀÌ¾î°¡ º®¿¡ ¹Ğ¸®´ÂÁö °Ë»çÇÒ ·¹ÀÌ¾î (Ground)")]
+    [Tooltip("í”Œë ˆì´ì–´ê°€ ë²½ì— ë°€ë¦¬ëŠ”ì§€ ê²€ì‚¬í•  ë ˆì´ì–´ (Ground)")]
     [SerializeField] private LayerMask obstacleLayer;
 
-    [Header("Ç¥½Ã")]
+    [Header("í‘œì‹œ")]
     [SerializeField] private SpriteRenderer beltRenderer;
     [Tooltip("conveyor_1 ~ 4")]
     [SerializeField] private Sprite[] frames;
     [SerializeField] private SpriteRenderer capLeft;
     [SerializeField] private SpriteRenderer capRight;
-    [Tooltip("¿òÁ÷ÀÌ´Â µ¿¾È ¹İº¹ Àç»ıÇÒ ¼Ò¸® (¼±ÅÃ)")]
+    [Tooltip("ì›€ì§ì´ëŠ” ë™ì•ˆ ë°˜ë³µ ì¬ìƒí•  ì†Œë¦¬ (ì„ íƒ)")]
     [SerializeField] private AudioSource loopSound;
     [SerializeField] private float loopVolume = 0.35f;
 
-    private const float FrameStep = 0.0625f;   // ÇÁ·¹ÀÓ ÇÏ³ª°¡ ±×¸²À» ¹Ğ¾î³»´Â °Å¸® (4px / 64)
+    private const float FrameStepTiles = 0.0625f;   // í”„ë ˆì„ í•˜ë‚˜ê°€ ê·¸ë¦¼ì„ ë°€ì–´ë‚´ëŠ” ê±°ë¦¬ (4px / 64 = í•œ ì¹¸ì˜ 1/16)
     private BoxCollider2D box;
+    private float cell = 1f;   // ìŠ¤í”„ë¼ì´íŠ¸ í•œ ì¹¸ì˜ ì‹¤ì œ í¬ê¸° (Pixels Per Unit ì— ë”°ë¼ ë‹¬ë¼ì§)
     private float animPos;
     private float phaseTimer;
     private int dirSign = 1;
@@ -67,7 +68,7 @@ public class ConveyorBelt : MonoBehaviour
         Sync();
 
         blockRight = new ContactFilter2D { useLayerMask = true, layerMask = obstacleLayer, useTriggers = false };
-        blockRight.SetNormalAngle(135f, 225f);   // ¿À¸¥ÂÊÀ¸·Î °¥ ¶§ ¸·´Â °Ç ¿ŞÂÊÀ» ÇâÇÑ ¸é
+        blockRight.SetNormalAngle(135f, 225f);   // ì˜¤ë¥¸ìª½ìœ¼ë¡œ ê°ˆ ë•Œ ë§‰ëŠ” ê±´ ì™¼ìª½ì„ í–¥í•œ ë©´
         blockLeft = new ContactFilter2D { useLayerMask = true, layerMask = obstacleLayer, useTriggers = false };
         blockLeft.SetNormalAngle(-45f, 45f);
 
@@ -77,7 +78,7 @@ public class ConveyorBelt : MonoBehaviour
     private void OnValidate()
     {
 #if UNITY_EDITOR
-        // OnValidate ¾È¿¡¼­ SpriteRenderer ¸¦ °Çµå¸®¸é SendMessage °æ°í°¡ ³ª¹Ç·Î ÇÑ ¹ÚÀÚ ´ÊÃç¼­ Àû¿ë
+        // OnValidate ì•ˆì—ì„œ SpriteRenderer ë¥¼ ê±´ë“œë¦¬ë©´ SendMessage ê²½ê³ ê°€ ë‚˜ë¯€ë¡œ í•œ ë°•ì ëŠ¦ì¶°ì„œ ì ìš©
         UnityEditor.EditorApplication.delayCall += () =>
         {
             if (this == null) return;
@@ -90,16 +91,21 @@ public class ConveyorBelt : MonoBehaviour
     private void Sync()
     {
         if (box == null) return;
-        box.size = new Vector2(width, colliderHeight);
-        box.offset = new Vector2(0f, 0.5f - topInset - colliderHeight * 0.5f);
+        // í•œ ì¹¸ í¬ê¸°ëŠ” ìŠ¤í”„ë¼ì´íŠ¸ì—ì„œ ì½ëŠ”ë‹¤ â†’ Pixels Per Unit ì´ 64ë“  100ì´ë“  Width ëŠ” í•­ìƒ 'ì¹¸ ìˆ˜'
+        Sprite s = (frames != null && frames.Length > 0 && frames[0] != null) ? frames[0]
+                 : (beltRenderer != null ? beltRenderer.sprite : null);
+        cell = s != null && s.bounds.size.x > 0.01f ? s.bounds.size.x : 1f;
+
+        box.size = new Vector2(width * cell, colliderHeight * cell);
+        box.offset = new Vector2(0f, (0.5f - topInset - colliderHeight * 0.5f) * cell);
         if (beltRenderer != null)
         {
             beltRenderer.drawMode = SpriteDrawMode.Tiled;
             beltRenderer.tileMode = SpriteTileMode.Continuous;
-            beltRenderer.size = new Vector2(width, 1f);
+            beltRenderer.size = new Vector2(width * cell, cell);
         }
-        if (capLeft != null) capLeft.transform.localPosition = new Vector3(-width * 0.5f + 0.5f, 0f, 0f);
-        if (capRight != null) capRight.transform.localPosition = new Vector3(width * 0.5f - 0.5f, 0f, 0f);
+        if (capLeft != null) capLeft.transform.localPosition = new Vector3((-width * 0.5f + 0.5f) * cell, 0f, 0f);
+        if (capRight != null) capRight.transform.localPosition = new Vector3((width * 0.5f - 0.5f) * cell, 0f, 0f);
     }
 
     private void FixedUpdate()
@@ -107,8 +113,8 @@ public class ConveyorBelt : MonoBehaviour
         UpdateSpeed(Time.fixedDeltaTime);
         if (Mathf.Abs(currentSpeed) < 0.001f) return;
 
-        Vector2 center = (Vector2)transform.position + new Vector2(0f, 0.5f - topInset);
-        var size = new Vector2(width * transform.lossyScale.x - 0.1f, 0.14f);
+        Vector2 center = (Vector2)transform.position + new Vector2(0f, (0.5f - topInset) * cell);
+        var size = new Vector2(width * cell * transform.lossyScale.x - 0.1f, 0.14f);
         int count = Physics2D.OverlapBoxNonAlloc(center + Vector2.up * 0.07f, size, 0f, overlaps);
         Rigidbody2D carried = null;
         for (int i = 0; i < count; i++)
@@ -148,7 +154,7 @@ public class ConveyorBelt : MonoBehaviour
 
     private void Update()
     {
-        animPos += currentSpeed * Time.deltaTime / FrameStep;
+        animPos += currentSpeed * Time.deltaTime / (FrameStepTiles * cell);
         if (beltRenderer != null && frames != null && frames.Length > 0)
         {
             int f = Mathf.FloorToInt(animPos) % frames.Length;
@@ -158,7 +164,7 @@ public class ConveyorBelt : MonoBehaviour
         if (loopSound != null)
         {
             bool running = Mathf.Abs(currentSpeed) > 0.01f;
-            loopSound.volume = Mathf.MoveTowards(loopSound.volume, running ? loopVolume : 0f, Time.deltaTime * 2f);
+            loopSound.volume = Mathf.MoveTowards(loopSound.volume, running ? loopVolume * GameAudioSettings.SfxVolume : 0f, Time.deltaTime * 2f);
             if (running && !loopSound.isPlaying) loopSound.Play();
             else if (!running && loopSound.isPlaying && loopSound.volume <= 0.001f) loopSound.Stop();
         }
@@ -167,7 +173,7 @@ public class ConveyorBelt : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = new Color(1f, 0.6f, 0.1f, 0.9f);
-        Vector3 c = transform.position + new Vector3(0f, 0.5f - topInset + 0.3f, 0f);
+        Vector3 c = transform.position + new Vector3(0f, (0.5f - topInset + 0.3f) * cell, 0f);
         float dir = Application.isPlaying ? Mathf.Sign(currentSpeed == 0f ? 1f : currentSpeed) : Mathf.Sign(speed == 0f ? 1f : speed);
         Gizmos.DrawLine(c - Vector3.right * width * 0.4f * dir, c + Vector3.right * width * 0.4f * dir);
         Gizmos.DrawLine(c + Vector3.right * width * 0.4f * dir, c + new Vector3(width * 0.4f * dir - 0.25f * dir, 0.2f, 0f));

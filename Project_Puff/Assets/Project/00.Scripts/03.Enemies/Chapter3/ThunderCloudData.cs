@@ -28,6 +28,10 @@ public class ThunderCloudData : EnemyData
     public int StrikesPerCast { get; private set; } = 1;
     [field: SerializeField, Tooltip("번개가 여러 개일 때 간격")]
     public float StrikeSpacing { get; private set; } = 3f;
+    [field: SerializeField, Tooltip("공격 후 빈틈 동안 플레이어 머리 위 이 높이까지 내려옴. 플레이어 근접 공격이 닿는 높이(점프 포함)로 맞출 것")]
+    public float RecoverHeight { get; private set; } = 1.2f;
+    [field: SerializeField, Tooltip("빈틈 동안 내려오는 속도")]
+    public float RecoverDescendSpeed { get; private set; } = 4f;
     [field: SerializeField, Tooltip("공격 후 쉬는 시간 (구름 본체를 때릴 기회)")]
     public float RecoverTime { get; private set; } = 1.6f;
 

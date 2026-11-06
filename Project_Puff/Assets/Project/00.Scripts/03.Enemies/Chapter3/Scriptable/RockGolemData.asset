@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81a8a74e674d7d4b96bf5641eae0369, type: 3}
+  m_Name: RockGolemData
+  m_EditorClassIdentifier: Assembly-CSharp::RockGolemData
+  <MaxHp>k__BackingField: 3
+  <MoveSpeed>k__BackingField: 2
+  <ContactDamage>k__BackingField: 1
+  <DetectRange>k__BackingField: 7
+  <DetectHeight>k__BackingField: 2
+  <WallCheckDistance>k__BackingField: 0.15
+  <LedgeCheckForward>k__BackingField: 0.15
+  <LedgeCheckDown>k__BackingField: 0.6
+  <KnockbackSpeed>k__BackingField: 4
+  <HitStunTime>k__BackingField: 0.25
+  <DeadDestroyDelay>k__BackingField: 1
+  <FrontArmor>k__BackingField: 1
+  <ArmorBreakDamage>k__BackingField: 3
+  <BackDamageMultiplier>k__BackingField: 3
+  <ArmorDownWhileRecover>k__BackingField: 1
+  <ChaseSpeedMultiplier>k__BackingField: 1.2
+  <AttackRange>k__BackingField: 2.4
+  <WindupTime>k__BackingField: 0.9
+  <SlamHoldTime>k__BackingField: 0.25
+  <RecoverTime>k__BackingField: 1.3
+  <SlamDamage>k__BackingField: 2
+  <SlamHitBoxSize>k__BackingField: {x: 2.2, y: 1.6}
+  <SlamHitBoxForward>k__BackingField: 1.4
+  <ShockwaveBothSides>k__BackingField: 1
+  <ShockwaveDamage>k__BackingField: 1
+  <ShockwaveSpeed>k__BackingField: 7
+  <ShockwaveLife>k__BackingField: 1.2

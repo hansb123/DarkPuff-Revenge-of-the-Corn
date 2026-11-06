@@ -1,45 +1,45 @@
 using UnityEngine;
 
 /// <summary>
-/// »ó½Â ±â·ù. Æ®¸®°Å ¿µ¿ª ¾È¿¡ µé¾î¿Â ÇÃ·¹ÀÌ¾î¸¦ À§·Î ¶ç¿î´Ù.
-/// - ¿µ¿ª À§ÂÊ¿¡ °¡±î¿öÁú¼ö·Ï ÈûÀÌ ¾àÇØÁ®¼­, ²À´ë±â ±ÙÃ³¿¡¼­ µÕ½Ç ¶° ÀÖ°Ô µÈ´Ù (Hover Fade Height).
-/// - 'È°°ø ÁßÀÏ ¶§¸¸' ¿É¼ÇÀ» ÄÑ¸é È°°ø ¹öÆ°À» ´©¸£°í ÀÖÀ» ¶§¸¸ ¶°¿À¸¥´Ù (È°°ø Æ©Åä¸®¾ó ±¸°£¿ë).
-/// ±¸¼º: ÀÌ ½ºÅ©¸³Æ®°¡ ºÙÀº ¿ÀºêÁ§Æ® = BoxCollider2D(Is Trigger) + ±â·ù SpriteRenderer(Draw Mode = Tiled).
-///       ÅëÇ³±¸ ±×¸²Àº ÀÚ½Ä ¿ÀºêÁ§Æ®(¼±ÅÃ)·Î µÎ°í Vent Renderer ¿¡ ¿¬°á.
-/// ¿ÀºêÁ§Æ®ÀÇ Áß½ÉÀÌ ±â·ù ¿µ¿ªÀÇ Áß½ÉÀÌ´Ù. ÅëÇ³±¸ ¹Ù·Î À§¿¡ ¿µ¿ªÀÇ ¾Æ·¡ÂÊÀÌ ¿Àµµ·Ï ³õ´Â´Ù.
+/// ìƒìŠ¹ ê¸°ë¥˜. íŠ¸ë¦¬ê±° ì˜ì—­ ì•ˆì— ë“¤ì–´ì˜¨ í”Œë ˆì´ì–´ë¥¼ ìœ„ë¡œ ë„ìš´ë‹¤.
+/// - ì˜ì—­ ìœ„ìª½ì— ê°€ê¹Œì›Œì§ˆìˆ˜ë¡ í˜ì´ ì•½í•´ì ¸ì„œ, ê¼­ëŒ€ê¸° ê·¼ì²˜ì—ì„œ ë‘¥ì‹¤ ë–  ìˆê²Œ ëœë‹¤ (Hover Fade Height).
+/// - 'í™œê³µ ì¤‘ì¼ ë•Œë§Œ' ì˜µì…˜ì„ ì¼œë©´ í™œê³µ ë²„íŠ¼ì„ ëˆ„ë¥´ê³  ìˆì„ ë•Œë§Œ ë– ì˜¤ë¥¸ë‹¤ (í™œê³µ íŠœí† ë¦¬ì–¼ êµ¬ê°„ìš©).
+/// êµ¬ì„±: ì´ ìŠ¤í¬ë¦½íŠ¸ê°€ ë¶™ì€ ì˜¤ë¸Œì íŠ¸ = BoxCollider2D(Is Trigger) + ê¸°ë¥˜ SpriteRenderer(Draw Mode = Tiled).
+///       í†µí’êµ¬ ê·¸ë¦¼ì€ ìì‹ ì˜¤ë¸Œì íŠ¸(ì„ íƒ)ë¡œ ë‘ê³  Vent Renderer ì— ì—°ê²°.
+/// ì˜¤ë¸Œì íŠ¸ì˜ ì¤‘ì‹¬ì´ ê¸°ë¥˜ ì˜ì—­ì˜ ì¤‘ì‹¬ì´ë‹¤. í†µí’êµ¬ ë°”ë¡œ ìœ„ì— ì˜ì—­ì˜ ì•„ë˜ìª½ì´ ì˜¤ë„ë¡ ë†“ëŠ”ë‹¤.
 /// </summary>
 [RequireComponent(typeof(BoxCollider2D))]
 public class UpdraftZone : MonoBehaviour
 {
-    [Header("¿µ¿ª (À¯´Ö)")]
-    [Tooltip("°¡·Î x ¼¼·Î. Äİ¶óÀÌ´õ¿Í ±â·ù ½ºÇÁ¶óÀÌÆ® Å©±â°¡ ÀÌ °ªÀ¸·Î ÀÚµ¿ ¸ÂÃçÁø´Ù")]
+    [Header("ì˜ì—­ (ìœ ë‹›)")]
+    [Tooltip("ê°€ë¡œ x ì„¸ë¡œ. ì½œë¼ì´ë”ì™€ ê¸°ë¥˜ ìŠ¤í”„ë¼ì´íŠ¸ í¬ê¸°ê°€ ì´ ê°’ìœ¼ë¡œ ìë™ ë§ì¶°ì§„ë‹¤")]
     [SerializeField] private Vector2 size = new Vector2(1f, 6f);
 
-    [Header("Èû")]
-    [Tooltip("ÃÖ´ë »ó½Â ¼Óµµ")]
+    [Header("í˜")]
+    [Tooltip("ìµœëŒ€ ìƒìŠ¹ ì†ë„")]
     [SerializeField] private float liftSpeed = 6f;
-    [Tooltip("ÃÊ´ç °¡¼Ó·®. Áß·Âº¸´Ù Ä¿¾ß ¶°¿À¸¥´Ù (±âº» Áß·ÂÀÌ¸é 40~50)")]
+    [Tooltip("ì´ˆë‹¹ ê°€ì†ëŸ‰. ì¤‘ë ¥ë³´ë‹¤ ì»¤ì•¼ ë– ì˜¤ë¥¸ë‹¤ (ê¸°ë³¸ ì¤‘ë ¥ì´ë©´ 40~50)")]
     [SerializeField] private float liftAcceleration = 45f;
-    [Tooltip("¿µ¿ª À§ÂÊ¿¡¼­ ÀÌ ³ôÀÌ ¾ÈÀ¸·Î µé¾î¿À¸é ÈûÀÌ ¼­¼­È÷ ¾àÇØÁ®¼­ ±× ºÎ±Ù¿¡ ¶á´Ù. 0 = ¾àÇØÁöÁö ¾ÊÀ½(¹ÛÀ¸·Î Æ¢¾î³ª°¨)")]
+    [Tooltip("ì˜ì—­ ìœ„ìª½ì—ì„œ ì´ ë†’ì´ ì•ˆìœ¼ë¡œ ë“¤ì–´ì˜¤ë©´ í˜ì´ ì„œì„œíˆ ì•½í•´ì ¸ì„œ ê·¸ ë¶€ê·¼ì— ëœ¬ë‹¤. 0 = ì•½í•´ì§€ì§€ ì•ŠìŒ(ë°–ìœ¼ë¡œ íŠ€ì–´ë‚˜ê°)")]
     [SerializeField] private float hoverFadeHeight = 1.5f;
-    [Tooltip("ÄÑ¸é È°°ø Áß(Á¡ÇÁ ¹öÆ°À» ´©¸£°í ÀÖÀ» ¶§)¿¡¸¸ ¶°¿À¸¥´Ù")]
+    [Tooltip("ì¼œë©´ í™œê³µ ì¤‘(ì í”„ ë²„íŠ¼ì„ ëˆ„ë¥´ê³  ìˆì„ ë•Œ)ì—ë§Œ ë– ì˜¤ë¥¸ë‹¤")]
     [SerializeField] private bool onlyWhileGliding = false;
 
-    [Header("±â·ù Ç¥½Ã")]
-    [Tooltip("Draw Mode = Tiled ÀÎ SpriteRenderer. º¸Åë ÀÌ ¿ÀºêÁ§Æ®ÀÇ °Í")]
+    [Header("ê¸°ë¥˜ í‘œì‹œ")]
+    [Tooltip("Draw Mode = Tiled ì¸ SpriteRenderer. ë³´í†µ ì´ ì˜¤ë¸Œì íŠ¸ì˜ ê²ƒ")]
     [SerializeField] private SpriteRenderer streamRenderer;
     [Tooltip("updraft_1 ~ 4")]
     [SerializeField] private Sprite[] streamFrames;
     [SerializeField] private float streamFps = 10f;
 
-    [Header("ÅëÇ³±¸ Ç¥½Ã (¼±ÅÃ)")]
+    [Header("í†µí’êµ¬ í‘œì‹œ (ì„ íƒ)")]
     [SerializeField] private SpriteRenderer ventRenderer;
     [Tooltip("vent_1 ~ 4")]
     [SerializeField] private Sprite[] ventFrames;
     [SerializeField] private float ventFps = 12f;
 
-    [Header("¹Ù¶÷ ¼Ò¸® (¼±ÅÃ)")]
-    [Tooltip("Loop °¡ ÄÑÁø AudioSource. ¾È¿¡ ÀÖ´Â µ¿¾È¸¸ µé¸°´Ù")]
+    [Header("ë°”ëŒ ì†Œë¦¬ (ì„ íƒ)")]
+    [Tooltip("Loop ê°€ ì¼œì§„ AudioSource. ì•ˆì— ìˆëŠ” ë™ì•ˆë§Œ ë“¤ë¦°ë‹¤")]
     [SerializeField] private AudioSource windLoop;
     [SerializeField] private float windVolume = 0.5f;
 
@@ -66,7 +66,7 @@ public class UpdraftZone : MonoBehaviour
     private void OnValidate()
     {
 #if UNITY_EDITOR
-        // OnValidate ¾È¿¡¼­ SpriteRenderer ¸¦ °Çµå¸®¸é SendMessage °æ°í°¡ ³ª¹Ç·Î ÇÑ ¹ÚÀÚ ´ÊÃç¼­ Àû¿ë
+        // OnValidate ì•ˆì—ì„œ SpriteRenderer ë¥¼ ê±´ë“œë¦¬ë©´ SendMessage ê²½ê³ ê°€ ë‚˜ë¯€ë¡œ í•œ ë°•ì ëŠ¦ì¶°ì„œ ì ìš©
         UnityEditor.EditorApplication.delayCall += () =>
         {
             if (this == null) return;
@@ -96,7 +96,7 @@ public class UpdraftZone : MonoBehaviour
         var player = rb.GetComponent<PlayerController>();
         if (player == null || player.IsDead) return;
 
-        // ÇÃ·¹ÀÌ¾î Äİ¶óÀÌ´õ°¡ ¿©·¯ °³¿©µµ ¹°¸® ÇÑ ½ºÅÜ¿¡ ÇÑ ¹ø¸¸ Àû¿ë
+        // í”Œë ˆì´ì–´ ì½œë¼ì´ë”ê°€ ì—¬ëŸ¬ ê°œì—¬ë„ ë¬¼ë¦¬ í•œ ìŠ¤í…ì— í•œ ë²ˆë§Œ ì ìš©
         int step = Mathf.RoundToInt(Time.fixedTime / Time.fixedDeltaTime);
         if (step == lastStep) return;
         lastStep = step;
@@ -131,7 +131,7 @@ public class UpdraftZone : MonoBehaviour
         if (windLoop != null)
         {
             bool inside = Time.time - lastLiftTime < 0.15f;
-            windLoop.volume = Mathf.MoveTowards(windLoop.volume, inside ? windVolume : 0f, Time.deltaTime * 3f);
+            windLoop.volume = Mathf.MoveTowards(windLoop.volume, inside ? windVolume * GameAudioSettings.SfxVolume : 0f, Time.deltaTime * 3f);
             if (inside && !windLoop.isPlaying) windLoop.Play();
             else if (!inside && windLoop.isPlaying && windLoop.volume <= 0.001f) windLoop.Stop();
         }

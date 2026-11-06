@@ -13,8 +13,8 @@ public class StageBgm : MonoBehaviour
     [Header("곡")]
     [SerializeField] private AudioClip normalClip;
     [SerializeField] private AudioClip miniGameClip;
-    [Range(0f, 1f)][SerializeField] private float normalVolume = 0.6f;
-    [Range(0f, 1f)][SerializeField] private float miniGameVolume = 0.7f;
+    [Range(0f, 1f)] [SerializeField] private float normalVolume = 0.6f;
+    [Range(0f, 1f)] [SerializeField] private float miniGameVolume = 0.7f;
 
     [Header("전환")]
     [SerializeField] private float fadeTime = 1.2f;
@@ -27,6 +27,7 @@ public class StageBgm : MonoBehaviour
     private float savedNormalTime;
     private Coroutine fadeRoutine;
     private bool suppressed;
+    private float currentBase;          // 곡 자체의 기본 음량 (설정 음량을 곱하기 전)
 
     private void Awake()
     {
@@ -38,11 +39,20 @@ public class StageBgm : MonoBehaviour
     private void OnEnable()
     {
         if (gameMode != null) gameMode.ModeChanged += OnModeChanged;
+        GameAudioSettings.BgmChanged += OnBgmSetting;
     }
 
     private void OnDisable()
     {
         if (gameMode != null) gameMode.ModeChanged -= OnModeChanged;
+        GameAudioSettings.BgmChanged -= OnBgmSetting;
+    }
+
+    // 설정창에서 음량을 바꾸면 재생 중인 곡에 바로 반영 (크로스페이드 중이면 그쪽이 알아서 읽음)
+    private void OnBgmSetting()
+    {
+        if (fadeRoutine == null && current != null && current.isPlaying)
+            current.volume = currentBase * GameAudioSettings.BgmVolume;
     }
 
     private void Start()
@@ -77,6 +87,7 @@ public class StageBgm : MonoBehaviour
         var prev = current;
         current = next;
         currentClip = clip;
+        currentBase = volume;
 
         if (fadeRoutine != null) StopCoroutine(fadeRoutine);
         fadeRoutine = StartCoroutine(Crossfade(prev, next, volume, instant ? 0f : (fade < 0f ? fadeTime : fade)));
@@ -88,11 +99,11 @@ public class StageBgm : MonoBehaviour
         for (float t = 0f; t < time; t += Time.unscaledDeltaTime)
         {
             float k = t / time;
-            to.volume = Mathf.Lerp(0f, toVolume, k);
+            to.volume = Mathf.Lerp(0f, toVolume * GameAudioSettings.BgmVolume, k);
             if (from != null) from.volume = Mathf.Lerp(fromStart, 0f, k);
             yield return null;
         }
-        to.volume = toVolume;
+        to.volume = toVolume * GameAudioSettings.BgmVolume;
         if (from != null) { from.volume = 0f; from.Stop(); }
         fadeRoutine = null;
     }

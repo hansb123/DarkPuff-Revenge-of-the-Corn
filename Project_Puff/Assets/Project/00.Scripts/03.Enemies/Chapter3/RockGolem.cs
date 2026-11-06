@@ -161,7 +161,7 @@ public class RockGolem : EnemyBase
         {
             if (e.PlayerInSight())
             {
-                e.Sfx(GameSfxId.EnemyAlert);
+                e.AlertSfx();
                 e.fsm.ChangeState(e.chase);
                 return;
             }

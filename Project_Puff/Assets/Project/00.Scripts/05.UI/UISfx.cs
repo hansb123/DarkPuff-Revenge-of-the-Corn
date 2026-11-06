@@ -32,7 +32,7 @@ public static class UISfx
         // 자주 나오는 소리는 음높이를 살짝 흔들어서 기계적인 느낌을 줄임
         bool jitter = id == UISfxId.Move || id == UISfxId.Tab;
         source.pitch = jitter ? 1f + Random.Range(-bank.PitchJitter, bank.PitchJitter) : 1f;
-        source.PlayOneShot(clip, bank.Volume);
+        source.PlayOneShot(clip, bank.Volume * GameAudioSettings.SfxVolume);
     }
 
     private static bool EnsureReady()

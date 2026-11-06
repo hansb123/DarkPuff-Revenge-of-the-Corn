@@ -34,6 +34,9 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     protected int facing = 1;       // 1 = 오른쪽, -1 = 왼쪽
     protected bool isDead;
 
+    /// <summary>죽었는지 (킬 게이트 등 외부에서 확인용)</summary>
+    public bool IsDead => isDead;
+
     // 데이터 값을 짧은 이름으로 (상태 클래스에서 e.moveSpeed처럼 쓰기 위함)
     protected int maxHp => data.MaxHp;
     protected float moveSpeed => data.MoveSpeed;
@@ -93,6 +96,21 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     protected void Sfx(GameSfxId id)
     {
         GameSfx.PlayAt(id, transform.position);
+    }
+
+    /// <summary>발각 효과음. 개별 쿨다운(이 적) + 전역 쿨다운(여러 마리가 동시에 울리는 것 방지)</summary>
+    private const float AlertCooldownSelf = 4f;
+    private const float AlertCooldownGlobal = 0.8f;
+    private static float lastGlobalAlertTime = -999f;
+    private float lastSelfAlertTime = -999f;
+
+    protected void AlertSfx()
+    {
+        float now = Time.time;
+        if (now - lastSelfAlertTime < AlertCooldownSelf) return;
+        if (now - lastGlobalAlertTime < AlertCooldownGlobal) return;
+        lastSelfAlertTime = lastGlobalAlertTime = now;
+        Sfx(GameSfxId.EnemyAlert);
     }
 
     // ---------------- 이동 / 방향 ----------------

@@ -35,22 +35,32 @@ public class SceneBgm : MonoBehaviour
         source.spatialBlend = 0f;
         source.volume = 0f;
         source.Play();
+        GameAudioSettings.BgmChanged += OnBgmSetting;
         StartCoroutine(FadeIn());
     }
 
     private void OnDestroy()
     {
+        GameAudioSettings.BgmChanged -= OnBgmSetting;
         if (instance == this) instance = null;
+    }
+
+    private bool fadingIn;
+    private void OnBgmSetting()
+    {
+        if (source != null && !fadingIn) source.volume = volume * GameAudioSettings.BgmVolume;
     }
 
     private IEnumerator FadeIn()
     {
+        fadingIn = true;
         for (float t = 0f; t < fadeInTime; t += Time.unscaledDeltaTime)
         {
-            source.volume = Mathf.Lerp(0f, volume, t / fadeInTime);
+            source.volume = Mathf.Lerp(0f, volume * GameAudioSettings.BgmVolume, t / fadeInTime);
             yield return null;
         }
-        source.volume = volume;
+        fadingIn = false;
+        source.volume = volume * GameAudioSettings.BgmVolume;
     }
 
     /// <summary>스테이지에 들어갈 때 호출하면 메뉴 BGM을 멈추고 지운다 (예: 시작 버튼에서)</summary>

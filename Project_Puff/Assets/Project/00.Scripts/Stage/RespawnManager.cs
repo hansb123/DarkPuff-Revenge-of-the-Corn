@@ -36,6 +36,15 @@ public class RespawnManager : MonoBehaviour
     }
     private static bool reloadedByDeath;
 
+    [Header("목숨 (노말 모드 전용. 이지 모드는 무한 부활)")]
+    [Tooltip("노말 모드 시작 목숨. 씬(스테이지)마다 새로 채워진다")]
+    [SerializeField] private int normalLives = 5;
+    [Tooltip("미니게임에 처음 들어갈 때 이 스테이지에서 한 번 추가되는 목숨")]
+    [SerializeField] private int miniGameBonusLives = 5;
+    [Tooltip("목숨을 모두 잃었을 때 보여줄 패널 (선택). 이 시간 동안 보여준 뒤 스테이지를 처음부터 다시 불러옴")]
+    [SerializeField] private GameObject outOfLivesPanel;
+    [SerializeField] private float outOfLivesDelay = 2.0f;
+
     [Header("연출")]
     [SerializeField] private float deathDelay = 1.0f;       // 죽는 모션을 보여줄 시간
     [SerializeField] private float respawnInvincible = 1.2f;
@@ -48,6 +57,9 @@ public class RespawnManager : MonoBehaviour
     private Checkpoint currentMiniCheckpoint;   // 미니게임 전용 체크포인트
     private bool respawning;
     private bool useCheckpoints = true;
+    private int lives;
+    private int livesCapacity;          // HUD에 보여줄 칸 수 (시작 목숨 + 보너스)
+    private bool bonusGranted;
 
     /// <summary>
     /// false면 미니게임 모드: 일반 체크포인트는 무시하고 미니게임 전용 체크포인트만 사용.
@@ -59,8 +71,36 @@ public class RespawnManager : MonoBehaviour
         set
         {
             if (value && !useCheckpoints) ClearMiniGameCheckpoints();
+            // 미니게임에 처음 들어갈 때(체크포인트 사용 끔) 목숨 보너스 (스테이지당 한 번)
+            if (!value && useCheckpoints) GrantMiniGameBonus();
             useCheckpoints = value;
         }
+    }
+
+    // ---------------- 목숨 ----------------
+
+    /// <summary>노말 모드인가 (목숨이 있다). 이지 모드는 무한 부활</summary>
+    public bool HasLives => GameDifficulty.IsNormal;
+    public int Lives => lives;
+    public int LivesCapacity => livesCapacity;
+
+    /// <summary>목숨이 바뀔 때 (남은 목숨, 표시 칸 수, 늘어난 것인지)</summary>
+    public event Action<int, int, bool> LivesChanged;
+
+    /// <summary>목숨 추가 (보너스). 이 씬에서만 유효</summary>
+    public void AddLives(int amount)
+    {
+        if (!HasLives || amount <= 0) return;
+        lives += amount;
+        livesCapacity += amount;
+        LivesChanged?.Invoke(lives, livesCapacity, true);
+    }
+
+    private void GrantMiniGameBonus()
+    {
+        if (bonusGranted) return;
+        bonusGranted = true;
+        AddLives(miniGameBonusLives);
     }
 
     /// <summary>미니게임 전용 체크포인트가 초기화될 때 (체크포인트가 표시를 원래대로 돌리는 용도)</summary>
@@ -90,8 +130,17 @@ public class RespawnManager : MonoBehaviour
             return;
         }
 
+        lives = livesCapacity = normalLives;
+
         startPosition = startPoint != null ? (Vector2)startPoint.position : (Vector2)player.transform.position;
         if (fade != null) fade.alpha = 0f;
+    }
+
+    private void Start()
+    {
+        // HUD가 Awake 순서와 상관없이 처음 값을 받도록
+        if (HasLives) LivesChanged?.Invoke(lives, livesCapacity, false);
+        if (outOfLivesPanel != null) outOfLivesPanel.SetActive(false);
     }
 
     private void OnDestroy()
@@ -147,8 +196,29 @@ public class RespawnManager : MonoBehaviour
         respawning = true;
         DeathCount++;
 
+        // 노말 모드: 목숨 1개 소모
+        bool outOfLives = false;
+        if (HasLives)
+        {
+            lives = Mathf.Max(0, lives - 1);
+            LivesChanged?.Invoke(lives, livesCapacity, false);
+            outOfLives = lives <= 0;
+        }
+
         // 죽는 모션을 보여주고 암전
         yield return new WaitForSecondsRealtime(deathDelay);
+
+        if (outOfLives)
+        {
+            // 목숨을 모두 잃음 → 이 스테이지를 처음부터
+            if (outOfLivesPanel != null) outOfLivesPanel.SetActive(true);
+            yield return new WaitForSecondsRealtime(outOfLivesDelay);
+            yield return Fade(1f);
+            reloadedByDeath = true;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+            yield break;
+        }
+
         yield return Fade(1f);
 
         if (reloadSceneOnDeath && (!onlyInMiniGameMode || !UseCheckpoints))

@@ -6,14 +6,18 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-// 타이틀 씬 매니저. 시작하기 / 챕터 선택 / 종료 버튼 처리, 씬 전환(페이드), 키보드 포커스 유지, 로고·캐릭터 연출.
-
+/// <summary>
+/// 타이틀 씬 매니저. 시작하기 / 챕터 선택 / 종료 버튼 처리, 씬 전환(페이드), 키보드 포커스 유지, 로고·캐릭터 연출.
+/// 기존 TitleUI를 대체한다 (TitleUI는 지우고 이걸 씬에 하나만 두면 됨).
+/// </summary>
 public class TitleSceneManager : MonoBehaviour
 {
     [Header("버튼")]
     [SerializeField] private Button startButton;
     [SerializeField] private Button chapterSelectButton;
     [SerializeField] private Button exitButton;
+    [Tooltip("'난이도 설정' 버튼 (선택). 패널 여닫기는 DifficultySelectUi가 처리하고, 여기서는 키보드 포커스/선택음만 맡는다")]
+    [SerializeField] private Button difficultyButton;
 
     [Header("Scenes (Build Settings에 등록된 씬 이름)")]
     [Tooltip("'시작하기'로 들어갈 씬 (1챕터 1스테이지)")]
@@ -49,6 +53,7 @@ public class TitleSceneManager : MonoBehaviour
 
         Register(startButton, OnStart);
         Register(chapterSelectButton, OnChapterSelect);
+        Register(difficultyButton, () => { });
         Register(exitButton, OnExit);
 
         if (logo != null) logoBaseScale = logo.localScale;

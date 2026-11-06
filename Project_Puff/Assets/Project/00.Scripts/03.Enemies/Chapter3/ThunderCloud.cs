@@ -167,7 +167,7 @@ public class ThunderCloud : EnemyBase
         {
             if (e.PlayerInSight())
             {
-                e.Sfx(GameSfxId.EnemyAlert);
+                e.AlertSfx();
                 e.fsm.ChangeState(e.chase);
                 return;
             }
@@ -216,7 +216,7 @@ public class ThunderCloud : EnemyBase
             e.StopFly();
             e.FacePlayer();
             e.Play("Charge", true);
-            e.Sfx(GameSfxId.EnemyAlert);
+            e.AlertSfx();
             timer = e.d.WarnTime;
             e.CastStrikes();     // 이 순간 플레이어 위치가 고정되고 바닥 경고가 뜸
         }
@@ -263,7 +263,10 @@ public class ThunderCloud : EnemyBase
         public override void Tick()
         {
             // 빈틈: 느리게 높이만 맞춤 (공격할 기회)
-            e.FlyToward(e.transform.position.x, e.player != null ? e.player.position.y + e.d.HoverHeight : e.spawnY, e.moveSpeed * 0.3f);
+            // 빈틈: 때릴 수 있는 높이(RecoverHeight)까지 내려와 가만히 있음
+            float ty = e.player != null ? e.player.position.y + e.d.RecoverHeight : e.spawnY;
+            float vy = Mathf.Clamp((ty - e.transform.position.y) * 3f, -e.d.RecoverDescendSpeed, e.d.RecoverDescendSpeed);
+            e.rb.linearVelocity = new Vector2(0f, vy);
             timer -= Time.deltaTime;
             if (timer <= 0f) e.fsm.ChangeState(e.chase);
         }

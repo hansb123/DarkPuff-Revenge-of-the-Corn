@@ -86,7 +86,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 6819613912691254233}
   animator: {fileID: 7132667065836629666}
   logStateChanges: 0
-  strikePrefab: {fileID: 0}
+  strikePrefab: {fileID: 3509778206327788277, guid: 00517948485458c439bc3bcff6d387ec, type: 3}
   strikeGroundLayer:
     serializedVersion: 2
     m_Bits: 64
