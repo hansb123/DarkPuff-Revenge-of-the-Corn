@@ -98,6 +98,8 @@ public class ChickenIntroSequence : MonoBehaviour, IMiniGameIntro
         if (skipIntroAfterDeathReload && RespawnManager.ConsumeReloadedByDeath())
         {
             IsPlaying = true;
+            // 씬이 새로 로드되면 체크포인트 사용이 기본(true)으로 돌아온다 → 다시 끄지 않으면 두 번째 사망부터 그냥 부활해 버림
+            if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.BeginBossFight();
             if (stageBgm != null) stageBgm.Suppress(0f);
             Started?.Invoke();
             if (chicken != null) { chicken.gameObject.SetActive(true); chicken.position = chickenFinalPos; }
@@ -137,9 +139,8 @@ public class ChickenIntroSequence : MonoBehaviour, IMiniGameIntro
     private IEnumerator Sequence()
     {
         IsPlaying = true;
-      
-
-        if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.UseCheckpoints = false;
+        HideAll();
+        if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.BeginBossFight();
         if (stageBgm != null) stageBgm.Suppress(bgmFadeOutTime);   // 닭이 나타나면 BGM 정지
         Started?.Invoke();
 

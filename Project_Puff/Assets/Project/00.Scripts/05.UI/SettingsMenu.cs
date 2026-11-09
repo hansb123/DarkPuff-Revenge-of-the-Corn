@@ -42,14 +42,22 @@ public class SettingsMenu : MonoBehaviour
     [Header("탭")]
     [SerializeField] private Button soundTabButton;
     [SerializeField] private Button controlsTabButton;
+    [SerializeField] private Button displayTabButton;       // 화면 탭 (선택)
     [SerializeField] private GameObject soundPage;
     [SerializeField] private GameObject controlsPage;
+    [SerializeField] private GameObject displayPage;        // 화면 설정 줄들을 담은 페이지 (선택)
     [SerializeField] private Image soundTabImage;
     [SerializeField] private Image controlsTabImage;
+    [SerializeField] private Image displayTabImage;
     [SerializeField] private Sprite tabNormal_Sound;
     [SerializeField] private Sprite tabSelected_Sound;
     [SerializeField] private Sprite tabNormal_Controls;
     [SerializeField] private Sprite tabSelected_Controls;
+    [SerializeField] private Sprite tabNormal_Display;
+    [SerializeField] private Sprite tabSelected_Display;
+
+    [Tooltip("화면 탭을 열 때 처음 선택될 오브젝트 (보통 화면 모드 버튼)")]
+    [SerializeField] private GameObject displayFirstSelected;
 
     [Header("소리")]
     [SerializeField] private Slider bgmSlider;              // Min 0, Max 1
@@ -66,7 +74,7 @@ public class SettingsMenu : MonoBehaviour
 
     private bool standalone;       // GameModeController 없이 직접 시간을 멈추는 경우
     private float lastPreview;
-    private bool showingSound = true;
+    private int page;   // 0 소리, 1 조작, 2 화면
 
     private void Awake()
     {
@@ -77,8 +85,9 @@ public class SettingsMenu : MonoBehaviour
         if (closeButton != null) closeButton.onClick.AddListener(Close);
         if (resumeButton != null) resumeButton.onClick.AddListener(Close);
         if (titleButton != null) titleButton.onClick.AddListener(GoToTitle);
-        if (soundTabButton != null) soundTabButton.onClick.AddListener(() => ShowPage(true));
-        if (controlsTabButton != null) controlsTabButton.onClick.AddListener(() => ShowPage(false));
+        if (soundTabButton != null) soundTabButton.onClick.AddListener(() => ShowPage(0));
+        if (controlsTabButton != null) controlsTabButton.onClick.AddListener(() => ShowPage(1));
+        if (displayTabButton != null) displayTabButton.onClick.AddListener(() => ShowPage(2));
 
         if (bgmSlider != null) bgmSlider.onValueChanged.AddListener(OnBgm);
         if (sfxSlider != null) sfxSlider.onValueChanged.AddListener(OnSfx);
@@ -103,8 +112,12 @@ public class SettingsMenu : MonoBehaviour
         var kb = Keyboard.current;
         if (kb == null) return;
 
-        // Tab 키로 소리 ↔ 조작 전환 (좌우 방향키는 슬라이더가 쓰므로)
-        if (kb.tabKey.wasPressedThisFrame) ShowPage(!showingSound);
+        // Tab 키로 소리 → 조작 → 화면 순서로 전환 (좌우 방향키는 슬라이더가 쓰므로)
+        if (kb.tabKey.wasPressedThisFrame)
+        {
+            int count = displayPage != null ? 3 : 2;
+            ShowPage((page + 1) % count);
+        }
 
         // 단독 모드(메인 화면 등)에서는 ESC로 직접 닫는다
         if (standalone && kb.escapeKey.wasPressedThisFrame) Close();
@@ -136,6 +149,7 @@ public class SettingsMenu : MonoBehaviour
     {
         GameAudioSettings.Save();
         UISfx.Play(UISfxId.Submit);
+        EagleBoss.ClearPhaseSave();   // 보스 페이즈 저장은 타이틀로 나가면 초기화
         Time.timeScale = 1f;   // 멈춘 채로 다음 씬에 넘어가지 않게
         SceneManager.LoadScene(titleSceneName);
     }
@@ -156,7 +170,7 @@ public class SettingsMenu : MonoBehaviour
         if (sfxSlider != null) sfxSlider.SetValueWithoutNotify(GameAudioSettings.SfxVolume);
         UpdatePercent();
         RefreshControlRows();
-        ShowPage(true);
+        ShowPage(0);
         UISfx.Play(UISfxId.Pop);
     }
 
@@ -170,24 +184,28 @@ public class SettingsMenu : MonoBehaviour
 
     // ---------------- 탭 ----------------
 
-    private void ShowPage(bool sound)
+    private void ShowPage(int index)
     {
-        showingSound = sound;
-        if (soundPage != null) soundPage.SetActive(sound);
-        if (controlsPage != null) controlsPage.SetActive(!sound);
+        page = index;
+        if (soundPage != null) soundPage.SetActive(index == 0);
+        if (controlsPage != null) controlsPage.SetActive(index == 1);
+        if (displayPage != null) displayPage.SetActive(index == 2);
         if (soundTabImage != null && tabNormal_Sound != null)
-            soundTabImage.sprite = sound ? tabSelected_Sound : tabNormal_Sound;
+            soundTabImage.sprite = index == 0 ? tabSelected_Sound : tabNormal_Sound;
         if (controlsTabImage != null && tabNormal_Controls != null)
-            controlsTabImage.sprite = sound ? tabNormal_Controls : tabSelected_Controls;
+            controlsTabImage.sprite = index == 1 ? tabSelected_Controls : tabNormal_Controls;
+        if (displayTabImage != null && tabNormal_Display != null)
+            displayTabImage.sprite = index == 2 ? tabSelected_Display : tabNormal_Display;
 
         // 키보드/패드로도 조작되게 첫 항목을 선택해 둔다
         if (EventSystem.current != null)
         {
-            GameObject first = sound && bgmSlider != null ? bgmSlider.gameObject
+            GameObject first = index == 0 && bgmSlider != null ? bgmSlider.gameObject
+                             : index == 2 && displayFirstSelected != null ? displayFirstSelected
                              : resumeButton != null ? resumeButton.gameObject : null;
             EventSystem.current.SetSelectedGameObject(first);
         }
-        if (!sound) UISfx.Play(UISfxId.Tab);
+        if (index != 0) UISfx.Play(UISfxId.Tab);
     }
 
     // ---------------- 소리 ----------------

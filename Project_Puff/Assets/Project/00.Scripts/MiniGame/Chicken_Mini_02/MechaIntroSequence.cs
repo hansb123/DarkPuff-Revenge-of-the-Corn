@@ -124,7 +124,7 @@ public class MechaIntroSequence : MonoBehaviour, IMiniGameIntro
         if (skipIntroAfterDeathReload && RespawnManager.ConsumeReloadedByDeath())
         {
             IsPlaying = true;
-            if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.UseCheckpoints = false;
+            if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.BeginBossFight();
             if (stageBgm != null) stageBgm.Suppress(0f);
             Started?.Invoke();
             ShowMechaInstantly();
@@ -163,7 +163,7 @@ public class MechaIntroSequence : MonoBehaviour, IMiniGameIntro
     {
         IsPlaying = true;
         HideAll();
-        if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.UseCheckpoints = false;
+        if (useMiniGameRespawn && RespawnManager.Instance != null) RespawnManager.Instance.BeginBossFight();
         if (stageBgm != null) stageBgm.Suppress(bgmFadeOutTime);
         Started?.Invoke();
 

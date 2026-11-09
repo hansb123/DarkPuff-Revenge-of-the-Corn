@@ -3326,6 +3326,54 @@ MonoBehaviour:
   restartOnRespawn: 1
   restartDelay: 1.2
   usePooling: 1
+--- !u!1 &680065545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680065546}
+  - component: {fileID: 680065547}
+  m_Layer: 0
+  m_Name: Comic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680065546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680065545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 81.91781, y: 8.15409, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &680065547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680065545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d189b9a8daf0694cb545bab107837b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ComicTrigger
+  comic: {fileID: 11400000, guid: 7764a9dc32bebd0418acc9113eadd478, type: 2}
+  nextSceneName: Title
+  alwaysPlay: 1
+  playOnTriggerEnter: 0
 --- !u!1 &683016158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3872,6 +3920,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2088439978285226790, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
+      propertyPath: openButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2811407645986368404, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3902,7 +3954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4890636849983613779, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
       propertyPath: stageId
-      value: mg2
+      value: mg3
       objectReference: {fileID: 0}
     - target: {fileID: 4890636849983613779, guid: 439146f8e542bd344aea830bb1f749e3, type: 3}
       propertyPath: gameMode
@@ -8037,7 +8089,19 @@ MonoBehaviour:
   gameMode: {fileID: 0}
   Completed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 680065547}
+        m_TargetAssemblyTypeName: ComicTrigger, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1424669620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11886,7 +11950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5598846800032223818, guid: 85c28b4a07246b644b97a5f45f58158d, type: 3}
+  m_Sprite: {fileID: -6544387351378141636, guid: 6f27aad01d8bc594fa0149f6be41c07d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13616,8 +13680,8 @@ MonoBehaviour:
   bossBgm: {fileID: 8300000, guid: e9fc87b3dafe658449f3d506ec51a9d9, type: 3}
   bossBgmVolume: 0.7
   flash: {fileID: 2084494416}
-  playOnStart: 0
-  startDelay: 1
+  playOnStart: 1
+  startDelay: 3
   beginBossAtEnd: 1
   Started:
     m_PersistentCalls:
@@ -14966,3 +15030,4 @@ SceneRoots:
   - {fileID: 795287754}
   - {fileID: 2059762061}
   - {fileID: 2054215777}
+  - {fileID: 680065546}

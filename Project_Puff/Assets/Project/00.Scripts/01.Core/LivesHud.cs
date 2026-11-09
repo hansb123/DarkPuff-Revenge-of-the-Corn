@@ -4,27 +4,27 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// ³ë¸» ¸ğµå ¸ñ¼û HUD. ¾ÆÀÌÄÜ ÇÏ³ª + "x5" ¼ıÀÚ·Î ³²Àº ¸ñ¼ûÀ» º¸¿©ÁØ´Ù.
-/// RespawnManager.LivesChanged¸¦ ±¸µ¶ÇØ °»½ÅÇÏ°í, ÀÌÁö ¸ğµå¿¡¼­´Â ÅëÂ°·Î ¼û°ÜÁø´Ù.
-/// ¸ñ¼ûÀÌ ÁÙ¸é ¹èÁö°¡ Åå Æ¢°í, ¸¶Áö¸· 1°³°¡ ³²À¸¸é ¹èÁö°¡ ºÓ°Ô(low ½ºÇÁ¶óÀÌÆ®) ¹Ù²ï´Ù.
+/// ë…¸ë§ ëª¨ë“œ ëª©ìˆ¨ HUD. ì•„ì´ì½˜ í•˜ë‚˜ + "x5" ìˆ«ìë¡œ ë‚¨ì€ ëª©ìˆ¨ì„ ë³´ì—¬ì¤€ë‹¤.
+/// RespawnManager.LivesChangedë¥¼ êµ¬ë…í•´ ê°±ì‹ í•˜ê³ , ì´ì§€ ëª¨ë“œì—ì„œëŠ” í†µì§¸ë¡œ ìˆ¨ê²¨ì§„ë‹¤.
+/// ëª©ìˆ¨ì´ ì¤„ë©´ ë°°ì§€ê°€ í†¡ íŠ€ê³ , ë§ˆì§€ë§‰ 1ê°œê°€ ë‚¨ìœ¼ë©´ ë°°ì§€ê°€ ë¶‰ê²Œ(low ìŠ¤í”„ë¼ì´íŠ¸) ë°”ë€ë‹¤.
 /// </summary>
 public class LivesHud : MonoBehaviour
 {
-    [SerializeField] private RespawnManager respawn;     // ºñ¿öµÎ¸é ÀÚµ¿ °Ë»ö
+    [SerializeField] private RespawnManager respawn;     // ë¹„ì›Œë‘ë©´ ìë™ ê²€ìƒ‰
 
-    [Header("Ç¥½Ã")]
-    [Tooltip("¹èÁö ÀÌ¹ÌÁö (¾ÆÀÌÄÜÀÌ ±×·ÁÁø Æ²)")]
+    [Header("í‘œì‹œ")]
+    [Tooltip("ë°°ì§€ ì´ë¯¸ì§€ (ì•„ì´ì½˜ì´ ê·¸ë ¤ì§„ í‹€)")]
     [SerializeField] private Image badge;
     [SerializeField] private TMP_Text countText;
-    [Tooltip("¼ıÀÚ ¾Õ¿¡ ºÙ´Â ±ÛÀÚ. {0}ÀÌ ³²Àº ¸ñ¼û. ¿¹: x{0}")]
+    [Tooltip("ìˆ«ì ì•ì— ë¶™ëŠ” ê¸€ì. {0}ì´ ë‚¨ì€ ëª©ìˆ¨. ì˜ˆ: x{0}")]
     [SerializeField] private string format = "x{0}";
     [SerializeField] private Sprite normalSprite;        // life_badge
-    [SerializeField] private Sprite lowSprite;           // life_badge_low (¸¶Áö¸· 1°³ ³²¾ÒÀ» ¶§, ¼±ÅÃ)
+    [SerializeField] private Sprite lowSprite;           // life_badge_low (ë§ˆì§€ë§‰ 1ê°œ ë‚¨ì•˜ì„ ë•Œ, ì„ íƒ)
     [SerializeField] private Color normalColor = new Color(0.08f, 0.08f, 0.08f);
     [SerializeField] private Color lowColor = new Color(0.8f, 0.2f, 0.18f);
 
-    [Header("¿¬Ãâ")]
-    [Tooltip("º¸³Ê½º¸¦ ¹Ş¾ÒÀ» ¶§ Àá±ñ º¸¿©ÁÙ ¹è³Ê (¼±ÅÃ, '¸ñ¼û +5')")]
+    [Header("ì—°ì¶œ")]
+    [Tooltip("ë³´ë„ˆìŠ¤ë¥¼ ë°›ì•˜ì„ ë•Œ ì ê¹ ë³´ì—¬ì¤„ ë°°ë„ˆ (ì„ íƒ, 'ëª©ìˆ¨ +5')")]
     [SerializeField] private GameObject bonusBanner;
     [SerializeField] private float bannerTime = 1.5f;
     [SerializeField] private float popScale = 1.3f;
@@ -42,18 +42,27 @@ public class LivesHud : MonoBehaviour
 
         if (respawn == null || !respawn.HasLives)
         {
-            gameObject.SetActive(false);   // ÀÌÁö ¸ğµå / ¸®½ºÆù ¸Å´ÏÀú ¾øÀ½
+            gameObject.SetActive(false);   // ì´ì§€ ëª¨ë“œ / ë¦¬ìŠ¤í° ë§¤ë‹ˆì € ì—†ìŒ
             return;
         }
 
         respawn.LivesChanged += OnChanged;
+        respawn.BossFightChanged += OnBossFight;
+        OnBossFight(respawn.BossFight);
         Refresh(respawn.Lives);
         shownLives = respawn.Lives;
     }
 
     private void OnDestroy()
     {
-        if (respawn != null) respawn.LivesChanged -= OnChanged;
+        if (respawn != null) { respawn.LivesChanged -= OnChanged; respawn.BossFightChanged -= OnBossFight; }
+    }
+
+    // ë³´ìŠ¤ì „ì€ ëª©ìˆ¨ì´ ì—†ìœ¼ë¯€ë¡œ í‘œì‹œë¥¼ ìˆ¨ê¸´ë‹¤
+    private void OnBossFight(bool on)
+    {
+        if (badge != null) badge.gameObject.SetActive(!on);
+        if (countText != null && !countText.transform.IsChildOf(badge != null ? badge.transform : transform)) countText.gameObject.SetActive(!on);
     }
 
     private void OnChanged(int lives, int capacity, bool gained)

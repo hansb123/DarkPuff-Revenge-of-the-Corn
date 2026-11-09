@@ -61,10 +61,25 @@ public class PpeongPickup : MonoBehaviour
     private void Start()
     {
         basePosition = transform.position;
+        started = true;
         phase = Random.value * Mathf.PI * 2f;   // 여러 개가 똑같이 움직이지 않게
 
         // 미니게임처럼 "처음부터 다시" 시작할 때(체크포인트를 안 쓰는 모드)만 먹은 아이템이 다시 나타남
         if (RespawnManager.Instance != null) RespawnManager.Instance.RespawnApplied += OnRespawnApplied;
+    }
+
+    // 하늘 플랫폼 세트처럼 부모가 꺼졌다 켜지면 재생성 코루틴이 같이 죽는다.
+    // 쿨타임 도중에 꺼졌다면, 다시 켜질 때 아이템을 복구해서 '영원히 흐릿한 상태'로 남지 않게 한다.
+    private bool started;
+
+    private void OnDisable()
+    {
+        respawnRoutine = null;
+    }
+
+    private void OnEnable()
+    {
+        if (started && collected) Restore();
     }
 
     private void OnDestroy()

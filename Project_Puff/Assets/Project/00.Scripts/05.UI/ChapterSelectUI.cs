@@ -36,6 +36,14 @@ public class ChapterSelectUI : MonoBehaviour
     [SerializeField] private Sprite mgCleared;
     [SerializeField] private Sprite mgLocked;
 
+    [Header("보스 박스 스프라이트 (LastStageIsBoss 챕터의 마지막 칸)")]
+    [SerializeField] private Sprite bossNormal;
+    [SerializeField] private Sprite bossSelected;
+    [SerializeField] private Sprite bossCleared;
+    [SerializeField] private Sprite bossLocked;
+    [Tooltip("보스 박스 크기 배율 (원본 380x250). 칸 높이에 맞춰 조절")]
+    [SerializeField, Range(0.3f, 1.2f)] private float bossScale = 0.6f;
+
     [Header("Scenes / Debug")]
     [SerializeField] private string titleSceneName = "Title";
     [SerializeField] private bool unlockAll;   // 테스트용: 전부 열기
@@ -138,7 +146,8 @@ public class ChapterSelectUI : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             var s = GetSprite(data, i, StageVisual.Normal);
-            sizes[i] = (s != null ? s.rect.size : new Vector2(150, 110)) * stageScale;
+            float sc = data.IsBossStage(i) ? bossScale : stageScale;
+            sizes[i] = (s != null ? s.rect.size : new Vector2(150, 110)) * sc;
         }
 
         // 페이지마다 항상 같은 배치가 나오도록 시드 고정
@@ -250,6 +259,17 @@ public class ChapterSelectUI : MonoBehaviour
                 StageVisual.Cleared => mgCleared,
                 StageVisual.Locked => mgLocked,
                 _ => mgNormal
+            };
+        }
+
+        if (data.IsBossStage(index))
+        {
+            return v switch
+            {
+                StageVisual.Selected => bossSelected,
+                StageVisual.Cleared => bossCleared,
+                StageVisual.Locked => bossLocked,
+                _ => bossNormal
             };
         }
 

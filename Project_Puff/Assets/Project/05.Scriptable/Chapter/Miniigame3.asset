@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd2ab22e5dfda645b82e3fcb017e31e, type: 3}
+  m_Name: Miniigame3
+  m_EditorClassIdentifier: Assembly-CSharp::ChapterData
+  <ChapterId>k__BackingField: mg3
+  <DisplayName>k__BackingField: "\uBBF8\uB2C8\uAC8C\uC7843"
+  <IsMiniGame>k__BackingField: 1
+  <TabNormal>k__BackingField: {fileID: 0}
+  <TabSelected>k__BackingField: {fileID: 0}
+  <StageSceneNames>k__BackingField:
+  - MiniGame_03
+  <LastStageIsBoss>k__BackingField: 0
+  <StageTitles>k__BackingField: []

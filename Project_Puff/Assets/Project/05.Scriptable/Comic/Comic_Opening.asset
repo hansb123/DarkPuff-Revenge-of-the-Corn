@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e223a7ba4e6ac64c862dfc37ecc34c2, type: 3}
+  m_Name: Comic_Opening
+  m_EditorClassIdentifier: Assembly-CSharp::ComicData
+  comicId: opening
+  displayName: "\uC624\uD504\uB2DD"
+  pages:
+  - {fileID: 6747037607860911874, guid: ecf1599a7f501ef4abd85188272b1e7b, type: 3}
+  - {fileID: -5974748432377020973, guid: 01783a0cb45e018418ea4643b817834e, type: 3}
+  - {fileID: -3999025997427107193, guid: cfdad8837a2ba82488a0982c9c5bce4e, type: 3}
+  - {fileID: 3392056526578519921, guid: 89687aad62cc4b24bb7e3bc9f9f441ae, type: 3}
+  pageSfx: []
+  shakePages: 
+  lastPageHold: 0
+  duckBgm: 0

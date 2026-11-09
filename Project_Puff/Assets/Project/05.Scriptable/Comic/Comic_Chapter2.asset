@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e223a7ba4e6ac64c862dfc37ecc34c2, type: 3}
+  m_Name: Comic_Chapter2
+  m_EditorClassIdentifier: Assembly-CSharp::ComicData
+  comicId: chapter2
+  displayName: "\uCC55\uD1302"
+  pages:
+  - {fileID: -4997003399187958987, guid: 99f1a6c3e84009a478c9ed6cd1c963e1, type: 3}
+  - {fileID: -3840018100004126666, guid: 327ac12fdb82a0f4d962d01f8bf473ec, type: 3}
+  - {fileID: -3941539897293782403, guid: a07383fa650df44429672fada7338a36, type: 3}
+  pageSfx: []
+  shakePages: 
+  lastPageHold: 0
+  duckBgm: 0

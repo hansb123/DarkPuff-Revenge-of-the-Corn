@@ -45,11 +45,71 @@ EditorBuildSettings:
     path: Assets/Project/01.Scene/Chapter_02/Ch2_01.unity
     guid: 8aee68cb2b8578542b3ae4aa40733240
   - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_02.unity
+    guid: e9f95291ae711274cb908fcd79064297
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_03.unity
+    guid: 9aa205b3dcf8a684698c3b5a558ac0ec
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_04.unity
+    guid: e3e23a4ad20e0fc4793deeb01d3ba546
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_05.unity
+    guid: 7edd801c80506f24b9a2256f72c8c0fb
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_06.unity
+    guid: 8ae861886a3f2b549b0cfb7fa652d7ff
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_07.unity
+    guid: ce5a6e882ab011a46bc823fba384579f
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_08.unity
+    guid: d7b224695993d4e49b9863df1330df3f
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_09.unity
+    guid: 1cdcacb6dc95579458b2193f9e4df0f2
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_02/Ch2_10.unity
+    guid: 1efd04c98f4a63f409381aa0288bd626
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_01.unity
+    guid: 781b16170879859469bfb636e9928564
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_02.unity
+    guid: ab2ae089b57ba9d4ab9a9a58ed7ad6c3
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_03.unity
+    guid: d33e05200a98d9f4da39ebd8287c4fae
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_04.unity
+    guid: c8d7950ef7cf82d4793dfec7be23b9f8
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_05.unity
+    guid: 6dcd6c29daeaf1f49b56249adec358a4
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_06.unity
+    guid: 103201bb6fb0a934e9fb328cbb363d4e
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_07.unity
+    guid: cad7c37493ac0e340888c729feaef3fd
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_08.unity
+    guid: d6eb172fac531824fb26599df63ccd9a
+  - enabled: 1
+    path: Assets/Project/01.Scene/Chapter_03/Ch3_09.unity
+    guid: da9b9d2a1e0ae544c94ce8506c40b14a
+  - enabled: 1
+    path: Assets/Project/01.Scene/MiniGameGroup/Ch3_10.unity
+    guid: 77fd4dc2ae9b6c74b996459411893f7b
+  - enabled: 1
     path: Assets/Project/01.Scene/MiniGameGroup/MiniGame_01.unity
     guid: ffee0197961717246b4614761d97effe
   - enabled: 1
     path: Assets/Project/01.Scene/MiniGameGroup/MiniGame_02.unity
     guid: 03e3cab836c5ce040add6c2241423956
+  - enabled: 1
+    path: Assets/Project/01.Scene/Start_Scene.unity
+    guid: 7a811e6f8b025224b8bae95bb6119130
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 5514b8a91905e7f4e9db8b94c60f7537, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -333,7 +333,7 @@ public class ChickenOutroSequence : MonoBehaviour, ITeaserSequence
         // 5) 끝: 닭은 사라지고 깃털만 남음. 플레이어가 깃털을 먹은 뒤 다음 씬으로 넘어갈 때 PlayTeaser()를 부른다
         routine = null;
         IsPlaying = false;
-        if (restoreCheckpointsAtEnd && RespawnManager.Instance != null) RespawnManager.Instance.UseCheckpoints = true;
+        if (restoreCheckpointsAtEnd && RespawnManager.Instance != null) RespawnManager.Instance.EndBossFight();
         if (playTeaserInline) { yield return TeaserRoutine(); }
         Completed?.Invoke();
         if (!featherPending) ReadyToLeave?.Invoke();   // 깃털이 없었거나 이미 먹었으면 바로

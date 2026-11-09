@@ -313,12 +313,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0b0d2bcf2ca40e24889d9d9f5a43b4f6, type: 3}
   - {fileID: 21300000, guid: 62d0e903c43c71a48bb2ed27b289d9be, type: 3}
   - {fileID: 21300000, guid: f255d479193c39240b94f1af8dd9fa28, type: 3}
-  - {fileID: 21300000, guid: 87ada3d84c702d7498dbbc17afca45ca, type: 3}
-  - {fileID: 21300000, guid: d9e5c7bae85697b439f18d438c02699e, type: 3}
   mgNormal: {fileID: 21300000, guid: 534d0ee01efd38c45b3a0bfe22896795, type: 3}
   mgSelected: {fileID: 21300000, guid: c0bb2ddce69dad7449d01da53103b15f, type: 3}
   mgCleared: {fileID: 21300000, guid: 9f5bb9201c1b9bd47a0340178f4029df, type: 3}
   mgLocked: {fileID: 21300000, guid: c7d90b2345625b44699dd3d9ea5b515d, type: 3}
+  bossNormal: {fileID: 5385922207123836552, guid: cbe4af76334d26c488b47830b8dfaf11, type: 3}
+  bossSelected: {fileID: -6271555380087231970, guid: c12bce2e61599ca4ead1d03de917c41b, type: 3}
+  bossCleared: {fileID: -8994785618880621288, guid: 6b23898e28b3e554d8eaab0408b2222e, type: 3}
+  bossLocked: {fileID: -8934598950033020696, guid: ebc0871ea9a92664291811ef3028f942, type: 3}
+  bossScale: 0.6
   titleSceneName: Title
   unlockAll: 0
 --- !u!4 &743403823

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e223a7ba4e6ac64c862dfc37ecc34c2, type: 3}
+  m_Name: Comic_Ending
+  m_EditorClassIdentifier: Assembly-CSharp::ComicData
+  comicId: ending
+  displayName: "\uC5D4\uB529"
+  pages:
+  - {fileID: 8702430557251106356, guid: af738a5761450d6438e478ef8b16a4a4, type: 3}
+  - {fileID: 9046091418944515882, guid: 8f1f6bb42abfb434fb53ad21519c8fd9, type: 3}
+  - {fileID: -104351585000316060, guid: d165eb45855b3a9499c0591bd9094708, type: 3}
+  - {fileID: -4132542766218173597, guid: a16ba621d42cef74285e7b6665ed53d7, type: 3}
+  - {fileID: -6852438259173646528, guid: 7e454c8b0ba1f0d4c9baf3fe28970d95, type: 3}
+  pageSfx: []
+  shakePages: 
+  lastPageHold: 0
+  duckBgm: 0

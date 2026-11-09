@@ -299,7 +299,7 @@ public class MechaOutroSequence : MonoBehaviour, ITeaserSequence
 
         routine = null;
         IsPlaying = false;
-        if (restoreCheckpointsAtEnd && RespawnManager.Instance != null) RespawnManager.Instance.UseCheckpoints = true;
+        if (restoreCheckpointsAtEnd && RespawnManager.Instance != null) RespawnManager.Instance.EndBossFight();
         Completed?.Invoke();
         if (!eggPending) ReadyToLeave?.Invoke();
         Finished?.Invoke();
@@ -345,7 +345,7 @@ public class MechaOutroSequence : MonoBehaviour, ITeaserSequence
             for (int i = 0; i < 3; i++)
             {
                 SetAlpha(teaserEyes, 0.2f); yield return new WaitForSecondsRealtime(0.06f);
-                SetAlpha(teaserEyes, 1f); yield return new WaitForSecondsRealtime(0.08f);
+                SetAlpha(teaserEyes, 1f);   yield return new WaitForSecondsRealtime(0.08f);
             }
         }
         yield return Shake(0.3f, 0.22f);

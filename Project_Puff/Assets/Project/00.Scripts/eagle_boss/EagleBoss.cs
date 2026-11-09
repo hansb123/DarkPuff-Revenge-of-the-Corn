@@ -73,7 +73,7 @@ public class EagleBoss : MonoBehaviour, IDamageable
     [Tooltip("연속으로 이만큼 패링에 성공하면 그로기")]
     [SerializeField] private int parriesToGroggy = 3;
     [Tooltip("패링당하면 화가 나서 한동안 난이도가 이만큼 올라감 (0이면 없음). 시간이 지나면 서서히 가라앉음")]
-    [Range(0f, 0.5f)][SerializeField] private float angerBonus = 0.15f;
+    [Range(0f, 0.5f)] [SerializeField] private float angerBonus = 0.15f;
     [Tooltip("화가 가라앉는 데 걸리는 시간(초)")]
     [SerializeField] private float angerDuration = 8f;
     [SerializeField] private float groggyTime = 5f;
@@ -93,7 +93,7 @@ public class EagleBoss : MonoBehaviour, IDamageable
     [Tooltip("그룹 안에서 패턴과 패턴 사이 쉬는 시간")]
     [SerializeField] private float stepGap = 0.35f;
     [Tooltip("그룹이 끝난 뒤 쉬는 시간 (마지막 패턴의 Rest After 에 곱해짐). 난이도 1이면 아래 값만큼 줄어듦")]
-    [Range(0.1f, 1f)][SerializeField] private float restAtMax = 0.5f;
+    [Range(0.1f, 1f)] [SerializeField] private float restAtMax = 0.5f;
     [SerializeField] private bool restartOnRespawn = true;
     [SerializeField] private float restartDelay = 1.5f;
 
@@ -122,6 +122,17 @@ public class EagleBoss : MonoBehaviour, IDamageable
     /// <summary>시간제 페이즈 진행도 0~1 (시간제가 아니면 0)</summary>
     public float TimedProgress { get; private set; }
     public bool IsTimedPhase => PhaseIndex >= 0 && phases[PhaseIndex].timed;
+
+    // ── 페이즈 저장 (이지 모드 전용) ──
+    // 씬이 다시 로드되어도 남도록 static. 노말 모드에서는 저장도 복원도 하지 않는다 (항상 처음부터).
+    private static string savedScene;
+    private static int savedPhase = -1, savedHp, savedMaxHp;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetSave() { savedScene = null; savedPhase = -1; }
+
+    /// <summary>저장된 페이즈 지우기. 타이틀로 나갈 때, 보스를 쓰러뜨렸을 때 호출</summary>
+    public static void ClearPhaseSave() { savedScene = null; savedPhase = -1; }
 
     // ── 연출/HUD 연결용 이벤트 ──
     public event Action<int, int> HpChanged;          // (현재, 이 페이즈 최대)
@@ -217,7 +228,21 @@ public class EagleBoss : MonoBehaviour, IDamageable
         PhaseIndex = -1;
         ParryStreak = 0;
         IsGroggy = false; ClearSky();
-        EnterPhase(Mathf.Clamp(debugStartPhase, 0, phases.Count - 1), withTransition: false);
+
+        // 보스전: 이지/노말 모두 목숨 없음 + 죽으면 보스전을 다시 시작
+        if (RespawnManager.Instance != null) RespawnManager.Instance.BeginBossFight();
+
+        // 이지: 마지막으로 들어간 페이즈부터 / 노말: 항상 처음부터
+        string scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        bool restore = GameDifficulty.IsEasy && savedPhase > 0 && savedPhase < phases.Count && savedScene == scene;
+        if (!GameDifficulty.IsEasy) ClearPhaseSave();
+
+        EnterPhase(restore ? savedPhase : Mathf.Clamp(debugStartPhase, 0, phases.Count - 1), withTransition: false);
+        if (restore && !IsTimedPhase)
+        {
+            Hp = savedHp; PhaseMaxHp = savedMaxHp;   // 페이즈에 들어갔던 시점의 체력
+            HpChanged?.Invoke(Hp, PhaseMaxHp);
+        }
     }
 
     /// <summary>전투 중단 + 남은 공격 정리</summary>
@@ -305,12 +330,12 @@ public class EagleBoss : MonoBehaviour, IDamageable
     {
         switch (gate)
         {
-            case GroupGate.PlayerNear: return () => PlayerDistanceX() <= nearDistance;
-            case GroupGate.PlayerFar: return () => PlayerDistanceX() > nearDistance;
+            case GroupGate.PlayerNear:     return () => PlayerDistanceX() <= nearDistance;
+            case GroupGate.PlayerFar:      return () => PlayerDistanceX() > nearDistance;
             case GroupGate.PlayerAirborne: return () => PlayerHeight() >= airborneHeight;
             case GroupGate.PlayerGrounded: return () => PlayerHeight() < airborneHeight;
             case GroupGate.PlayerLeftSide: return () => player != null && player.position.x < transform.position.x;
-            case GroupGate.PlayerRightSide: return () => player != null && player.position.x >= transform.position.x;
+            case GroupGate.PlayerRightSide:return () => player != null && player.position.x >= transform.position.x;
             default: return null;
         }
     }
@@ -402,6 +427,13 @@ public class EagleBoss : MonoBehaviour, IDamageable
         IsGroggy = false; ClearSky();
         if (motion != null) motion.Recover();   // 그로기 중 페이즈가 넘어가도 하늘로 복귀
 
+        // 이지 모드: 새 페이즈에 들어가면 저장 (1페이즈는 처음이라 저장하지 않음)
+        if (GameDifficulty.IsEasy && index > 0)
+        {
+            savedScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            savedPhase = index; savedHp = Hp; savedMaxHp = PhaseMaxHp;
+        }
+
         Interrupt();
         PhaseEntered?.Invoke(index);
 
@@ -440,6 +472,7 @@ public class EagleBoss : MonoBehaviour, IDamageable
 
     private void Die()
     {
+        ClearPhaseSave();   // 쓰러뜨렸으니 저장 삭제
         Stop();
         Defeated?.Invoke();
     }

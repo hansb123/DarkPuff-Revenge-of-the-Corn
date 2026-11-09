@@ -41,7 +41,6 @@ public class PpeongHud : MonoBehaviour
 
         routines = new Coroutine[slots.Length];
         basePositions = new Vector2[slots.Length];
-        for (int i = 0; i < slots.Length; i++) basePositions[i] = ((RectTransform)slots[i].transform).anchoredPosition;
 
         special.ChargesChanged += OnChanged;
         special.ChargeRejected += OnRejected;
@@ -135,6 +134,10 @@ public class PpeongHud : MonoBehaviour
 
     private IEnumerator ShakeRoutine()
     {
+        // 흔들기 직전의 실제 위치를 기준으로 삼는다.
+        // (Start 시점에는 HorizontalLayoutGroup이 아직 칸을 배치하기 전이라 모두 같은 자리일 수 있음 → 흔든 뒤 한 칸으로 겹쳐 보이던 원인)
+        for (int i = 0; i < slots.Length; i++) basePositions[i] = ((RectTransform)slots[i].transform).anchoredPosition;
+
         float t = 0f;
         while (t < shakeTime)
         {
@@ -151,6 +154,21 @@ public class PpeongHud : MonoBehaviour
         for (int i = 0; i < slots.Length; i++)
             ((RectTransform)slots[i].transform).anchoredPosition = basePositions[i];
 
+        // 레이아웃 그룹이 있으면 위치를 다시 계산하게 한다
+        if (slots.Length > 0 && slots[0].transform.parent is RectTransform parent)
+            LayoutRebuilder.ForceRebuildLayoutImmediate(parent);
+
         shakeRoutine = null;
+    }
+
+    private void OnDisable()
+    {
+        // 흔드는 도중 꺼져도 칸이 어긋난 채로 남지 않게
+        if (shakeRoutine != null && basePositions != null)
+        {
+            for (int i = 0; i < slots.Length; i++)
+                ((RectTransform)slots[i].transform).anchoredPosition = basePositions[i];
+            shakeRoutine = null;
+        }
     }
 }

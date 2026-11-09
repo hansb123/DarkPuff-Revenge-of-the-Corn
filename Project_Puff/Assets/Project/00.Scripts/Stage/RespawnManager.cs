@@ -60,6 +60,7 @@ public class RespawnManager : MonoBehaviour
     private int lives;
     private int livesCapacity;          // HUD에 보여줄 칸 수 (시작 목숨 + 보너스)
     private bool bonusGranted;
+    private bool bossFight;             // 보스전: 이지/노말 모두 목숨 없음 (사망해도 목숨이 깎이지 않음)
 
     /// <summary>
     /// false면 미니게임 모드: 일반 체크포인트는 무시하고 미니게임 전용 체크포인트만 사용.
@@ -72,7 +73,7 @@ public class RespawnManager : MonoBehaviour
         {
             if (value && !useCheckpoints) ClearMiniGameCheckpoints();
             // 미니게임에 처음 들어갈 때(체크포인트 사용 끔) 목숨 보너스 (스테이지당 한 번)
-            if (!value && useCheckpoints) GrantMiniGameBonus();
+            if (!value && useCheckpoints && !bossFight) GrantMiniGameBonus();
             useCheckpoints = value;
         }
     }
@@ -83,6 +84,28 @@ public class RespawnManager : MonoBehaviour
     public bool HasLives => GameDifficulty.IsNormal;
     public int Lives => lives;
     public int LivesCapacity => livesCapacity;
+
+    /// <summary>보스전 중인가. 보스전에서는 목숨이 깎이지 않고 보너스도 없다</summary>
+    public bool BossFight => bossFight;
+    public event Action<bool> BossFightChanged;
+
+    /// <summary>보스전 시작. 체크포인트를 끄고(죽으면 처음부터) 목숨 소모를 멈춘다. 닭/메카/독수리 보스가 호출</summary>
+    public void BeginBossFight()
+    {
+        bool changed = !bossFight;
+        bossFight = true;      // 먼저 켜야 미니게임 보너스(+5)가 붙지 않는다
+        UseCheckpoints = false;
+        if (changed) BossFightChanged?.Invoke(true);
+    }
+
+    /// <summary>보스전 종료. 체크포인트와 목숨 소모를 원래대로</summary>
+    public void EndBossFight()
+    {
+        bool changed = bossFight;
+        bossFight = false;
+        UseCheckpoints = true;
+        if (changed) BossFightChanged?.Invoke(false);
+    }
 
     /// <summary>목숨이 바뀔 때 (남은 목숨, 표시 칸 수, 늘어난 것인지)</summary>
     public event Action<int, int, bool> LivesChanged;
@@ -198,7 +221,7 @@ public class RespawnManager : MonoBehaviour
 
         // 노말 모드: 목숨 1개 소모
         bool outOfLives = false;
-        if (HasLives)
+        if (HasLives && !bossFight)
         {
             lives = Mathf.Max(0, lives - 1);
             LivesChanged?.Invoke(lives, livesCapacity, false);

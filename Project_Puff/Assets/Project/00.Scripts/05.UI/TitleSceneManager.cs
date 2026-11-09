@@ -7,24 +7,24 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
-/// Å¸ÀÌÆ² ¾À ¸Å´ÏÀú. ½ÃÀÛÇÏ±â / Ã©ÅÍ ¼±ÅÃ / Á¾·á ¹öÆ° Ã³¸®, ¾À ÀüÈ¯(ÆäÀÌµå), Å°º¸µå Æ÷Ä¿½º À¯Áö, ·Î°í¡¤Ä³¸¯ÅÍ ¿¬Ãâ.
-/// ±âÁ¸ TitleUI¸¦ ´ëÃ¼ÇÑ´Ù (TitleUI´Â Áö¿ì°í ÀÌ°É ¾À¿¡ ÇÏ³ª¸¸ µÎ¸é µÊ).
+/// íƒ€ì´í‹€ ì”¬ ë§¤ë‹ˆì €. ì‹œì‘í•˜ê¸° / ì±•í„° ì„ íƒ / ì¢…ë£Œ ë²„íŠ¼ ì²˜ë¦¬, ì”¬ ì „í™˜(í˜ì´ë“œ), í‚¤ë³´ë“œ í¬ì»¤ìŠ¤ ìœ ì§€, ë¡œê³ Â·ìºë¦­í„° ì—°ì¶œ.
+/// ê¸°ì¡´ TitleUIë¥¼ ëŒ€ì²´í•œë‹¤ (TitleUIëŠ” ì§€ìš°ê³  ì´ê±¸ ì”¬ì— í•˜ë‚˜ë§Œ ë‘ë©´ ë¨).
 /// </summary>
 public class TitleSceneManager : MonoBehaviour
 {
-    [Header("¹öÆ°")]
+    [Header("ë²„íŠ¼")]
     [SerializeField] private Button startButton;
     [SerializeField] private Button chapterSelectButton;
     [SerializeField] private Button exitButton;
-    [Tooltip("'³­ÀÌµµ ¼³Á¤' ¹öÆ° (¼±ÅÃ). ÆĞ³Î ¿©´İ±â´Â DifficultySelectUi°¡ Ã³¸®ÇÏ°í, ¿©±â¼­´Â Å°º¸µå Æ÷Ä¿½º/¼±ÅÃÀ½¸¸ ¸Ã´Â´Ù")]
+    [Tooltip("'ë‚œì´ë„ ì„¤ì •' ë²„íŠ¼ (ì„ íƒ). íŒ¨ë„ ì—¬ë‹«ê¸°ëŠ” DifficultySelectUiê°€ ì²˜ë¦¬í•˜ê³ , ì—¬ê¸°ì„œëŠ” í‚¤ë³´ë“œ í¬ì»¤ìŠ¤/ì„ íƒìŒë§Œ ë§¡ëŠ”ë‹¤")]
     [SerializeField] private Button difficultyButton;
 
-    [Header("Scenes (Build Settings¿¡ µî·ÏµÈ ¾À ÀÌ¸§)")]
-    [Tooltip("'½ÃÀÛÇÏ±â'·Î µé¾î°¥ ¾À (1Ã©ÅÍ 1½ºÅ×ÀÌÁö)")]
+    [Header("Scenes (Build Settingsì— ë“±ë¡ëœ ì”¬ ì´ë¦„)")]
+    [Tooltip("'ì‹œì‘í•˜ê¸°'ë¡œ ë“¤ì–´ê°ˆ ì”¬ (1ì±•í„° 1ìŠ¤í…Œì´ì§€)")]
     [SerializeField] private string firstStageSceneName = "";
     [SerializeField] private string chapterSelectSceneName = "ChapterSelect";
 
-    [Header("·Î°í / Ä³¸¯ÅÍ ¿¬Ãâ (ºñ¿öµÎ¸é »ı·«)")]
+    [Header("ë¡œê³  / ìºë¦­í„° ì—°ì¶œ (ë¹„ì›Œë‘ë©´ ìƒëµ)")]
     [SerializeField] private RectTransform logo;
     [SerializeField] private float logoSwayAngle = 1.2f;
     [SerializeField] private float logoSwaySpeed = 1.6f;
@@ -33,10 +33,10 @@ public class TitleSceneManager : MonoBehaviour
     [SerializeField] private float characterBobHeight = 8f;
     [SerializeField] private float characterBobSpeed = 2.4f;
 
-    [Header("ÀüÈ¯")]
-    [Tooltip("'½ÃÀÛÇÏ±â' ¶§ '»½!' ¼Ò¸®°¡ µé¸± ½Ã°£")]
+    [Header("ì „í™˜")]
+    [Tooltip("'ì‹œì‘í•˜ê¸°' ë•Œ 'ë»¥!' ì†Œë¦¬ê°€ ë“¤ë¦´ ì‹œê°„")]
     [SerializeField] private float startDelay = 0.45f;
-    [Tooltip("ÆäÀÌµå ÀÎ/¾Æ¿ô ½Ã°£ (0ÀÌ¸é ÆäÀÌµå ¾øÀ½)")]
+    [Tooltip("í˜ì´ë“œ ì¸/ì•„ì›ƒ ì‹œê°„ (0ì´ë©´ í˜ì´ë“œ ì—†ìŒ)")]
     [SerializeField] private float fadeTime = 0.35f;
 
     private readonly List<Button> buttons = new();
@@ -48,8 +48,9 @@ public class TitleSceneManager : MonoBehaviour
 
     private void Start()
     {
+        EagleBoss.ClearPhaseSave();
         Time.timeScale = 1f;
-        UISelectSound.IgnoreFor(0.3f);   // Ã¹ ¹öÆ° ¼±ÅÃ ¼Ò¸® ¹æÁö
+        UISelectSound.IgnoreFor(0.3f);   // ì²« ë²„íŠ¼ ì„ íƒ ì†Œë¦¬ ë°©ì§€
 
         Register(startButton, OnStart);
         Register(chapterSelectButton, OnChapterSelect);
@@ -71,7 +72,7 @@ public class TitleSceneManager : MonoBehaviour
         KeepFocus();
     }
 
-    // ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡ ¹öÆ° ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ ë²„íŠ¼ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     private void Register(Button b, UnityEngine.Events.UnityAction action)
     {
@@ -83,13 +84,13 @@ public class TitleSceneManager : MonoBehaviour
 
     private void OnStart()
     {
-        // ¸Ş´º BGMÀº ½ºÅ×ÀÌÁö BGM°ú °ãÄ¡Áö ¾Ê°Ô ²ö´Ù
+        // ë©”ë‰´ BGMì€ ìŠ¤í…Œì´ì§€ BGMê³¼ ê²¹ì¹˜ì§€ ì•Šê²Œ ëˆë‹¤
         Load(firstStageSceneName, UISfxId.Start, startDelay, stopMenuBgm: true);
     }
 
     private void OnChapterSelect()
     {
-        // Å¸ÀÌÆ² ¡æ Ã©ÅÍ ¼±ÅÃÀº °°Àº BGMÀÌ ÀÌ¾îÁö¹Ç·Î ²ôÁö ¾ÊÀ½
+        // íƒ€ì´í‹€ â†’ ì±•í„° ì„ íƒì€ ê°™ì€ BGMì´ ì´ì–´ì§€ë¯€ë¡œ ë„ì§€ ì•ŠìŒ
         Load(chapterSelectSceneName, UISfxId.Submit, 0.05f, stopMenuBgm: false);
     }
 
@@ -111,7 +112,7 @@ public class TitleSceneManager : MonoBehaviour
 #endif
     }
 
-    // ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡ ¾À ÀüÈ¯ ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ ì”¬ ì „í™˜ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     private void Load(string sceneName, UISfxId sfx, float delay, bool stopMenuBgm)
     {
@@ -120,7 +121,7 @@ public class TitleSceneManager : MonoBehaviour
         if (string.IsNullOrEmpty(sceneName) || !Application.CanStreamedLevelBeLoaded(sceneName))
         {
             UISfx.Play(UISfxId.Denied);
-            Debug.LogWarning($"[TitleSceneManager] ¾À '{sceneName}' À»(¸¦) ºÒ·¯¿Ã ¼ö ¾ø½À´Ï´Ù. (ÀÌ¸§ / Build Settings È®ÀÎ)", this);
+            Debug.LogWarning($"[TitleSceneManager] ì”¬ '{sceneName}' ì„(ë¥¼) ë¶ˆëŸ¬ì˜¬ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. (ì´ë¦„ / Build Settings í™•ì¸)", this);
             return;
         }
 
@@ -137,7 +138,7 @@ public class TitleSceneManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    // ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡ ÆäÀÌµå ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ í˜ì´ë“œ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     private void BuildFade()
     {
@@ -153,7 +154,7 @@ public class TitleSceneManager : MonoBehaviour
 
         var img = go.GetComponent<Image>();
         img.color = Color.black;
-        img.raycastTarget = false;   // ¹öÆ° Å¬¸¯À» ¸·Áö ¾ÊÀ½
+        img.raycastTarget = false;   // ë²„íŠ¼ í´ë¦­ì„ ë§‰ì§€ ì•ŠìŒ
 
         fade = go.GetComponent<CanvasGroup>();
         fade.alpha = 1f;
@@ -173,7 +174,7 @@ public class TitleSceneManager : MonoBehaviour
         fade.alpha = to;
     }
 
-    // ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡ ¿¬Ãâ / Æ÷Ä¿½º ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ ì—°ì¶œ / í¬ì»¤ìŠ¤ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
     private void Animate()
     {
@@ -193,7 +194,7 @@ public class TitleSceneManager : MonoBehaviour
         }
     }
 
-    /// <summary>¸¶¿ì½º·Î ºó °÷À» ´­·¯ ¼±ÅÃÀÌ Ç®·Áµµ, ¹æÇâÅ°/Enter¸¦ ´©¸£¸é ¸¶Áö¸· ¹öÆ°À¸·Î µ¹¾Æ¿È</summary>
+    /// <summary>ë§ˆìš°ìŠ¤ë¡œ ë¹ˆ ê³³ì„ ëˆŒëŸ¬ ì„ íƒì´ í’€ë ¤ë„, ë°©í–¥í‚¤/Enterë¥¼ ëˆ„ë¥´ë©´ ë§ˆì§€ë§‰ ë²„íŠ¼ìœ¼ë¡œ ëŒì•„ì˜´</summary>
     private void KeepFocus()
     {
         var es = EventSystem.current;
@@ -221,7 +222,7 @@ public class TitleSceneManager : MonoBehaviour
     private void Select(Button b)
     {
         if (b == null || EventSystem.current == null) return;
-        UISelectSound.IgnoreFor(0.05f);   // Æ÷Ä¿½º¸¦ µÇµ¹¸± ¶§´Â ¼Ò¸® ¾øÀÌ
+        UISelectSound.IgnoreFor(0.05f);   // í¬ì»¤ìŠ¤ë¥¼ ë˜ëŒë¦´ ë•ŒëŠ” ì†Œë¦¬ ì—†ì´
         EventSystem.current.SetSelectedGameObject(b.gameObject);
         lastSelected = b;
     }
