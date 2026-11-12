@@ -22,6 +22,8 @@ MonoBehaviour:
   diveHard: 0.24
   betweenEasy: 0.7
   betweenHard: 0.3
+  lockHoldEasy: 0
+  lockHoldHard: 0
   hold: 0.35
   returnTime: 0.8
   impactHeight: 1.6

@@ -87,7 +87,27 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     protected virtual void Update()
     {
         if (isDead) return;
+
+        // 낙사: 플레이어와 같은 기준선(RespawnManager.FallY) 아래로 떨어지면 즉사
+        if (!HazardImmune && RespawnManager.Instance != null && transform.position.y < RespawnManager.Instance.FallY)
+        {
+            HazardKill();
+            return;
+        }
         fsm.Tick();
+    }
+
+    // ---------------- 함정 / 낙사 즉사 ----------------
+
+    /// <summary>true면 함정/낙사로 죽지 않는다 (날아다니는 적 등). 하위 클래스가 override</summary>
+    public virtual bool HazardImmune => false;
+
+    /// <summary>함정(가시, 톱날 등)에 닿거나 낙사했을 때: 방어/슈퍼아머/체력과 상관없이 즉사</summary>
+    public void HazardKill()
+    {
+        if (isDead) return;
+        hp = 0;
+        Die();
     }
 
     // ---------------- 효과음 ----------------

@@ -94,6 +94,8 @@ public class TitleSceneManager : MonoBehaviour
         Load(chapterSelectSceneName, UISfxId.Submit, 0.05f, stopMenuBgm: false);
     }
 
+   
+
     private void OnExit()
     {
         if (loading) return;

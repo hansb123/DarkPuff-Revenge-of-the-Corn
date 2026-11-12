@@ -11,7 +11,7 @@ using UnityEngine;
 public static class GameDisplaySettings
 {
     private const string ModeKey = "Darkpuff.DisplayMode";   // 0 = 전체화면, 1 = 창 모드
-    private const string ResKey  = "Darkpuff.WindowedRes";   // 프리셋 인덱스(너비x높이 문자열로 저장)
+    private const string ResKey = "Darkpuff.WindowedRes";   // 프리셋 인덱스(너비x높이 문자열로 저장)
 
     private static readonly Vector2Int[] Presets =
     {
@@ -88,4 +88,11 @@ public static class GameDisplaySettings
     }
 
     public static void Save() => PlayerPrefs.Save();
+
+    /// <summary>PlayerPrefs를 전부 지운 뒤, 미리 기억해 둔 화면 설정을 다시 기록한다 (진행 초기화에서 유지할 때 사용)</summary>
+    public static void Persist(bool fullscreen, Vector2Int windowedResolution)
+    {
+        PlayerPrefs.SetInt(ModeKey, fullscreen ? 0 : 1);
+        PlayerPrefs.SetString(ResKey, $"{windowedResolution.x}x{windowedResolution.y}");
+    }
 }

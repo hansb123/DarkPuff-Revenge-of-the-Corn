@@ -17,6 +17,8 @@ public static class StageProgress
 
     public static void MarkCleared(string stageId)
     {
+        CollectibleProgress.CommitPending();
+
         if (string.IsNullOrEmpty(stageId)) return;
         PlayerPrefs.SetInt(ClearedPrefix + stageId, 1);
         PlayerPrefs.Save();

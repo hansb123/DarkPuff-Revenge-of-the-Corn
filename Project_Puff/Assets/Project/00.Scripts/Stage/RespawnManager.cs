@@ -22,6 +22,8 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] private Transform startPoint;
     [Tooltip("이 높이보다 아래로 떨어지면 낙사")]
     [SerializeField] private float fallY = -15f;
+    /// <summary>이 높이 아래로 떨어지면 낙사 (적도 같은 기준으로 즉사)</summary>
+    public float FallY => fallY;
 
     [Header("재시작 방식")]
     [Tooltip("켜면 죽었을 때 부활 대신 씬을 처음부터 다시 불러옴 (적/아이템/함정/게이지 전부 초기화)")]

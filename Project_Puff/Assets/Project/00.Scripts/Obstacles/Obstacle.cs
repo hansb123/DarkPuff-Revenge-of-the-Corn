@@ -6,7 +6,8 @@ using UnityEngine;
 /// - 콜라이더가 Is Trigger이면 겹친 동안, 일반(solid) 콜라이더이면 부딪힌 동안 데미지를 준다.
 ///   (연속 피격은 PlayerHealth의 무적 시간이 막아 준다)
 /// - 함정 스크립트(FallingObstacle, PopUpObstacle 등)가 DamageEnabled로 "지금 위험한가"를 켜고 끈다.
-/// 플레이어는 PlayerHealth 컴포넌트로 알아보므로 레이어 설정이 필요 없다. 적은 다치지 않는다.
+/// 플레이어는 PlayerHealth 컴포넌트로 알아보므로 레이어 설정이 필요 없다.
+/// 적(EnemyBase)도 닿으면 즉사한다 (Kills Enemies). 날아다니는 적은 EnemyBase.HazardImmune 으로 제외.
 /// </summary>
 public class Obstacle : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Obstacle : MonoBehaviour
     [SerializeField] private int damage = 1;
     [Tooltip("켜면 하트 수와 상관없이 즉사 (낙사 같은 함정, 고양이마리오식 가시)")]
     [SerializeField] private bool instantKill;
+    [Tooltip("켜면 적도 닿는 즉시 죽는다 (가시 위로 지나가거나 구멍에 떨어진 적). 끄면 적은 무시하고 지나감")]
+    [SerializeField] private bool killsEnemies = true;
     [Tooltip("꺼 두면 위험하지 않은 상태. 함정 스크립트가 시작할 때 이 값을 덮어쓸 수 있음")]
     [SerializeField] private bool damageEnabled = true;
 
@@ -61,6 +64,16 @@ public class Obstacle : MonoBehaviour
 
     private void Touch(Collider2D other)
     {
+        if (killsEnemies)
+        {
+            var enemy = other.GetComponentInParent<EnemyBase>();
+            if (enemy != null)
+            {
+                if (!enemy.IsDead && !enemy.HazardImmune) enemy.HazardKill();
+                return;
+            }
+        }
+
         var health = other.GetComponentInParent<PlayerHealth>();
         if (health == null || health.IsDead) return;
 

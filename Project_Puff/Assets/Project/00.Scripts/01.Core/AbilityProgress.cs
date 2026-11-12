@@ -8,27 +8,35 @@ public static class AbilityProgress
 {
     private const string GlideKey = "ability_glide";
     private const string HardKey = "ability_hard";
+    private const string CheatKey = "cheat_unlock_abilities";
+
+    /// <summary>테스트용 '모든 능력 해금'. 켜 두는 동안 전부 해금된 것으로 취급하고, 실제 해금 기록은 건드리지 않는다 (끄면 원래 상태)</summary>
+    public static bool CheatUnlockAll
+    {
+        get => PlayerPrefs.GetInt(CheatKey, 0) == 1;
+        set { PlayerPrefs.SetInt(CheatKey, value ? 1 : 0); PlayerPrefs.Save(); }
+    }
 
     /// <summary>활공 해금 직후 (UI/튜토리얼 표시 등에서 구독)</summary>
     public static event Action GlideUnlockedEvent;
     /// <summary>단단해지기 해금 직후</summary>
     public static event Action HardUnlockedEvent;
 
-    public static bool GlideUnlocked => PlayerPrefs.GetInt(GlideKey, 0) == 1;
+    public static bool GlideUnlocked => CheatUnlockAll || PlayerPrefs.GetInt(GlideKey, 0) == 1;
 
     public static void UnlockGlide()
     {
-        if (GlideUnlocked) return;
+        if (PlayerPrefs.GetInt(GlideKey, 0) == 1) return;   // 치트가 켜져 있어도 실제 기록은 따로 저장
         PlayerPrefs.SetInt(GlideKey, 1);
         PlayerPrefs.Save();
         GlideUnlockedEvent?.Invoke();
     }
 
-    public static bool HardUnlocked => PlayerPrefs.GetInt(HardKey, 0) == 1;
+    public static bool HardUnlocked => CheatUnlockAll || PlayerPrefs.GetInt(HardKey, 0) == 1;
 
     public static void UnlockHard()
     {
-        if (HardUnlocked) return;
+        if (PlayerPrefs.GetInt(HardKey, 0) == 1) return;
         PlayerPrefs.SetInt(HardKey, 1);
         PlayerPrefs.Save();
         HardUnlockedEvent?.Invoke();

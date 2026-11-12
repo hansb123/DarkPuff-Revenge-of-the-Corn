@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2 hitKnockback = new Vector2(5f, 6f);
     [Tooltip("맞은 뒤 조작이 막히는 시간(초). PlayerHealth의 무적 시간보다 짧아야 함")]
     [SerializeField] private float hitStunTime = 0.35f;
+    [Tooltip("맞은 직후 이 시간(초)이 지나면 땅에서 점프로 경직을 끊고 빠져나올 수 있다. 0이면 즉시, Hit Stun Time 이상이면 불가")]
+    [SerializeField] private float hitJumpCancelTime = 0.1f;
 
     [Header("Attack")]
     [SerializeField] private PlayerAttack attack;       // 비워두면 같은 오브젝트에서 자동으로 찾음
@@ -102,6 +104,7 @@ public class PlayerController : MonoBehaviour
     public int FacingDir => spriteRenderer != null && spriteRenderer.flipX ? -1 : 1;
 
     public float HitStunTime => hitStunTime;
+    public float HitJumpCancelTime => hitJumpCancelTime;
     public float StepInterval => stepInterval;
     public bool IsDead => health != null && health.IsDead;
     private Vector2 lastHitFrom;
@@ -439,8 +442,22 @@ public class PlayerController : MonoBehaviour
     {
         if (groundCheck == null) return false;
 
-        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer) != null;
+        if (Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer) != null) return true;
+
+        // 함정(Obstacle)의 단단한 콜라이더 위에 서 있어도 땅으로 인정 (레이어가 Ground가 아니어도 점프 가능)
+        int n = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, trapFilter, trapBuffer);
+        for (int i = 0; i < n; i++)
+        {
+            var c = trapBuffer[i];
+            if (c == null || c.isTrigger) continue;
+            if (c.attachedRigidbody == rb) continue;
+            if (c.GetComponentInParent<Obstacle>() != null) return true;
+        }
+        return false;
     }
+
+    private readonly Collider2D[] trapBuffer = new Collider2D[8];
+    private static readonly ContactFilter2D trapFilter = new ContactFilter2D().NoFilter();
 
     // ---------------- 디버그 ----------------
 

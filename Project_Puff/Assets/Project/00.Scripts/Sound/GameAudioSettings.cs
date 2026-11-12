@@ -47,4 +47,11 @@ public static class GameAudioSettings
 
     /// <summary>설정창을 닫을 때 호출해서 디스크에 확실히 저장</summary>
     public static void Save() => PlayerPrefs.Save();
+
+    /// <summary>PlayerPrefs를 전부 지운 뒤, 메모리에 있는 현재 값을 다시 기록한다 (진행 초기화에서 소리 설정을 유지할 때 사용)</summary>
+    public static void PersistCurrent()
+    {
+        PlayerPrefs.SetFloat(BgmKey, BgmVolume);
+        PlayerPrefs.SetFloat(SfxKey, SfxVolume);
+    }
 }

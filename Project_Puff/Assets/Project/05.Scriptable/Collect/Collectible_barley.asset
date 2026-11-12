@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03e15ced27da30418ed38318fd79544, type: 3}
+  m_Name: Collectible_barley
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleData
+  id: barley
+  displayName: "\uBCF4\uB9AC"
+  description: 
+  chapter: 1
+  sprite: {fileID: 21300000, guid: 863876345b9c10545b9a52b954985c7c, type: 3}
+  lockedSprite: {fileID: 21300000, guid: e7d732b05eddb0a4abaac3a78e2eee33, type: 3}

@@ -46,6 +46,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void TakeDamage(int amount, Vector2 hitFrom)
     {
         if (IsDead || IsInvincible || amount <= 0) return;
+        if (DebugCheats.InfiniteHealth) return;   // 테스트용 체력 무한: 피해를 완전히 무시 (넉백/경직도 없음)
 
         Current = Mathf.Max(0, Current - amount);
         Changed?.Invoke(Current, maxHp);

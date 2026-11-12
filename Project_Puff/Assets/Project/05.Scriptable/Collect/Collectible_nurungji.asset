@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03e15ced27da30418ed38318fd79544, type: 3}
+  m_Name: Collectible_nurungji
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleData
+  id: nurungji
+  displayName: "\uB204\uB8FD\uC9C0"
+  description: 
+  chapter: 3
+  sprite: {fileID: 21300000, guid: ca24af1f68f4bb34cbf4132af0d1d3e2, type: 3}
+  lockedSprite: {fileID: 21300000, guid: ef4b795423b96224d88934dc77d2856c, type: 3}

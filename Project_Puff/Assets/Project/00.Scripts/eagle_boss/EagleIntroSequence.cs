@@ -120,6 +120,8 @@ public class EagleIntroSequence : MonoBehaviour
     [SerializeField] private float startDelay = 1.0f;
     [Tooltip("연출이 끝나면 EagleBoss.Begin() 호출")]
     [SerializeField] private bool beginBossAtEnd = true;
+    [Tooltip("죽어서 씬이 다시 로드된 경우 연출을 건너뛰고 바로 전투 시작 (닭/메카 보스와 같은 방식)")]
+    [SerializeField] private bool skipIntroAfterDeathReload = true;
 
     [Header("이벤트")]
     [Tooltip("연출 시작 (플레이어 입력 잠금, HUD 숨김 등)")]
@@ -191,7 +193,44 @@ public class EagleIntroSequence : MonoBehaviour
         if (IsPlaying || HasPlayed) return;
         Cache();
         HasPlayed = true;
+
+        // 죽어서 씬이 다시 로드됨 → 연출 없이 전투 상태로 바로 시작
+        if (skipIntroAfterDeathReload && RespawnManager.ConsumeReloadedByDeath())
+        {
+            routine = StartCoroutine(SkipToFight());
+            return;
+        }
         routine = StartCoroutine(Sequence());
+    }
+
+    /// <summary>연출을 건너뛰고: 닭은 사라진 채, 독수리는 전투 위치에서 전투 자세로, 보스 BGM 재생 후 전투 시작</summary>
+    private IEnumerator SkipToFight()
+    {
+        IsPlaying = true;
+        Started?.Invoke();
+        if (runner != null) runner.Stop();
+        if (chicken != null) chicken.gameObject.SetActive(false);
+        if (eagleBody != null)
+        {
+            eagleBody.enabled = true;
+            eagleBody.color = eagleColor0;
+            if (idlePose != null) eagleBody.sprite = idlePose;
+        }
+        if (eagle != null)
+        {
+            eagle.localScale = eagleScale0;
+            if (fightAnchor != null) eagle.position = fightAnchor.position;
+        }
+        if (stageBgm != null)
+        {
+            stageBgm.Suppress(0f);
+            if (bossBgm != null) stageBgm.Release(bossBgm, bossBgmVolume, 0.3f);
+        }
+        yield return null;   // 한 프레임: 다른 오브젝트들의 시작 처리가 끝난 뒤
+
+        IsPlaying = false;
+        Completed?.Invoke();
+        if (beginBossAtEnd && boss != null) boss.Begin();
     }
 
     /// <summary>테스트용: 연출 흔적을 지우고 처음 상태로</summary>

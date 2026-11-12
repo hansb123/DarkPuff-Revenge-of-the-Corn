@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03e15ced27da30418ed38318fd79544, type: 3}
+  m_Name: Collectible_brownrice
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleData
+  id: brownrice
+  displayName: "\uD604\uBBF8"
+  description: 
+  chapter: 3
+  sprite: {fileID: 21300000, guid: 016bb435c2f4e954eb9241727cf08908, type: 3}
+  lockedSprite: {fileID: 21300000, guid: f04e6db3056eb544eaf760c16b9da46d, type: 3}

@@ -192,8 +192,16 @@ public sealed class PlayerHitState : PlayerState
 
     public override void Tick()
     {
-        // 조작 입력은 읽지 않음 (점프 버퍼도 소비하지 않으므로, 끝나기 직전에 누른 점프는 살아남음)
+        // 경직 중에는 이동/공격 입력을 읽지 않는다. 단, 짧은 최소 경직이 지나면 땅에서 점프로 빠져나올 수 있다
+        // (가시 위에서 맞고 꼼짝 못 해 연속으로 맞는 일을 막음)
         timer -= Time.deltaTime;
+        float elapsed = player.HitStunTime - timer;
+        if (timer > 0f && elapsed >= player.HitJumpCancelTime && player.IsGrounded && player.ConsumeJump())
+        {
+            player.Jump();
+            player.ChangeState(player.JumpState);
+            return;
+        }
         if (timer > 0f) return;
 
         player.ChangeState(player.IsGrounded ? player.IdleState : player.JumpState);
